@@ -1,4 +1,8 @@
 /* ./styles/globals.css */
+.blog-content {
+    color: green;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

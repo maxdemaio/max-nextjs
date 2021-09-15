@@ -25,11 +25,9 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
         <PostLayout>
-            {postData.title}
-            <br />
-            {postData.id}
-            <br />
-            {postData.date}
+            <h1>{postData.title}</h1>
+            <div>{postData.date}</div>
+            <div className="sr-only">{postData.id}</div>
             <br />
             <div className={'blog-content'} 
                 dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

@@ -90,18 +90,8 @@ export default function Post({ postData }) {
                     <a>← Back</a>
                 </Link>
                 {/* To top button */}
-                <button
-                        className="w-20 cursor-pointer float-right"
-                    onClick={moveToTop}>                    
-                        <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current" viewBox="0 0 512 512">
-                        <path
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="48"
-                            d="M112 328l144-144 144 144"
-                        />
-                    </svg>
+                <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>                    
+                    <a>↑ Top</a>
                 </button>
                 <hr></hr>
                 <p>

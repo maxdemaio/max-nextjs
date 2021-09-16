@@ -25,6 +25,7 @@ export default function PostLayout({ children }) {
             />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
+            <title></title>
         </Head>
 
         {/*Blog post header */}
@@ -34,7 +35,7 @@ export default function PostLayout({ children }) {
         </header>
 
         {/* Blog post content */}
-        <div className="blogPost mt-8 mb-8 mx-auto prose prose-blue">
+        <div className="blogPost mt-8 mb-8 mx-auto prose prose-lg prose-blue">
             <main>{children}</main>
             <div className={styles.backToHome}>
                 <Link href="/">

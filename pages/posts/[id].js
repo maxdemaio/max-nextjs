@@ -10,7 +10,7 @@ export async function getStaticProps({ params }) {
     // We need to use await for remark
     // async/await allows us to fetch data asynchronously.
     const postData = await getPostData(params.id)
-
+    console.log(postData);
     return {
         props: {
             postData

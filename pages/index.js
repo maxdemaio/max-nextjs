@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
       <>
-      <div className="prose prose-lg mx-auto">
+      <div className="mt-8 mb-8 mx-auto p-4 prose prose-lg">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -25,13 +25,8 @@ export default function Home() {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
 
-        <header>
+        <header className="select-none text-center">
           <h1>Max DeMaio</h1>
-          <p>
-            Self-learning computer science, creating practical business solutions,
-            and designing software architecture through research & development.
-            Documenting the entire open source process.
-          </p>
           <>
             <Image
               priority
@@ -46,9 +41,9 @@ export default function Home() {
 
         <main>
           <section>
-            <h2>Hello, world.</h2>
             <p>
-              Hi, I'm Max! I'm a graduate of URI, and my passions include business, language, and computer science.
+              Hi, I'm Max! I'm self-learning computer science, creating practical business solutions,
+              and designing software architecture through research & development.
               Currently, I'm working as an Associate Software Developer at <a href="https://www.infosys.com/" class="myLink">Infosys</a>
               {' '}where I work on client facing applications in an agile environment.
               I'm working on

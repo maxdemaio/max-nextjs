@@ -31,12 +31,13 @@ export default function Software() {
             {/* Tailwind CSS Typography prose */}
             <div className="mt-8 mb-8 mx-auto p-4 prose prose-lg">
                 {/*Blog post header */}
-                <header className="select-none">
-                    <h1 class="mb-0">Software</h1>
+                <header>
+                    <h1 class="select-none">Software</h1>
                 </header>
 
                 {/* Add this <section> tag below the existing <section> tag */}
                 <main>
+                    <div>Featured projects</div>
                     <div>Software repos</div>
                     <table id="myTable">
                         <thead>

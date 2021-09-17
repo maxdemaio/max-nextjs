@@ -8,7 +8,6 @@ export async function getStaticProps({ params }) {
     // We need to use await for remark
     // Async/await allows us to fetch data asynchronously.
     const postData = await getPostData(params.id)
-    console.log(postData);
     return {
         props: {
             postData
@@ -40,7 +39,7 @@ export default function Post({ postData }) {
                 name="description"
                 content="Post content here"
             />
-            <title>{postData.title} | {blogTitle}</title>
+                <title>{postData.title}</title>
         </Head>
 
             {/* Tailwind CSS Typography prose */}

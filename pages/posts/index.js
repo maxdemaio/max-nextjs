@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import { getSortedPostsData } from '../../lib/posts';
-import Link from 'next/link'
+import { getSortedPostsData } from '../../lib/posts'
 import Date from '../../components/date'
+import NestedFooter from '../../components/nestedFooter'
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
-    console.log(allPostsData[0]);
     return {
         props: {
             allPostsData
@@ -55,13 +54,7 @@ export default function PostHome({ allPostsData }) {
                 </ul>
             </main>
 
-            {/* PostHome footer */}
-            <footer>
-                <Link href="/">
-                    <a>← Back</a>
-                </Link>
-                <hr></hr>
-            </footer>
+            <NestedFooter></NestedFooter>
         </div>
         </>
     )

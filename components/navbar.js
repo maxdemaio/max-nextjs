@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 // Layout for my website navbar
 export default function Navbar() {
     return (
@@ -23,6 +22,9 @@ export default function Navbar() {
                 </li>
                 <li className="mr-6">
                     <a className="text-gray-400 cursor-not-allowed" href="#">Socials</a>
+                </li>
+                <li className="mr-6">
+                    <a className="text-blue-500 hover:text-blue-800" href="#">Light | Dark</a>
                 </li>
             </ul>
         </nav>

@@ -1,27 +1,72 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import Image from 'next/image'
+import Footer from '../components/footer';
 
-
-// Pass our blogs as a prop to the Home component
 export default function Home() {
-  return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
+  const siteTitle = "Max DeMaio";
 
-      {/* Add this <section> tag below the existing <section> tag */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>About</h2>
-      </section>
-    </Layout>
+  return (
+      <>
+      <div className="prose prose-lg mx-auto">
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="Learn how to build a personal website using Next.js"
+          />
+          <meta
+            property="og:image"
+            content={`https://og-image.vercel.app/${encodeURI(
+              siteTitle
+            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          />
+          <meta name="og:title" content="Max DeMaio" />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
+
+        <header>
+          <h1>Max DeMaio</h1>
+          <p>
+            Self-learning computer science, creating practical business solutions,
+            and designing software architecture through research & development.
+            Documenting the entire open source process.
+          </p>
+          <>
+            <Image
+              priority
+              src="/images/me.jpg"
+              className={utilStyles.borderCircle}
+              height={400}
+              width={400}
+              alt="Max DeMaio"
+            />
+          </>
+        </header>
+
+        <main>
+          <section>
+            <h2>Hello, world.</h2>
+            <p>
+              Hi, I'm Max! I'm a graduate of URI, and my passions include business, language, and computer science.
+              Currently, I'm working as an Associate Software Developer at <a href="https://www.infosys.com/" class="myLink">Infosys</a>
+              {' '}where I work on client facing applications in an agile environment.
+              I'm working on
+              growing my skills and gaining exposure to a variety of technology,
+              whether that be through work or personal projects.
+              When I'm not glued to my computer, I enjoy playing the guitar, chess, and learning languages.
+            </p>
+            <p>
+              You can follow me on <a href="https://twitter.com/maxwelldemaio" class="myLink">Twitter</a>
+              {' '}where I mostly post about language, technology, and business. Most of my work is open source
+              and publicly available on <a href="https://github.com/maxwelldemaio" class="myLink">GitHub</a>.
+              Feel free to reach out and contact me at any of the links on my website.
+            </p>
+          </section>
+        </main>
+        
+        <Footer></Footer>
+      </div>
+    </>
   )
 }

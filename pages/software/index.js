@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import NestedFooter from '../../components/nestedFooter'
 
 // export async function getStaticProps() {
 //     // TODO
@@ -65,13 +66,7 @@ export default function Software() {
                     </table>
                 </main>
 
-                {/* Software footer */}
-                <footer>
-                    <Link href="/">
-                        <a>← Back</a>
-                    </Link>
-                    <hr></hr>
-                </footer>
+                <NestedFooter></NestedFooter>
             </div>
         </>
     )

@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -10,7 +10,7 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head />
-                <body className="bg-white dark:bg-black text-white dark:text-black">
+                <body className="bg-white text-black dark:bg-black dark:text-white">
                     <Main />
                     <NextScript />
                 </body>

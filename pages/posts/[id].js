@@ -1,6 +1,6 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Date from '@/components/Date';
-import Head from 'next/head';
+import Container from '@/components/Container';
 import Link from 'next/link';
 
 export async function getStaticProps({ params }) {
@@ -32,17 +32,8 @@ export default function Post({ postData }) {
 
     return (
         <>
-        {/* Blog post head */}
-        <Head>
-            <link rel="icon" href="/favicon.ico" />
-            <meta
-                name="description"
-                content="Post content here"
-            />
-                <title>{postData.title}</title>
-        </Head>
-
-            {/* Tailwind CSS Typography prose */}
+        <Container title={postData.title}>
+        {/* Tailwind CSS Typography prose */}
         <div className="blogPost m-auto p-4 prose prose-lg">
             {/*Blog post header */}
             <header>
@@ -55,26 +46,27 @@ export default function Post({ postData }) {
             </header>
 
             {/* Blog post content */}
-            <main className={'blog-content'} 
+            <main className={'blog-content'}
                 dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-            
-            
+
+
             {/* Blog post footer */}
             <footer>
                 <Link href="/posts">
                     <a>← Back</a>
                 </Link>
                 {/* To top button */}
-                <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>                    
+                <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>
                     <a>↑ Top</a>
                 </button>
                 <hr></hr>
                 <p>
-                    <strong>{blogTitle}</strong> is a blog about business, language, and computer science. 
+                    <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                     Sometimes my thoughts overflow and end up here for safekeeping.
                 </p>
             </footer>
         </div>
+        </Container>
         </>
     )
 }

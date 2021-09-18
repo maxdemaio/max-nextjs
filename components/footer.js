@@ -1,7 +1,7 @@
 // Layout for my website footer
 export default function Footer() {
     return (
-        <footer className="text-black">
+        <footer>
             <hr/>
             <p>Footer!</p>
         </footer>    

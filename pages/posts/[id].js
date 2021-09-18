@@ -1,7 +1,7 @@
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import Date from '../../components/date'
-import Head from 'next/head'
-import Link from 'next/link'
+import { getAllPostIds, getPostData } from '../../lib/posts';
+import Date from '@/components/Date';
+import Head from 'next/head';
+import Link from 'next/link';
 
 export async function getStaticProps({ params }) {
     // We added the async keyword to getPostData in lib/posts.js

@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import NestedFooter from '../../components/NestedFooter'
+import Head from 'next/head';
+import NestedFooter from '@/components/NestedFooter';
 
 // export async function getStaticProps() {
 //     // TODO
@@ -87,6 +87,16 @@ export default function Software() {
                             <td>size kb</td>
                             <td>stars</td>
                         </tr>
+                            <tr>
+                                <td><a href="#" className="">repo name</a></td>
+                                <td>description</td>
+                                <td>language</td>
+                                <td>creations</td>
+                                <td>forks</td>
+                                <td>issues</td>
+                                <td>size kb</td>
+                                <td>stars</td>
+                            </tr>
                     </tbody>
                 </table>
             </main>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { getSortedPostsData } from '../../lib/posts'
-import Date from '@/components/Date'
-import NestedFooter from '@/components/NestedFooter'
-import Container from '@/components/Container'
+import { getSortedPostsData } from '../../lib/posts';
+import Date from '@/components/Date';
+import NestedFooter from '@/components/NestedFooter';
+import Container from '@/components/Container';
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()

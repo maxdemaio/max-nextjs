@@ -1,11 +1,12 @@
-import Navbar from '../components/navbar';
-import '../styles/global.css'; // Includes Tailwind CSS
+import '@/styles/global.css';
+
+import { ThemeProvider } from 'next-themes';
 
 export default function App({ Component, pageProps }) {
+
     return (
-        <>
-            <Navbar />
+        <ThemeProvider attribute="class">
             <Component {...pageProps} />
-        </>
+        </ThemeProvider>
     );
 }

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import NextLink from 'next/link';
+import Link from 'next/link';
 
 import Footer from '@/components/Footer';
 
@@ -16,7 +16,7 @@ export default function Container(props) {
     const { children, ...customMeta } = props;
     const router = useRouter();
     const meta = {
-        title: 'Lee Robinson – Developer, writer, creator.',
+        title: 'Max DeMaio – Developer, writer, creator.',
         description: `Front-end developer, JavaScript enthusiast, and course creator.`,
         image: 'https://leerob.io/static/images/banner.png',
         type: 'website',
@@ -45,10 +45,24 @@ export default function Container(props) {
                     <meta property="article:published_time" content={meta.date} />
                 )}
             </Head>
+
             <nav className="flex items-center justify-between w-full max-w-4xl p-8 mx-auto my-0 text-gray-900 bg-white sticky-nav md:my-8 dark:bg-black bg-opacity-60 dark:text-gray-100">
-                <a href="#skip" className="skip-nav">
-                    Skip to content
-                </a>
+                <Link href="/">
+                    <a className="text-blue-500 hover:text-blue-800" href="#">Maxwell DeMaio</a>
+                </Link>
+                <Link href="/posts">
+                    <a className="text-blue-500 hover:text-blue-800" href="#">Posts</a>
+                </Link>
+                <Link href="/software">
+                    <a className="text-blue-500 hover:text-blue-800" href="#">Software</a>
+                </Link>
+                <div>
+                    <Link href="/">
+                        <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">
+                            Socials
+                        </a>
+                    </Link>
+                </div>
                 <button
                     aria-label="Toggle Dark Mode"
                     type="button"
@@ -81,29 +95,9 @@ export default function Container(props) {
                         </svg>
                     )}
                 </button>
-                <div>
-                    <NextLink href="/dashboard">
-                        <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">
-                            Dashboard
-                        </a>
-                    </NextLink>
-                    <NextLink href="/blog">
-                        <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Blog</a>
-                    </NextLink>
-                    <NextLink href="/about">
-                        <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">About</a>
-                    </NextLink>
-                    <NextLink href="/">
-                        <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Home</a>
-                    </NextLink>
-                </div>
             </nav>
-            <main
-                id="skip"
-                className="flex flex-col justify-center px-8 bg-white dark:bg-black"
-            >
+            <main className="flex flex-col justify-center px-8 bg-white dark:bg-black">
                 {children}
-                <Footer />
             </main>
         </div>
     );

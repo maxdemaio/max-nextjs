@@ -1,14 +1,13 @@
 import Head from 'next/head';
-import utilStyles from '../styles/utils.module.css';
 import Image from 'next/image'
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const siteTitle = "Max DeMaio";
 
   return (
       <>
-      <div className="mt-8 mb-8 mx-auto p-4 prose prose-lg">
+      <div className="">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -25,13 +24,15 @@ export default function Home() {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
 
-        <header className="select-none text-center">
-          <h1>Max DeMaio</h1>
+        <header className="text-center">
+          <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+            Max DeMaio
+          </h1>
           <>
             <Image
               priority
               src="/images/me.jpg"
-              className={utilStyles.borderCircle}
+              className="rounded-full"
               height={400}
               width={400}
               alt="Max DeMaio"
@@ -39,6 +40,7 @@ export default function Home() {
           </>
         </header>
 
+        <div className="mt-4 mb-4 mx-auto p-4 prose prose-lg">
         <main>
           <section>
             <p>
@@ -59,8 +61,8 @@ export default function Home() {
             </p>
           </section>
         </main>
-        
         <Footer></Footer>
+        </div>
       </div>
     </>
   )

@@ -32,7 +32,7 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-400 mb-8">
                 Hi, I'm Max! I'm self-learning computer science, creating practical business solutions,
                 and designing software architecture through research & development.
-                Currently, I'm working as an Associate Software Developer at <a href="https://www.infosys.com/">Infosys</a>
+            Currently, I'm working as an Associate Software Developer at <a className="underline text-blue-400 hover:text-blue-600" href="https://www.infosys.com/">Infosys</a>
                 {' '}where I work on client facing applications in an agile environment.
                 I'm working on
                 growing my skills and gaining exposure to a variety of technology,
@@ -40,9 +40,9 @@ export default function Home() {
                 When I'm not glued to my computer, I enjoy playing the guitar, chess, and learning languages.
               </p>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-                You can follow me on <a href="https://twitter.com/maxwelldemaio">Twitter</a>
+            You can follow me on <a className="underline text-blue-400 hover:text-blue-600" href="https://twitter.com/maxwelldemaio">Twitter</a>
                 {' '}where I mostly post about language, technology, and business. Most of my work is open source
-                and publicly available on <a href="https://github.com/maxwelldemaio">GitHub</a>.
+            and publicly available on <a className="underline text-blue-400 hover:text-blue-600" href="https://github.com/maxwelldemaio">GitHub</a>.
                 Feel free to reach out and contact me at any of the links on my website.
             </p>
           </section>
@@ -51,7 +51,7 @@ export default function Home() {
         <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
           <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
           <p className="mb-8">
-            <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 2021 © Maxwell DeMaio</span>
+            <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><span className="text-gray-600 dark:text-gray-400"> {(new Date().getFullYear())} © Maxwell DeMaio</span></span>
           </p>
         </footer>
       </div>

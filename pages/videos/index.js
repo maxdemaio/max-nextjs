@@ -47,8 +47,8 @@ export default function Videos({ allPostsData }) {
                         <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
                     </Link>
                     <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-                    <p className="text-gray-600 dark:text-gray-400 mb-8">
-                        <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 2021 © Maxwell DeMaio</span>
+                    <p className="mb-8">
+                        <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><span className="text-gray-600 dark:text-gray-400"> {(new Date().getFullYear())} © Maxwell DeMaio</span></span>
                     </p>
                 </footer>
             </div>

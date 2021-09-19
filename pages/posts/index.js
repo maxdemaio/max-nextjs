@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { getSortedPostsData } from '../../lib/posts';
-import Date from '@/components/Date';
+import DateComp from '@/components/Date';
 import Container from '@/components/Container';
 import Link from 'next/link'
 
@@ -43,7 +43,7 @@ export default function PostHome({ allPostsData }) {
                                     <div className="text-black dark:text-white">{title}</div>
                                     <div>
                                         <span className="text-gray-500 dark:text-gray-500">
-                                            <Date dateString={date} />
+                                            <DateComp dateString={date} />
                                         </span>
                                         <span className="text-gray-400 dark:text-gray-600"> · (X)min</span>
                                     </div>
@@ -59,8 +59,8 @@ export default function PostHome({ allPostsData }) {
                     <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
                 </Link>
                 <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-                <p className="text-gray-600 dark:text-gray-400 mb-8">
-                    <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 2021 © Maxwell DeMaio</span>
+                <p className="mb-8">
+                    <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><span className="text-gray-600 dark:text-gray-400"> {(new Date().getFullYear())} © Maxwell DeMaio</span></span>
                 </p>
             </footer>
         </div>

@@ -1,5 +1,5 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import Date from '@/components/Date';
+import DateComp from '@/components/Date';
 import Container from '@/components/Container';
 import Link from 'next/link';
 
@@ -38,7 +38,7 @@ export default function Post({ postData }) {
                     {postData.title}
                 </h1>
                 <div className="text-gray-500">
-                    <Date dateString={postData.date} />
+                    <DateComp dateString={postData.date} />
                 </div>
                 <div className="sr-only">{postData.id}</div>
             </div>
@@ -61,6 +61,9 @@ export default function Post({ postData }) {
                     <p>
                         <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                         Sometimes my thoughts overflow and end up here for safekeeping.
+                    </p>
+                    <p>
+                        <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><span className="text-gray-600 dark:text-gray-400"> {(new Date().getFullYear())} © Maxwell DeMaio</span></span>
                     </p>
                 </footer>
             </article>

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { getSortedPostsData } from '../../lib/posts';
 import Date from '@/components/Date';
-import NestedFooter from '@/components/NestedFooter';
 import Container from '@/components/Container';
 import Link from 'next/link'
 
@@ -36,9 +35,9 @@ export default function PostHome({ allPostsData }) {
             <section>
                 <ul>
                     {allPostsData.map(({ id, date, title }) => (
-                        <Link href={`/posts/${id}`}>
+                        <Link key={id} href={`/posts/${id}`}>
                             <a>
-                                <li className="mb-4 opacity-60 hover:opacity-100" key={id}>
+                                <li key={id} className="mb-4 opacity-60 hover:opacity-100">
                                     <div className="text-black dark:text-white">{title}</div>
                                     <div>
                                         <span className="text-gray-500 dark:text-gray-500">
@@ -52,7 +51,16 @@ export default function PostHome({ allPostsData }) {
                     ))}
                 </ul>
             </section>
-            <NestedFooter></NestedFooter>
+
+            <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
+                <Link href="/">
+                    <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
+                </Link>
+                <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+                <p className="text-gray-600 dark:text-gray-400 mb-8">
+                    <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 2021 © Maxwell DeMaio</span>
+                </p>
+            </footer>
         </div>
         </Container>
     );

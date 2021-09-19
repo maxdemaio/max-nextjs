@@ -46,13 +46,13 @@ export default function Container(props) {
 
             <nav className="flex items-center justify-between w-full max-w-4xl p-8 mx-auto my-0 text-gray-900 bg-white sticky-nav md:my-8 dark:bg-black bg-opacity-60 dark:text-gray-100">
                 <Link href="/">
-                    <a className="text-blue-500 hover:text-blue-800" href="#">Maxwell DeMaio</a>
+                    <a className="text-blue-400 hover:text-blue-600">Home</a>
                 </Link>
                 <Link href="/posts">
-                    <a className="text-blue-500 hover:text-blue-800" href="#">Posts</a>
+                    <a className="text-blue-400 hover:text-blue-600">Posts</a>
                 </Link>
                 <Link href="/software">
-                    <a className="text-blue-500 hover:text-blue-800" href="#">Software</a>
+                    <a className="text-blue-400 hover:text-blue-600">Software</a>
                 </Link>
                 <div>
                     <Link href="/">

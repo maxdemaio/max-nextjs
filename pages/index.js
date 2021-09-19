@@ -8,22 +8,22 @@ export default function Home() {
       <Container>
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
           <div className="header-section flex items-center justify-center flex-wrap mb-6">
-            <div className="header-frame p-2 lg:p-3">
+            <div className="flex-1 header-frame pr-2 pb-2">
               <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight text-black dark:text-white">
-                  Max DeMaio
+                  Maxwell DeMaio
               </h1>
               <h2 className="font-bold text-3xl tracking-tight text-gray-600 dark:text-gray-400">
-                Something cool here
+                Software Developer in Providence, RI
               </h2>
             </div>
 
-            <div className="image-frame p-2 lg:p-3">
+            <div className="image-frame pr-2 pb-2">
               <Image
                 priority
                 src="/images/me.jpg"
                 className="rounded-full"
-                height={300}
-                width={300}
+                height={260}
+                width={260}
                 alt="Max DeMaio"
               />
             </div>
@@ -50,10 +50,10 @@ export default function Home() {
           </section>
 
           
-        <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8">
-          <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8"/>
-          <p className="text-gray-600 dark:text-gray-400 mb-8">
-            <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 2021 © Maxwell DeMaio</span>
+        <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
+          <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+          <p className="mb-8">
+            <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 2021 © Maxwell DeMaio</span>
           </p>
         </footer>
       </div>

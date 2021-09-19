@@ -18,13 +18,15 @@ export default function PostHome({ allPostsData }) {
     const blogTitle = "max overflow";
 
     return (
-        <Container title="Blog – Max DeMaio">
+        <Container title="Posts | Blog – Max DeMaio">
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-            <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white">
+            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white">
                 Blog{' '}
-                <a href="/talks" className="text-gray-800 dark:text-gray-100 opacity-20 hover:opacity-50">
-                    Videos/Talks
-                </a>
+                <Link href="/videos" >
+                    <a className="text-gray-800 dark:text-gray-100 opacity-20 hover:opacity-50">
+                        Videos
+                    </a>
+                </Link>
             </h1>
 
             <p className="text-gray-600 dark:text-gray-400 mb-8">

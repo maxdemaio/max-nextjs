@@ -2,13 +2,11 @@ import Container from '@/components/Container';
 import Image from 'next/image';
 
 export default function Home() {
-  const siteTitle = "Max DeMaio";
-
   return (
       <Container>
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-          <div className="header-section flex items-center justify-center flex-wrap mb-6">
-            <div className="flex-1 header-frame pr-2 pb-2">
+          <div className="header-section flex items-center justify-center flex-wrap mb-10">
+            <div className="flex-1 header-frame pr-4 pb-4">
               <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight text-black dark:text-white">
                   Maxwell DeMaio
               </h1>
@@ -17,7 +15,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="image-frame pr-2 pb-2">
+            <div className="image-frame">
               <Image
                 priority
                 src="/images/me.jpg"

@@ -29,7 +29,7 @@ module.exports = {
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32]
             },
-            code: { color: theme('colors.pink.500') },
+            code: { color: theme('colors.pink.600') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false
           }

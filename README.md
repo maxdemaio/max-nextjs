@@ -1,12 +1,11 @@
-**[mywebsite]()**
-
-my personal website powered by [Nextjs](https://nextjs.org/)
+my personal website powered by [Next.js](https://nextjs.org/)
 
 <br>
 
 **Tech stack used**
 - Next.js
-- remark (markdown to html, will probably swap out for mdx to make use of Image component of Next.js)
+- remark
+- Will probably add mdx to make use of Image component of Next.js in md files
 - gray-matter (for .md frontmatter) 
 - next-themes
 - tailwindcss

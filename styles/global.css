@@ -4,14 +4,12 @@
 @tailwind utilities;
 
 /* Tailwind’s @apply directive to easily extract 
-common utility patterns to CSS component classes.*/
-
-.blogPost {
-    /* example extra global blog post styles */
-}
+common utility patterns to CSS component classes.
+This essentially allows us to make our own tailwind-like classNames. */
 
 html {
   min-width: 360px;
+  /* Notably for our "top" button in blog posts */
   scroll-behavior: smooth;
 }
 
@@ -34,14 +32,6 @@ html {
     backdrop-filter: none;
     @apply bg-opacity-100;
   }
-}
-
-/* Blogpost styles */
-.prose table {
-  color: red;
-  display: table;
-  overflow-x: scroll;
-  overflow-y: scroll;
 }
 
 .prose .anchor {

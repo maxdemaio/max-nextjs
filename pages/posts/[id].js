@@ -31,42 +31,40 @@ export default function Post({ postData }) {
     }
 
     return (
-        <>
         <Container title={postData.title}>
-        {/* Tailwind CSS Typography prose */}
-        <div className="blogPost m-auto p-4 prose prose-lg">
-            {/*Blog post header */}
-            <header>
-                {/* Will show at top of blog post */}
-                <h1>{postData.title}</h1>
+        <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+            <div>
+                <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+                    {postData.title}
+                </h1>
                 <div className="text-gray-500">
                     <Date dateString={postData.date} />
                 </div>
                 <div className="sr-only">{postData.id}</div>
-            </header>
+            </div>
 
-            {/* Blog post content */}
-            <main className={'blog-content'}
-                dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <article className="prose dark:prose-dark prose-lg">
+                {/* Blog post content */}
+                <div className={'blog-content'}
+                    dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
-
-            {/* Blog post footer */}
-            <footer>
-                <Link href="/posts">
-                    <a>← Back</a>
-                </Link>
-                {/* To top button */}
-                <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>
-                    <a>↑ Top</a>
-                </button>
-                <hr></hr>
-                <p>
-                    <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
-                    Sometimes my thoughts overflow and end up here for safekeeping.
-                </p>
-            </footer>
+                {/* Blog post footer */}
+                <footer>
+                    <Link href="/posts">
+                        <a>← Back</a>
+                    </Link>
+                    {/* To top button */}
+                    <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>
+                        <a>↑ Top</a>
+                    </button>
+                    <hr></hr>
+                    <p>
+                        <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
+                        Sometimes my thoughts overflow and end up here for safekeeping.
+                    </p>
+                </footer>
+            </article>
         </div>
         </Container>
-        </>
-    )
+    );
 }

@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-import Footer from '@/components/Footer';
-
 export default function Container(props) {
     const [mounted, setMounted] = useState(false);
     const { resolvedTheme, setTheme } = useTheme();

@@ -30,27 +30,15 @@ export default function Videos({ allPostsData }) {
                 </h1>
 
                 <p className="text-gray-600 dark:text-gray-400 mb-8">
-                    <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
-                    Sometimes my thoughts overflow and end up here for safekeeping.
+                    This page is a work in progress! Eventually it will make an API call to YouTube and fetch all my videos. The data will be 
+                    represented as an unordered list (HTML element) where each item in the list will be one of my YouTube videos.
                 </p>
 
                 <section>
                     <ul>
-                        {allPostsData.map(({ id, date, title }) => (
-                            <Link key={id} href={`/posts/${id}`}>
-                                <a>
-                                    <li key={id} className="mb-4 opacity-60 hover:opacity-100">
-                                        <div className="text-black dark:text-white">{title}</div>
-                                        <div>
-                                            <span className="text-gray-500 dark:text-gray-500">
-                                                <Date dateString={date} />
-                                            </span>
-                                            <span className="text-gray-400 dark:text-gray-600"> · (X)min</span>
-                                        </div>
-                                    </li>
-                                </a>
-                            </Link>
-                        ))}
+                        <li className="mb-4 opacity-60 hover:opacity-100">example video 1</li>
+                        <li className="mb-4 opacity-60 hover:opacity-100">example video 2</li>
+                        <li className="mb-4 opacity-60 hover:opacity-100">example video 3</li>
                     </ul>
                 </section>
 

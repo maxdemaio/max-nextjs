@@ -37,7 +37,7 @@ module.exports = {
         // Here we specify what happens on darkmode shift in prose
         dark: {
           css: {
-            color: theme('colors.pink.300'),
+            color: theme('colors.gray.300'),
             a: {
               color: theme('colors.blue.400'),
               '&:hover': {

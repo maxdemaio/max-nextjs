@@ -37,19 +37,19 @@ export default function PostHome({ allPostsData }) {
             <section>
                 <ul>
                     {allPostsData.map(({ id, date, title }) => (
-                        <Link key={id} href={`/posts/${id}`}>
+                        <li key={id} className="mb-4 opacity-60 hover:opacity-100">
+                            <Link href={`/posts/${id}`}>
                             <a>
-                                <li key={id} className="mb-4 opacity-60 hover:opacity-100">
-                                    <div className="text-black dark:text-white">{title}</div>
-                                    <div>
-                                        <span className="text-gray-500 dark:text-gray-500">
-                                            <DateComp dateString={date} />
-                                        </span>
-                                        <span className="text-gray-400 dark:text-gray-600"> · (X)min</span>
-                                    </div>
-                                </li>
+                            <div className="text-black dark:text-white">{title}</div>
+                            <div>
+                                <span className="text-gray-500 dark:text-gray-500">
+                                    <DateComp dateString={date} />
+                                </span>
+                                <span className="text-gray-400 dark:text-gray-600"> · (X)min</span>
+                            </div>
                             </a>
-                        </Link>
+                            </Link>
+                        </li> 
                     ))}
                 </ul>
             </section>

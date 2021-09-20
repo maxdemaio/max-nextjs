@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-      <Container>
+      <Container title="Home - Max DeMaio">
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
           <div className="header-section flex items-center justify-center flex-wrap mb-10">
             <div className="flex-1 header-frame pr-2 pb-4">
@@ -30,8 +30,8 @@ export default function Home() {
         
           <section>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-                Hi, I'm Max! I'm self-learning computer science, creating practical business solutions,
-                and designing software architecture through research & development.
+            Hi, I'm Max! I'm a software developer with a strong will to learn, research new technologies, and design software architecture. 
+            I like creating practical business solutions and making development processes as efficient as possible.
             Currently, I'm working as an Associate Software Developer at <a className="underline text-blue-400 hover:text-blue-600" href="https://www.infosys.com/">Infosys</a>
                 {' '}where I work on client facing applications in an agile environment.
                 I'm working on

@@ -1,6 +1,5 @@
-import Head from 'next/head';
 import { getSortedPostsData } from '../../lib/posts';
-import Date from '@/components/Date';
+import DateComp from '@/components/Date';
 import Container from '@/components/Container';
 import Link from 'next/link'
 

@@ -41,8 +41,3 @@ pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-table {
-  display: table;
-  overflow-y: scroll;
-}

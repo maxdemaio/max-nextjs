@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
       <Container title="Home - Max DeMaio">
-        <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+      <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
           <div className="header-section flex items-center justify-center flex-wrap mb-10">
             <div className="flex-1 header-frame pr-2 pb-4">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight text-black dark:text-white">

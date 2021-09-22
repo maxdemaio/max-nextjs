@@ -57,7 +57,6 @@ export default function Post({ postData }) {
                     <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>
                         <a>↑ Top</a>
                     </button>
-                    <hr></hr>
                     <p>
                         <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                         Sometimes my thoughts overflow and end up here for safekeeping.

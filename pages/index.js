@@ -18,7 +18,7 @@ export default function Home() {
             <div className="image-frame">
               <Image
                 priority
-                src="/images/me.jpg"
+                src="/static/images/me.jpg"
                 className="rounded-full"
                 height={260}
                 width={260}

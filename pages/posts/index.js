@@ -5,6 +5,7 @@ import Container from '@/components/Container';
 import Link from 'next/link'
 
 export async function getStaticProps() {
+    // Get external data from the file system
     const allPostsData = getSortedPostsData()
     return {
         props: {
@@ -34,7 +35,7 @@ export default function PostHome({ allPostsData }) {
                 Sometimes my thoughts overflow and end up here for safekeeping.
             </p>
             
-            <section>
+            <section className="mb-4">
                 <ul>
                     {allPostsData.map(({ id, date, title }) => (
                         <li key={id} className="mb-4 opacity-60 hover:opacity-100">

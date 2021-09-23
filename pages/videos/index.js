@@ -1,8 +1,8 @@
 import { getSortedPostsData } from '../../lib/posts';
-import DateComp from '@/components/Date';
 import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
+import {shimmer, toBase64} from '@/lib/imageManip';
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
@@ -44,7 +44,7 @@ export default function Videos({ allPostsData }) {
 
                 <Image
                     placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAACAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAcEAEAAgMAAwAAAAAAAAAAAAABAgMABAUhUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAAMBAAAAAAAAAAAAAAAAAAABMQL/2gAMAwEAAhEDEQA/AKjQCnk0V0hXXDa6EIxh4IxOjtAB6AA+GMYx1CXVZ//Z"
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
                     src="/static/images/howl-videos.jpg"
                     className="rounded"
                     height={1038}

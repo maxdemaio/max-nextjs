@@ -1,9 +1,9 @@
-import Head from 'next/head';
 import { getSortedPostsData } from '../../lib/posts';
 import DateComp from '@/components/Date';
 import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
+import {shimmer, toBase64} from '@/lib/imageManip';
 
 export async function getStaticProps() {
     // Get external data from the file system
@@ -58,7 +58,7 @@ export default function PostHome({ allPostsData }) {
                 
             <Image
                 placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAACAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAABBAIDAQAAAAAAAAAAAAABAAIDBAUhERITYf/EABUBAQEAAAAAAAAAAAAAAAAAAAIF/8QAGREAAQUAAAAAAAAAAAAAAAAAAAECAzEy/9oADAMBAAIRAxEAPwCdX8nfmrYkTXbUgjxtVjO8rj1b5NPA3ock6+oiKjFlBOs//9k="
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
                 src="/static/images/spirited-blog.jpg"
                 className="rounded"
                 height={1038}

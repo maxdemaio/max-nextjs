@@ -14,7 +14,7 @@ export default function Software() {
             </section>
             <section>
                     <h2 className="font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white">Featured Projects</h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <p className="dark:hover:text-white hover:text-black text-gray-600 dark:text-gray-400">
                                 <a href="https://github.com/maxwelldemaio/langlab" className="my-link">LangLab</a> is a free and open source language learning website that allows users to practice the conjugations of the 25 most common verbs in English. Helpful resources have also been provided to help learners on their path.

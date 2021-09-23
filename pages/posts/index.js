@@ -2,7 +2,8 @@ import Head from 'next/head';
 import { getSortedPostsData } from '../../lib/posts';
 import DateComp from '@/components/Date';
 import Container from '@/components/Container';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 
 export async function getStaticProps() {
     // Get external data from the file system
@@ -34,8 +35,8 @@ export default function PostHome({ allPostsData }) {
                 <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                 Sometimes my thoughts overflow and end up here for safekeeping.
             </p>
-            
-            <section className="mb-4">
+
+            <section>
                 <ul>
                     {allPostsData.map(({ id, date, title }) => (
                         <li key={id} className="mb-4 opacity-60 hover:opacity-100">
@@ -54,6 +55,16 @@ export default function PostHome({ allPostsData }) {
                     ))}
                 </ul>
             </section>
+                
+            <Image
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAACAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAABBAIDAQAAAAAAAAAAAAABAAIDBAUhERITYf/EABUBAQEAAAAAAAAAAAAAAAAAAAIF/8QAGREAAQUAAAAAAAAAAAAAAAAAAAECAzEy/9oADAMBAAIRAxEAPwCdX8nfmrYkTXbUgjxtVjO8rj1b5NPA3ock6+oiKjFlBOs//9k="
+                src="/static/images/spirited-blog.jpg"
+                className="rounded"
+                height={1038}
+                width={1920}
+                alt="Spirited Away - Blog Picture"
+            />
 
             <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
                 <Link href="/">

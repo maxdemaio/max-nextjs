@@ -54,9 +54,10 @@ export default function Post({ postData }) {
                         <a>← Back</a>
                     </Link>
                     {/* To top button */}
-                    <button className="w-20 cursor-pointer float-right" onClick={moveToTop}>
+                    <button className="cursor-pointer float-right" onClick={moveToTop}>
                         <a>↑ Top</a>
                     </button>
+                    <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
                     <p>
                         <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                         Sometimes my thoughts overflow and end up here for safekeeping.

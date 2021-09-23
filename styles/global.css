@@ -6,6 +6,14 @@
 common utility patterns to CSS component classes.
 This essentially allows us to make our own tailwind-like classNames. */
 
+.pill {
+  @apply text-gray-100;
+}
+
+.my-link {
+  @apply underline text-blue-400 hover:text-blue-600;
+}
+
 html {
   min-width: 360px;
   /* Notably for our "top" button in blog posts */

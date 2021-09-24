@@ -39,6 +39,10 @@ export default function Software() {
             </section>
             <section className="mb-8">
                 <h2 className="font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white">Tech Stack</h2>
+                <ul>
+                    <li className="mb-4 text-gray-600 dark:text-gray-400"><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, and SQL.</li>
+                    <li className="mb-4 text-gray-600 dark:text-gray-400"><strong>Tools:</strong> Git, Postman, Redis, Markdown, Visual Studio Code, and Eclipse.</li>
+                </ul>
             </section>
             <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
                 <Link href="/">

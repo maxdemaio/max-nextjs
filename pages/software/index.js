@@ -7,13 +7,13 @@ export default function Software() {
         <Container title="Software – Max DeMaio">
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
             <section>
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white">Software</h1>
-                <p className="text-gray-600 dark:text-gray-400 mb-8">
+                <h1 className="my-h1">Software</h1>
+                <p className="my-para">
                     During this workshop, you'll learn how to integrate Prisma with Next.js and build a statically-generated site that displays a list of your favorite songs. We'll use Chakra UI for styling and deploy our site with Vercel.
                 </p>
             </section>
             <section>
-                    <h2 className="font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white">Featured Projects</h2>
+                    <h2 className="my-h2">Featured Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <p className="dark:hover:text-white hover:text-black text-gray-600 dark:text-gray-400">
@@ -37,13 +37,15 @@ export default function Software() {
                         </div>
                     </div>
             </section>
+            
             <section className="mb-8">
-                <h2 className="font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white">Tech Stack</h2>
+                <h2 className="my-h2">Tech Stack</h2>
                 <ul>
-                    <li className="mb-4 text-gray-600 dark:text-gray-400"><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, and SQL.</li>
-                    <li className="mb-4 text-gray-600 dark:text-gray-400"><strong>Tools:</strong> Git, Postman, Redis, Markdown, Visual Studio Code, and Eclipse.</li>
+                    <li className="mb-4 opacity-60 hover:opacity-100"><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, and SQL.</li>
+                    <li className="mb-4 opacity-60 hover:opacity-100"><strong>Tools:</strong> Git, Postman, Redis, Markdown, Visual Studio Code, and Eclipse.</li>
                 </ul>
             </section>
+
             <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
                 <Link href="/">
                     <a className="underline text-blue-400 hover:text-blue-600">← Back</a>

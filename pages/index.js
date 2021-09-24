@@ -30,7 +30,7 @@ export default function Home() {
 
         
           <section>
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p className="my-para">
             Hi, I'm Max! I'm a software developer with a strong will to learn, research new technologies, and design software architecture. 
             I like creating practical business solutions and making development processes as efficient as possible.
             Currently, I'm working as an Associate Software Developer at <a className="underline text-blue-400 hover:text-blue-600" href="https://www.infosys.com/">Infosys</a>
@@ -40,7 +40,7 @@ export default function Home() {
                 whether that be through work or personal projects.
                 When I'm not glued to my computer, I enjoy playing the guitar, chess, and learning languages.
               </p>
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p className="my-para">
             You can follow me on <a className="underline text-blue-400 hover:text-blue-600" href="https://twitter.com/maxwelldemaio">Twitter</a>
                 {' '}where I mostly post about language, technology, and business. Most of my work is open source
             and publicly available on <a className="underline text-blue-400 hover:text-blue-600" href="https://github.com/maxwelldemaio">GitHub</a>.

@@ -22,7 +22,7 @@ export default function PostHome({ allPostsData }) {
     return (
         <Container title="Posts | Blog – Max DeMaio">
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white">
+            <h1 className="my-h1">
                 Blog{' '}
                 <Link href="/videos" >
                     <a className="text-gray-800 dark:text-gray-100 opacity-20 hover:opacity-50">
@@ -31,7 +31,7 @@ export default function PostHome({ allPostsData }) {
                 </Link>
             </h1>
 
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p className="my-para">
                 <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                 Sometimes my thoughts overflow and end up here for safekeeping.
             </p>

@@ -20,7 +20,7 @@ export default function Videos({ allPostsData }) {
     return (
         <Container title="Posts | Videos – Max DeMaio">
             <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white">
+                <h1 className="my-h1">
                     <Link href="/posts" >
                         <a className="text-gray-800 dark:text-gray-100 opacity-20 hover:opacity-50">
                             Blog{' '}
@@ -29,7 +29,7 @@ export default function Videos({ allPostsData }) {
                     Videos
                 </h1>
 
-                <p className="text-gray-600 dark:text-gray-400 mb-8">
+                <p className="my-para">
                     This page is a work in progress! Eventually it will make an API call to YouTube and fetch all my videos. The data will be 
                     represented as an unordered list (HTML element) where each item in the list will be one of my YouTube videos.
                 </p>

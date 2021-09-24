@@ -6,14 +6,14 @@
 common utility patterns to CSS component classes.
 This essentially allows us to make our own tailwind-like classNames. */
 
-.my-para {
-  @apply text-gray-600 dark:text-gray-400 mb-8;
-}
 .my-h1 {
   @apply font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white;
 }
 .my-h2 {
   @apply font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white;
+}
+.my-para {
+  @apply text-gray-600 dark:text-gray-400 mb-8;
 }
 .my-link {
   @apply underline text-blue-400 hover:text-blue-600;

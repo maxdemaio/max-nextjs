@@ -33,7 +33,7 @@ export default function Post({ postData }) {
 
     return (
         <Container title={postData.title}>
-        <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+        <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
             <div>
                 <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
                     {postData.title}
@@ -44,29 +44,29 @@ export default function Post({ postData }) {
                 <div className="sr-only">{postData.id}</div>
             </div>
 
-            <article className="prose dark:prose-dark prose-lg">
+            <div className="prose dark:prose-dark max-w-none w-full">
                 {/* Blog post content */}
                 <div className={'blog-content'}
                     dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            </div>
 
-                {/* Blog post footer */}
-                <footer>
-                    <Link href="/posts">
-                        <a>← Back</a>
-                    </Link>
-                    {/* To top button */}
-                    <button className="cursor-pointer float-right" onClick={moveToTop}>
-                        <a>↑ Top</a>
-                    </button>
-                    <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-                    <p>
-                        <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
-                        Sometimes my thoughts overflow and end up here for safekeeping.
-                    </p>
-                    <CcName></CcName>
-                </footer>
-            </article>
-        </div>
+            {/* Blog post footer */}
+            <footer>
+                <Link href="/posts">
+                    <a>← Back</a>
+                </Link>
+                {/* To top button */}
+                <button className="cursor-pointer float-right" onClick={moveToTop}>
+                    <a>↑ Top</a>
+                </button>
+                <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+                <p>
+                    <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
+                    Sometimes my thoughts overflow and end up here for safekeeping.
+                </p>
+                <CcName></CcName>
+            </footer>
+        </article>
         </Container>
     );
 }

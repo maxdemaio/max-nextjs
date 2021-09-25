@@ -14,11 +14,11 @@ export default function Container(props) {
     const { children, ...customMeta } = props;
     const router = useRouter();
 
-    // TODO, edit and add banner
+    // TODO, edit and add custom banner
     const meta = {
-        title: 'Max DeMaio – Developer, writer, creator.',
-        description: `Front-end developer, JavaScript enthusiast, and course creator.`,
-        image: 'https://leerob.io/static/images/banner.png',
+        title: 'Max DeMaio',
+        description: `Passionate about business, language, and computer science.`,
+        image: 'https://maxdemaio.com/static/images/me.jpg',
         type: 'website',
         ...customMeta
     };
@@ -32,7 +32,7 @@ export default function Container(props) {
                 <meta property="og:url" content={`https://maxdemaio.com${router.asPath}`} />
                 <link rel="canonical" href={`https://maxdemaio.com${router.asPath}`} />
                 <meta property="og:type" content={meta.type} />
-                <meta property="og:site_name" content="Maxwell DeMaio" />
+                <meta property="og:site_name" content="Max DeMaio" />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:image" content={meta.image} />

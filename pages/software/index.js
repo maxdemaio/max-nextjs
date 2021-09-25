@@ -6,7 +6,6 @@ import CcName from '@/components/CcName';
 
 
 export default function Software() {
-    
     return (
         <Container title="Software – Max DeMaio">
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">

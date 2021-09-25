@@ -32,7 +32,7 @@ export default function Home() {
         
           <section>
             <p className="my-para">
-            Hi, I'm Max! I'm a software developer with a strong will to learn, research new technologies, and design software architecture. 
+            Hi, I'm Max! I'm a self-taught software developer with a strong will to learn, research new technologies, and design software architecture. 
             I like creating practical business solutions and making development processes as efficient as possible.
             Currently, I'm working as an Associate Software Developer at <a className="underline text-blue-400 hover:text-blue-600" href="https://www.infosys.com/">Infosys</a>
                 {' '}where I work on client facing applications in an agile environment.

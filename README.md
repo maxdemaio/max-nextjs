@@ -10,6 +10,9 @@ my personal website powered by [Next.js](https://nextjs.org/)
 - next-themes
 - tailwindcss
 
+**Inspirations**
+- Heavily influenced by the personal websites of: [Lee Robinson](https://github.com/leerob), [Adam Richardson](https://github.com/adamrichardson14), and [Anthony Fu](https://github.com/antfu).
+- Resources: [Adam's video on Next.js + the YouTubeAPI](https://www.youtube.com/watch?v=cyXQFjD_RAE), [Lee's video on his personal website](https://www.youtube.com/watch?v=xXQsF0q8KUg), [Deploying a Next.js app on Vercel](https://www.youtube.com/watch?v=ben3vRAqvKE).
 <br>
 
 <samp>code is licensed under <a href='./LICENSE'>MIT</a>,<br> words and images are licensed under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a></samp>.

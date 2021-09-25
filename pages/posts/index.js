@@ -4,6 +4,7 @@ import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
 import {shimmer, toBase64} from '@/lib/imageManip';
+import CcName from '@/components/CcName';
 
 // Pass our blogs as a prop to the Home component
 export default function PostHome({ allPostsData }) {
@@ -27,17 +28,17 @@ export default function PostHome({ allPostsData }) {
             </p>
 
             <section className="mb-8">
-                <ul>
+                <ul className="space-y-4">
                     {allPostsData.map(({ id, date, title }) => (
-                        <li key={id} className="mb-4 opacity-60 hover:opacity-100">
+                        <li key={id} className="opacity-80 hover:opacity-100">
                             <Link href={`/posts/${id}`}>
                             <a>
                             <div className="text-black dark:text-white">{title}</div>
-                            <div>
-                                <span className="text-gray-500 dark:text-gray-500">
-                                    <DateComp dateString={date} />
-                                </span>
-                                {/* <span className="text-gray-400 dark:text-gray-600"> · (X)min</span> */}
+                                <div>
+                                    <span className="text-gray-500 dark:text-gray-500">
+                                        <DateComp dateString={date} />
+                                    </span>
+                                    {/* <span className="text-gray-400 dark:text-gray-600"> · (X)min</span> */}
                             </div>
                             </a>
                             </Link>
@@ -61,9 +62,7 @@ export default function PostHome({ allPostsData }) {
                     <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
                 </Link>
                 <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-                <p className="mb-8">
-                    <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><span className="text-gray-600 dark:text-gray-400"> {(new Date().getFullYear())} © Maxwell DeMaio</span></span>
-                </p>
+                <CcName></CcName>
             </footer>
         </div>
         </Container>

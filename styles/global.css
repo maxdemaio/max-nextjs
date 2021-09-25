@@ -13,7 +13,7 @@ This essentially allows us to make our own tailwind-like classNames. */
   @apply font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white;
 }
 .my-para {
-  @apply text-gray-600 dark:text-gray-400 mb-8;
+  @apply text-gray-700 dark:text-gray-400 mb-8;
 }
 .my-link {
   @apply underline text-blue-400 hover:text-blue-600;

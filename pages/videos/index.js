@@ -9,7 +9,6 @@ import { useState } from 'react';
 import CcName from '@/components/CcName';
 
 export default function Videos({ stats, videos }) {
-    console.log(videos);
     const [searchValue, setSearchValue] = useState("");
     const sortedVids = videos
         .sort((a, b) =>

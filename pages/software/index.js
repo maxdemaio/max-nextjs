@@ -12,6 +12,9 @@ export default function Software() {
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
             <section>
                 <h1 className="my-h1">Software</h1>
+                <p class="my-para">Here you'll find my featured projects as well as the technology I use to build business and software architecture.
+                    {' '}The remainder of my open source work is located on <a className="underline text-blue-400 hover:text-blue-600" href="https://github.com/maxwelldemaio">GitHub</a>.
+                </p>
             </section>
             <section>
                     <h2 className="my-h2">Featured Projects</h2>
@@ -41,9 +44,9 @@ export default function Software() {
             
             <section className="mb-8">
                 <h2 className="my-h2">Tech Stack</h2>
-                <ul className="space-y-4">
-                    <li className="opacity-60 hover:opacity-100"><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, and SQL.</li>
-                    <li className="opacity-60 hover:opacity-100"><strong>Tools:</strong> Git, Postman, Redis, Markdown, Visual Studio Code, and Eclipse.</li>
+                <ul className="space-y-4 text-gray-700 dark:text-gray-400">
+                    <li><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, and SQL.</li>
+                    <li><strong>Tools:</strong> Git, Postman, Redis, Markdown, Visual Studio Code, and Eclipse.</li>
                 </ul>
             </section>
 

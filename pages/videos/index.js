@@ -28,9 +28,9 @@ export default function Videos({ stats, videos }) {
                 Videos
             </h1>
 
-            <section>
+            <section className="mb-8">
                 <YoutubeStats stats={stats} />
-                <div className="relative w-full mt-4 mb-4">
+                <div className="relative w-full mt-4">
                     <input
                         type="text"
                         value={searchValue}
@@ -69,7 +69,7 @@ export default function Videos({ stats, videos }) {
                 className="rounded"
                 height={1038}
                 width={1920}
-                alt="Howl's Moving Castle - Blog Picture"
+                alt="Howl's Moving Castle - Videos Picture"
             />
 
             <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
@@ -90,6 +90,8 @@ export async function getStaticProps() {
     const statisticsURL = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`;
     const uploadsURL = `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`;
 
+    // Make two calls to the Google YouTube API
+    // Fetch stats and video upload data
     async function getData() {
         const statsData = fetchData(statisticsURL);
         const uploadsData = fetchData(uploadsURL);

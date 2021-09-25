@@ -1,3 +1,4 @@
+import CcName from '@/components/CcName';
 import Container from '@/components/Container';
 import Image from 'next/image';
 
@@ -51,9 +52,7 @@ export default function Home() {
           
         <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
           <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-          <p className="mb-8">
-            <span><a className="underline text-blue-400 hover:text-blue-600" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><span className="text-gray-600 dark:text-gray-400"> {(new Date().getFullYear())} © Maxwell DeMaio</span></span>
-          </p>
+          <CcName></CcName>
         </footer>
       </div>
       </Container>

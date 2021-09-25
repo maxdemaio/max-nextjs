@@ -1,4 +1,4 @@
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData } from '@/lib/posts';
 import DateComp from '@/components/DateComp';
 import Container from '@/components/Container';
 import Link from 'next/link';

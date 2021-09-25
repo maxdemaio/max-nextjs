@@ -4,6 +4,7 @@ const { spacing } = require('tailwindcss/defaultTheme');
 // https://github.com/tailwindlabs/tailwindcss-typography#customization
 
 module.exports = {
+  mode: 'jit',
   // Files that are utilizing tailwindcss so we can purge unused styles (dep graph)
   purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
   // Dark mode will change the styles on 'class' attribute

@@ -1,5 +1,8 @@
 import Container from '@/components/Container';
 import Link from 'next/link';
+import Image from 'next/image';
+import { shimmer, toBase64 } from '@/lib/imageManip';
+
 
 export default function Software() {
     
@@ -8,9 +11,6 @@ export default function Software() {
         <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
             <section>
                 <h1 className="my-h1">Software</h1>
-                <p className="my-para">
-                    During this workshop, you'll learn how to integrate Prisma with Next.js and build a statically-generated site that displays a list of your favorite songs. We'll use Chakra UI for styling and deploy our site with Vercel.
-                </p>
             </section>
             <section>
                     <h2 className="my-h2">Featured Projects</h2>
@@ -45,6 +45,16 @@ export default function Software() {
                     <li className="mb-4 opacity-60 hover:opacity-100"><strong>Tools:</strong> Git, Postman, Redis, Markdown, Visual Studio Code, and Eclipse.</li>
                 </ul>
             </section>
+
+            <Image
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+                src="/static/images/castle-software.jpg"
+                className="rounded"
+                height={1038}
+                width={1920}
+                alt="Castle in the Sky - Blog Picture"
+            />
 
             <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
                 <Link href="/">

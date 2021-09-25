@@ -1,5 +1,5 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import DateComp from '@/components/Date';
+import DateComp from '@/components/DateComp';
 import Container from '@/components/Container';
 import Link from 'next/link';
 

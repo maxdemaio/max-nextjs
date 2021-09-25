@@ -1,21 +1,20 @@
-import { getSortedPostsData } from '../../lib/posts';
 import Container from '@/components/Container';
+import YoutubeStats from '@/components/YoutubeStats';
+import VidDisplayListItem from '@/components/VidDisplayListItem';
 import Link from 'next/link';
 import Image from 'next/image';
 import {shimmer, toBase64} from '@/lib/imageManip';
+import { fetchData } from "@/lib/utils";
+import { useState } from 'react';
 
-export async function getStaticProps() {
-    const allPostsData = getSortedPostsData()
-    return {
-        props: {
-            allPostsData
-        }
-    }
-}
-
-// Pass our blogs as a prop to the Home component
-export default function Videos({ allPostsData }) {
-    const blogTitle = "max overflow";
+export default function Videos({ stats, videos }) {
+    console.log(videos);
+    const [searchValue, setSearchValue] = useState("");
+    const sortedVids = videos
+        .sort((a, b) =>
+            Number(new Date(b.snippet.publishedAt) - Number(new Date(a.snippet.publishedAt))),
+        )
+        .filter((vid) => vid.snippet.title.toLowerCase().includes(searchValue.toLowerCase()));
 
     return (
         <Container title="Posts | Videos – Max DeMaio">
@@ -34,12 +33,18 @@ export default function Videos({ allPostsData }) {
                     represented as an unordered list (HTML element) where each item in the list will be one of my YouTube videos.
                 </p>
 
-                <section>
-                    <ul>
-                        <li className="mb-4 opacity-60 hover:opacity-100">example video 1</li>
-                        <li className="mb-4 opacity-60 hover:opacity-100">example video 2</li>
-                        <li className="mb-4 opacity-60 hover:opacity-100">example video 3</li>
-                    </ul>
+                <YoutubeStats stats={stats} />
+                <input
+                    type="text"
+                    placeholder="Search here...."
+                    value={searchValue}
+                    onChange={(e) => setSearchValue(e.target.value)}
+                    className="mt-3 text-gray-200 tracking-wider bg-gray-800 h-10 px-3 shadow-sm focus:ring-indigo-500 focus:outline-none focus:border-gray-400 block w-full border-gray-700 rounded-md"
+                />
+
+
+                <section className="mb-8">
+                    {sortedVids && sortedVids.map((vid) => <VidDisplayListItem key={vid.id.videoId} vid={vid} />)}
                 </section>
 
                 <Image
@@ -64,4 +69,31 @@ export default function Videos({ allPostsData }) {
             </div>
         </Container>
     );
+}
+
+export async function getStaticProps() {
+    // Get API keys from env
+    const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = process.env;
+    const statisticsURL = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`;
+    const uploadsURL = `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`;
+
+    async function getData() {
+        const statsData = fetchData(statisticsURL);
+        const uploadsData = fetchData(uploadsURL);
+
+        return {
+            stats: await statsData,
+            videos: await uploadsData,
+        };
+    }
+
+    const { stats, videos } = await getData();
+
+    return {
+        revalidate: 86400,
+        props: {
+            stats: stats.items[0].statistics,
+            videos: videos.items
+        }
+    }
 }

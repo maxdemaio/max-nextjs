@@ -1,19 +1,9 @@
 import { getSortedPostsData } from '../../lib/posts';
-import DateComp from '@/components/Date';
+import DateComp from '@/components/DateComp';
 import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
 import {shimmer, toBase64} from '@/lib/imageManip';
-
-export async function getStaticProps() {
-    // Get external data from the file system
-    const allPostsData = getSortedPostsData()
-    return {
-        props: {
-            allPostsData
-        }
-    }
-}
 
 // Pass our blogs as a prop to the Home component
 export default function PostHome({ allPostsData }) {
@@ -36,7 +26,7 @@ export default function PostHome({ allPostsData }) {
                 Sometimes my thoughts overflow and end up here for safekeeping.
             </p>
 
-            <section>
+            <section className="mb-8">
                 <ul>
                     {allPostsData.map(({ id, date, title }) => (
                         <li key={id} className="mb-4 opacity-60 hover:opacity-100">
@@ -47,7 +37,7 @@ export default function PostHome({ allPostsData }) {
                                 <span className="text-gray-500 dark:text-gray-500">
                                     <DateComp dateString={date} />
                                 </span>
-                                <span className="text-gray-400 dark:text-gray-600"> · (X)min</span>
+                                {/* <span className="text-gray-400 dark:text-gray-600"> · (X)min</span> */}
                             </div>
                             </a>
                             </Link>
@@ -78,4 +68,14 @@ export default function PostHome({ allPostsData }) {
         </div>
         </Container>
     );
+}
+
+export async function getStaticProps() {
+    // Get external data from the file system
+    const allPostsData = getSortedPostsData()
+    return {
+        props: {
+            allPostsData
+        }
+    }
 }

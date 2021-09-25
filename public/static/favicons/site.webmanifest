@@ -1,0 +1,24 @@
+{
+    "name": "Max DeMaio",
+    "short_name": "maxdemaio.com",
+    "description": "Max DeMaio's personal website. Here you can find out more about me, the projects I have completed, and the tech stack I use.",
+    "icons": [
+        {
+            "src": "/static/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "start_url": "../../index.html"
+}

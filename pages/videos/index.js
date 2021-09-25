@@ -105,6 +105,7 @@ export async function getStaticProps() {
     const { stats, videos } = await getData();
 
     return {
+        // Refreshes every 24 hours
         revalidate: 86400,
         props: {
             stats: stats.items[0].statistics,

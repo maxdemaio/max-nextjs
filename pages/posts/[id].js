@@ -53,11 +53,11 @@ export default function Post({ postData }) {
             {/* Blog post footer */}
             <footer>
                 <Link href="/posts">
-                    <a>← Back</a>
+                    <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
                 </Link>
                 {/* To top button */}
                 <button className="cursor-pointer float-right" onClick={moveToTop}>
-                    <a>↑ Top</a>
+                    <a className="underline text-blue-400 hover:text-blue-600">↑ Top</a>
                 </button>
                 <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
                 <p>

@@ -35,7 +35,7 @@ export default function Post({ postData }) {
         <Container title={postData.title}>
         <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
             <div>
-                <h1 className="select-none font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+                <h1 className="my-h1">
                     {postData.title}
                 </h1>
                 <div className="text-gray-500">

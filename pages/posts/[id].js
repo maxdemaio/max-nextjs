@@ -60,9 +60,12 @@ export default function Post({ postData }) {
                     <a className="underline text-blue-400 hover:text-blue-600">↑ Top</a>
                 </button>
                 <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-                <p>
+                <p className="my-para">
                     <strong>{blogTitle}</strong> is a blog about business, language, and computer science.
                     Sometimes my thoughts overflow and end up here for safekeeping.
+                </p>
+                <p className="my-para">
+                    For corrections (typos, factual inaccuracies), please file a <a href="https://github.com/maxwelldemaio/max-nextjs/issues" className="underline text-blue-400 hover:text-blue-600">GitHub issue</a>.
                 </p>
                 <CcName></CcName>
             </footer>

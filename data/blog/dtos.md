@@ -63,4 +63,6 @@ public class ExampleController {
 
 In the example application's repository, I've also included two Postman API calls. If we were to make a POST request with invalid age or name data, the end user receives a 400 error. However, if all fields of the request body of the POST request are valid, we receive a nice message "Valid person DTO!". In a real application, catching these types of errors early is extremely important.
 
+## Conclusion
+
 We now know what DTOs are used for and why they're very helpful in enterprise applications. This design pattern is very common and allows for efficient API architecture when coupled with validation. In short: validate, validate, validate!

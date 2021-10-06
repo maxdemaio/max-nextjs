@@ -2,6 +2,7 @@
 
 # personal
 .env
+/data/blogDrafts/
 
 # dependencies
 /node_modules

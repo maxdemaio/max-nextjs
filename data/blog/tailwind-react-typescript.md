@@ -6,7 +6,6 @@ date: '2021-09-04'
 Want to construct your frontend with Tailwind, React, and Typescript? Look no further; here we will discuss everything that you'll need to get setup.
 
 ---
-<br>
 
 ## React and Typescript setup
 Before we get started, "Tailwind CSS requires Node.js 12.13.0 or higher" (tailwindcss). Make sure you have Node.js installed and the correct version by running `node --version` in your command line. If you don't have it installed, feel free to visit [Node.js's official website](https://nodejs.org/en/).

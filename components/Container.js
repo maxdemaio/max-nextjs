@@ -44,6 +44,15 @@ export default function Container(props) {
                 {meta.date && (
                     <meta property="article:published_time" content={meta.date} />
                 )}
+                <link
+                    rel="preload"
+                    href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css"
+                    as="script"
+                />
+                <link
+                    href={`https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css`}
+                    rel="stylesheet"
+                />
             </Head>
 
             <nav className="flex items-center justify-between w-full max-w-4xl p-8 mx-auto my-0 text-gray-900 bg-white sticky-nav md:my-8 dark:bg-black bg-opacity-60 dark:text-gray-100">

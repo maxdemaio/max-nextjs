@@ -2,7 +2,11 @@ import { getAllPostIds, getPostData } from '@/lib/posts';
 import DateComp from '@/components/DateComp';
 import Container from '@/components/Container';
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 import CcName from '@/components/CcName';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+
 
 export async function getStaticProps({ params }) {
     // We added the async keyword to getPostData in lib/posts.js
@@ -46,8 +50,28 @@ export default function Post({ postData }) {
 
             <div className="prose dark:prose-dark max-w-none w-full">
                 {/* Blog post content */}
-                <div className={'blog-content'}
-                    dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <ReactMarkdown
+                    children={postData.html}
+                    components={{
+                        code({ node, inline, className, children, ...props }) {
+                            const match = /language-(\w+)/.exec(className || '')
+                            return !inline && match ? (
+                                <SyntaxHighlighter
+                                    children={String(children).replace(/\n$/, '')}
+                                    style={tomorrow}
+                                    language={match[1]}
+                                    PreTag="div"
+                                    {...props}
+                                />
+                            ) : (
+                                <code className={className} {...props}>
+                                    {children}
+                                </code>
+                            )
+                        }
+                    }}
+                >
+                </ReactMarkdown>
             </div>
 
             {/* Blog post footer */}

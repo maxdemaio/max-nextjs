@@ -6,7 +6,6 @@ date: '2021-08-07'
 The science of sentences and the relationships between words. Syntax is broadly understood as the study of word order and how words are put together into larger units.
 
 ---
-<br>
 
 ## Overview
 Most core questions in the scientific domain of linguistics are in these three areas alone (Kumar, 00:00:54 - 00:01:30):

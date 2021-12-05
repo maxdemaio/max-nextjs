@@ -6,7 +6,6 @@ date: '2021-10-06'
 Data Transfer Objects (DTOs) carry data between processes. Each call to an application is expensive. Calls to an application should be kept to a minimum. DTOs solve this problem. DTOs need to be serializable to go across remote connections. Usually, an assembler is used on the server side to transfer data between DTOs and any domain objects.
 
 ---
-<br>
 
 ## Overview
 

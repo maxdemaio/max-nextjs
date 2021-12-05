@@ -16,13 +16,13 @@ Now let's get down to business, creating a new React project with TypeScript usi
 Your React + TypeScript project has now been made and all that's left is to install Tailwind CSS. To do so, we have to follow some steps according to [Tailwind CSS's Create React App installation documentation](https://tailwindcss.com/docs/guides/create-react-app).
 
 ### [Install Tailwind CSS via npm](https://tailwindcss.com/docs/guides/create-react-app#install-and-configure-craco)
-```
-npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
-```
+
+`npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9`
+
 ### [Install and configure CRACO](https://tailwindcss.com/docs/guides/create-react-app#install-and-configure-craco)
-```
-npm install @craco/craco
-```
+
+`npm install @craco/craco`
+
 Once CRACO has finished installing, edit your `package.json` to use `craco` for all scripts except `eject`.
 ```json
 {
@@ -50,9 +50,9 @@ module.exports = {
 }
 ```
 ### [Create your configuration file](https://tailwindcss.com/docs/guides/create-react-app#create-your-configuration-file)
-```
-npx tailwindcss-cli@latest init
-```
+
+`npx tailwindcss-cli@latest init`
+
 ### [Include Tailwind in your CSS](https://tailwindcss.com/docs/guides/create-react-app#include-tailwind-in-your-css)
 
 Change the `index.css` file located in the `src` directory in the root of your React project.

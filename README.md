@@ -5,8 +5,9 @@ my personal website powered by [Next.js](https://nextjs.org/)
 --- 
 
 - **Framework**: [Next.js](https://nextjs.org/)
-- **Content**: Will probably add MDX to make use of image component of Next.js in md files and more
+- **Content**: `gray-matter`, `remark`, `remark-html`, `react-markdown`, and `react-syntax-highlighter`
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Images**: [Studio Ghibli free non-commercial images](https://www.ghibli.jp/info/013344/)
 
 ## Overview
 
@@ -19,8 +20,8 @@ my personal website powered by [Next.js](https://nextjs.org/)
 ```bash
 $ git clone https://github.com/maxwelldemaio/max-nextjs.git
 $ cd max-nextjs
-$ npm i
-$ npm run dev
+$ yarn install
+$ yarn run dev
 ```
 
 Create a `.env` file similar to [`.env.example`](./env.example)

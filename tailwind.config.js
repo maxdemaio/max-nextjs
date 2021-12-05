@@ -19,6 +19,12 @@ module.exports = {
         // Default prose styles low level customization
         DEFAULT: {
           css: {
+            // Do not apply any classes on code
+            pre: false,
+            code: false,
+            'pre code': false,
+            'code::before': false,
+            'code::after': false,
             color: theme('colors.gray.700'),
             a: {
               color: theme('colors.blue.500'),

@@ -6,7 +6,6 @@ date: '2021-07-04'
 The study of words, how they are constructed, and their relationship to other words in the same language.
 
 ---
-<br>
 
 What even is a word? Well, for each word we'd expect to find its entry in a dictionary. Meanings of words can be unpredictable and each word is known as a lexeme or lexical item since their key/value pairs are in a lexicon (dictionary). The words we use are arbitrary [signs](https://en.wikipedia.org/wiki/Sign_(semiotics)) that are essentially [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) to objects/ideas in the world.
 

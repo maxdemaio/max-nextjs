@@ -125,7 +125,7 @@ DELETE FROM Customer
 ```
 
 ---
-<br>
+
 
 I hope this post helped boost your MySQL [power level](https://dragonball.fandom.com/wiki/Power_Level). If you like video format better, I have a [YouTube playlist](https://www.youtube.com/playlist?list=PLg7mHz5jVDueWom70v1JjpaCfxwh99_fC) where I demonstrate everything in the MySQL workbench. MySQL is a database management system that allows us to interact with and design databases. With a solid foundation of MySQL basics, you can start designing and interacting with databases.
 

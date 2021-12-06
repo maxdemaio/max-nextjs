@@ -1,0 +1,10 @@
+version: '3'
+services:
+  max-nextjs-app:
+  image: max-nextjs-app:1.0
+  ports:
+  - 3000:3000
+  # Taken from https://console.cloud.google.com/apis/
+  environment:
+    - YOUTUBE_API_KEY=
+    - YOUTUBE_CHANNEL_ID=

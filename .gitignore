@@ -3,6 +3,7 @@
 # personal
 .env
 /data/blogDrafts/
+docker-compose.yaml
 
 # dependencies
 /node_modules

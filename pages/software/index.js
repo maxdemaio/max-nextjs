@@ -45,7 +45,7 @@ export default function Software() {
                 <h2 className="my-h2">Tech Stack</h2>
                 <ul className="space-y-4 text-gray-700 dark:text-gray-400">
                     <li><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS, and SQL.</li>
-                    <li><strong>Tools:</strong> Git, Docker, Postman, GitHub Actions, Figma, Visual Studio Code, and Eclipse.</li>
+                    <li><strong>Tools:</strong> Git, GitHub Actions, Docker, Postman, Figma, GIMP, Visual Studio Code, and Eclipse.</li>
                 </ul>
             </section>
 

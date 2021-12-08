@@ -1,7 +1,7 @@
 describe('Navigation', () => {
   it('should navigate to the software page', () => {
-    // Start from the index page
-    cy.visit('http://localhost:3000/')
+    // Start from the index page (uses baseurl)
+    cy.visit('/')
 
     // Find a link with an href attribute containing "software" and click it
     cy.get('a[href*="software"]').click()

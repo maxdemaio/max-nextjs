@@ -13,7 +13,7 @@ DTO design patterns are frequently used in enterprise applications. Why? This de
 
 ## Examples
 
-When writing RESTful APIs we can even analyze an incoming request and stop it in its tracks by validating its request body data against our DTOs. This saves precious I/O since you can identify validation errors before you even get past the controller layer. I've created an [example application](https://github.com/maxwelldemaio/blog-demos/tree/master/dtoExample) where I demonstrate applying validation constraints to a DTO class which I will detail here.
+When writing RESTful APIs we can even analyze an incoming request and stop it in its tracks by validating its request body data against our DTOs. This saves precious I/O since you can identify validation errors before you even get past the controller layer. I've created an [example application](https://github.com/maxwelldemaio/demos/tree/main/dtoExample) where I demonstrate applying validation constraints to a DTO class which I will detail here.
 
 ```java
 public class PersonDTO {

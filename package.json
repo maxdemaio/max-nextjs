@@ -26,6 +26,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
-    "@tailwindcss/jit": "^0.1.18"
+    "@tailwindcss/jit": "^0.1.18",
+    "cypress": "^9.1.1"
   }
 }

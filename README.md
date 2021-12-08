@@ -8,6 +8,7 @@ my personal website powered by [Next.js](https://nextjs.org/)
 - **Content**: `gray-matter`, `remark`, `remark-html`, `react-markdown`, and `react-syntax-highlighter`
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Images**: [Studio Ghibli free non-commercial images](https://www.ghibli.jp/info/013344/)
+- **Testing**: [Cypress](https://dashboard.cypress.io/), [Cypress documentation](https://www.cypress.io/)
 
 ## Overview
 

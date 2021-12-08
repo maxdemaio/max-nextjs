@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "e2e-cloud": "cypress run --record",
+    "e2e": "cypress run"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",

@@ -8,6 +8,7 @@ my personal website powered by [Next.js](https://nextjs.org/)
 - **Content**: `gray-matter`, `remark`, `remark-html`, `react-markdown`, and `react-syntax-highlighter`
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Images**: [Studio Ghibli free non-commercial images](https://www.ghibli.jp/info/013344/)
+- **Testing**: [Cypress](https://dashboard.cypress.io/), [Cypress documentation](https://www.cypress.io/)
 
 ## Overview
 
@@ -32,5 +33,5 @@ Create a `.env` file similar to [`.env.example`](./env.example)
 - Development resources: [Adam's video on Next.js + the YouTubeAPI](https://www.youtube.com/watch?v=cyXQFjD_RAE), [Lee's video on his personal website](https://www.youtube.com/watch?v=xXQsF0q8KUg), and [Deploying a Next.js app on Vercel](https://www.youtube.com/watch?v=ben3vRAqvKE).
 
 ---
-test
+
 <samp>code is licensed under [MIT](./LICENSE), words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</samp>

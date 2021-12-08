@@ -1,15 +1,15 @@
 describe('Navigation', () => {
-  it('should navigate to the about page', () => {
+  it('should navigate to the software page', () => {
     // Start from the index page
     cy.visit('http://localhost:3000/')
 
-    // Find a link with an href attribute containing "about" and click it
-    cy.get('a[href*="about"]').click()
+    // Find a link with an href attribute containing "software" and click it
+    cy.get('a[href*="software"]').click()
 
-    // The new url should include "/about"
-    cy.url().should('include', '/about')
+    // The new url should include "/software"
+    cy.url().should('include', '/software')
 
-    // The new page should contain an h1 with "About page"
-    cy.get('h1').contains('About Page')
+    // The new page should contain an h1 with "Software"
+    cy.get('h1').contains('Software')
   })
 })

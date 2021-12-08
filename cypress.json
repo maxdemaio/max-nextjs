@@ -1,7 +1,3 @@
 {
-    "baseUrl": "http://localhost:8080",
-    "fixturesFolder": false,
-    "supportFile": false,
-    "pluginsFile": false,
-    "projectId": "max-nextjs"
+    "projectId": "jtsd69"
 }

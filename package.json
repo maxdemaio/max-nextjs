@@ -6,13 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "cypress-expect run --passing 1"
+    "cypress": "cypress open",
+    "e2e-cloud": "cypress run --record",
+    "e2e": "cypress run"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^9",
     "axios": "^0.21.4",
-    "cypress-expect": "^2.5.1",
     "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",

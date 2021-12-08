@@ -1,0 +1,14 @@
+name: max-nextjs-ci
+# https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+# Vercel for GitHub dispatches deployment events to GitHub 
+# Reference: https://glebbahmutov.com/blog/develop-preview-test/
+on: [push, deployment, deployment_status]
+jobs:
+  show-event:
+    # TODO: try node:14-alpine for consistency
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"

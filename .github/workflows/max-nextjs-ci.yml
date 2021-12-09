@@ -1,4 +1,9 @@
 name: max-nextjs-ci
+
+# This workflow runs CI tests against Vercel's successful deployment
+# This will also run against sub-branches of main before they can be merged in
+# Vercel will deploy any new changes on the main branch to production
+
 # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
 # Vercel for GitHub dispatches deployment events to GitHub 
 # Reference: https://glebbahmutov.com/blog/develop-preview-test/

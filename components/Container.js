@@ -110,7 +110,7 @@ export default function Container(props) {
                     )}
                 </button>
             </nav>
-            <main className="flex flex-col justify-center px-8 bg-white dark:bg-black">
+            <main className="text-lg flex flex-col justify-center px-8">
                 {children}
             </main>
         </div>

@@ -12,7 +12,6 @@ export default function PostHome({ allPostsData }) {
 
     return (
         <Container title="Posts | Blog – Max DeMaio">
-        <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
             <h1 className="my-h1">
                 Blog{' '}
                 <Link href="/videos" >
@@ -64,7 +63,6 @@ export default function PostHome({ allPostsData }) {
                 <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
                 <CcName></CcName>
             </footer>
-        </div>
         </Container>
     );
 }

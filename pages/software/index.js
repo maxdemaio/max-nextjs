@@ -8,7 +8,6 @@ import CcName from '@/components/CcName';
 export default function Software() {
     return (
         <Container title="Software – Max DeMaio">
-        <div className="text-lg flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
             <section>
                 <h1 className="my-h1">Software</h1>
                 <p class="my-para">Here you'll find my featured projects as well as the technology I use to build business and software architecture.
@@ -66,7 +65,6 @@ export default function Software() {
                 <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
                 <CcName></CcName>
             </footer>
-        </div>
         </Container>
     );
 }

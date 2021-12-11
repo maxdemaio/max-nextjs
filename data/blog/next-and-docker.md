@@ -11,17 +11,17 @@ In this blog post I'm introducing a dangerously good application development duo
 
 [Next.js](https://nextjs.org/) is an open-source React framework built on top of Node.js. Next.js leverages a wide array of functionalities such as hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. In fact, [This website](https://github.com/maxwelldemaio/max-nextjs) was built using Next.js!
 
-Curious about giving it a try? Next.js has a [step-by-step tutorial]([https://nextjs.org/learn/basics/create-nextjs-app](https://nextjs.org/learn/basics/create-nextjs-app)) on building your first app. To get a Next.js app up and running in seconds you can use `npx create-next-app@latest` or `yarn create next-app`. Also, if you get stuck you can visit the [Create Next App documentation]([https://nextjs.org/docs/api-reference/create-next-app](https://nextjs.org/docs/api-reference/create-next-app)). There are even [official Next.js templates]([https://github.com/vercel/next.js/tree/canary/examples](https://github.com/vercel/next.js/tree/canary/examples)) you can snag.
+Curious about giving it a try? Next.js has a [step-by-step tutorial](https://nextjs.org/learn/basics/create-nextjs-app) on building your first app. To get a Next.js app up and running in seconds you can use `npx create-next-app@latest` or `yarn create next-app`. Also, if you get stuck you can visit the [Create Next App documentation](https://nextjs.org/docs/api-reference/create-next-app). There are even [official Next.js templates](https://github.com/vercel/next.js/tree/canary/examples) you can snag.
 
 ## Docker
 
-[Docker]([https://www.docker.com/](https://www.docker.com/)) is an open platform for developing, shipping, and running apps. Before Docker, you had to locally set up your app and all of its dependencies according to your machine. Docker eliminates this issue by packaging and running apps in loosely isolated environments called containers.
+[Docker](https://www.docker.com/) is an open platform for developing, shipping, and running apps. Before Docker, you had to locally set up your app and all of its dependencies according to your machine. Docker eliminates this issue by packaging and running apps in loosely isolated environments called containers.
 
-Docker also has a [great overview on their website]([https://docs.docker.com/get-started/overview/](https://docs.docker.com/get-started/overview/)).
+Docker also has a [great overview on their website](https://docs.docker.com/get-started/overview/).
 
 ### Docker Command Starter Kit
 
-Here are the most useful commands I found to get you up and running with Docker. For more detailed information on each command and all other commands you can visit [Docker's documentation]([https://docs.docker.com/engine/reference/commandline/docker/](https://docs.docker.com/engine/reference/commandline/docker/)).
+Here are the most useful commands I found to get you up and running with Docker. For more detailed information on each command and all other commands you can visit [Docker's documentation](https://docs.docker.com/engine/reference/commandline/docker/).
 
 - `docker login` - log in to local registry or Docker Hub
 - `docker pull IMAGE` - pulls an image from Docker Hub (default registry), but you can specify a different one
@@ -101,7 +101,7 @@ You can see how the Dockerfile's instructions create layers to form the resultin
 Consider this set of instructions where each instruction creates one layer:
 
 - `FROM` creates a layer from the `node:14-alpine` Docker image
-- `RUN` [adds missing shared libraries to our image]([https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine](https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine))
+- `RUN` [adds missing shared libraries to our image](https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine)
 - `WORKDIR` sets the working directory for any subsequent instructions
 - `COPY` adds our dependency blueprints (package.json/yarn.lock) from the Docker client’s current directory
 - `RUN` installs all of our Next.js application's dependencies with yarn

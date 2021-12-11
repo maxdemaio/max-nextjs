@@ -57,7 +57,7 @@ export default function PostHome({ allPostsData }) {
                 alt="Spirited Away - Blog Picture"
             />
 
-            <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-4">
+            <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-8">
                 <Link href="/">
                     <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
                 </Link>

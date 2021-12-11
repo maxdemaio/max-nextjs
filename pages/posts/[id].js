@@ -38,7 +38,7 @@ export default function Post({ postData }) {
     return (
         <Container title={postData.title}>
         <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-            <div>
+            <div className='mb-8'>
                 <h1 className="my-h1">
                     {postData.title}
                 </h1>
@@ -48,7 +48,7 @@ export default function Post({ postData }) {
                 <div className="sr-only">{postData.id}</div>
             </div>
 
-            <div className="prose dark:prose-dark max-w-none w-full">
+            <div className="prose prose-lg dark:prose-dark max-w-none w-full">
                 {/* Blog post content */}
                 <ReactMarkdown
                     children={postData.html}
@@ -75,7 +75,7 @@ export default function Post({ postData }) {
             </div>
 
             {/* Blog post footer */}
-            <footer>
+            <footer className='mt-8'>
                 <Link href="/posts">
                     <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
                 </Link>

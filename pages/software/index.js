@@ -10,8 +10,8 @@ export default function Software() {
         <Container title="Software – Max DeMaio">
             <section>
                 <h1 className="my-h1">Software</h1>
-                <p class="my-para">Here you'll find my featured projects as well as the technology I use to build business and software architecture.
-                    {' '}The remainder of my open source work is located on <a className="underline text-blue-400 hover:text-blue-600" href="https://github.com/maxwelldemaio">GitHub</a>.
+                <p className="my-para">Here you'll find my featured projects as well as the technology I use to build business and software architecture. 
+                The remainder of my open source work is located on <a className="underline text-blue-400 hover:text-blue-600" href="https://github.com/maxwelldemaio">GitHub</a>.
                 </p>
             </section>
             <section>

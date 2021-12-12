@@ -15,7 +15,10 @@ This essentially allows us to make our own tailwind-like classNames. */
 .my-para {
   @apply text-gray-700 dark:text-gray-400 mb-8;
 }
-a {
+.my-link {
+  @apply underline text-blue-400 hover:text-blue-600;
+}
+.prose a {
   @apply underline text-blue-400 hover:text-blue-600;
 }
 

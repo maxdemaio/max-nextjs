@@ -64,13 +64,7 @@ module.exports = {
         dark: {
           css: {
             color: theme('colors.gray.300'),
-            a: {
-              color: theme('colors.blue.400'),
-              '&:hover': {
-                color: theme('colors.blue.600'),
-              },
-              code: {color: theme('colors.blue.400')},
-            },
+            a: false,
             blockquote: {
               borderLeftColor: theme('colors.gray.700'),
               color: theme('colors.gray.300'),

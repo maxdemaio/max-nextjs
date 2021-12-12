@@ -1,4 +1,4 @@
-const { spacing } = require('tailwindcss/defaultTheme');
+const {spacing} = require('tailwindcss/defaultTheme');
 
 // For more customization read the tailwind typography docs here:
 // https://github.com/tailwindlabs/tailwindcss-typography#customization
@@ -13,10 +13,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-opaque': 'rgb(13 42 148 / 18%)'
+        'blue-opaque': 'rgb(13 42 148 / 18%)',
       },
       typography: (theme) => ({
         // Default prose styles low level customization
+        // Instead of 'lg' for normal 'prose' you'd use 'DEFAULT'
         DEFAULT: {
           css: {
             // Do not apply any classes on code
@@ -27,19 +28,37 @@ module.exports = {
             'code::after': false,
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.blue.500'),
+              color: '#3182ce',
               '&:hover': {
-                color: theme('colors.blue.700')
+                color: '#2c5282',
               },
-              code: { color: theme('colors.blue.400') }
             },
+            a: false,
             'h2,h3,h4': {
-              'scroll-margin-top': spacing[32]
+              'scroll-margin-top': spacing[32],
             },
-            code: { color: theme('colors.pink.600') },
+            code: {color: theme('colors.pink.600')},
             'blockquote p:first-of-type::before': false,
-            'blockquote p:last-of-type::after': false
-          }
+            'blockquote p:last-of-type::after': false,
+          },
+        },
+        lg: {
+          css: {
+            // Do not apply any classes on code
+            pre: false,
+            code: false,
+            'pre code': false,
+            'code::before': false,
+            'code::after': false,
+            color: theme('colors.gray.700'),
+            a: false,
+            'h2,h3,h4': {
+              'scroll-margin-top': spacing[32],
+            },
+            code: {color: theme('colors.pink.600')},
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:last-of-type::after': false,
+          },
         },
         // Here we specify what happens on darkmode shift in prose
         dark: {
@@ -48,45 +67,45 @@ module.exports = {
             a: {
               color: theme('colors.blue.400'),
               '&:hover': {
-                color: theme('colors.blue.600')
+                color: theme('colors.blue.600'),
               },
-              code: { color: theme('colors.blue.400') }
+              code: {color: theme('colors.blue.400')},
             },
             blockquote: {
               borderLeftColor: theme('colors.gray.700'),
-              color: theme('colors.gray.300')
+              color: theme('colors.gray.300'),
             },
             'h2,h3,h4': {
               color: theme('colors.gray.100'),
-              'scroll-margin-top': spacing[32]
+              'scroll-margin-top': spacing[32],
             },
-            hr: { borderColor: theme('colors.gray.700') },
+            hr: {borderColor: theme('colors.gray.700')},
             ol: {
               li: {
-                '&:before': { color: theme('colors.gray.500') }
-              }
+                '&:before': {color: theme('colors.gray.500')},
+              },
             },
             ul: {
               li: {
-                '&:before': { backgroundColor: theme('colors.gray.500') }
-              }
+                '&:before': {backgroundColor: theme('colors.gray.500')},
+              },
             },
-            strong: { color: theme('colors.gray.300') },
+            strong: {color: theme('colors.gray.300')},
             thead: {
-              color: theme('colors.gray.100')
+              color: theme('colors.gray.100'),
             },
             tbody: {
               tr: {
-                borderBottomColor: theme('colors.gray.700')
-              }
-            }
-          }
-        }
-      })
-    }
+                borderBottomColor: theme('colors.gray.700'),
+              },
+            },
+          },
+        },
+      }),
+    },
   },
   variants: {
-    typography: ['dark']
+    typography: ['dark'],
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [require('@tailwindcss/typography')],
 };

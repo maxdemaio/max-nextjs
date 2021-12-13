@@ -2,7 +2,7 @@
 
 my personal website powered by [Next.js](https://nextjs.org/)
 
---- 
+---
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Content**: `gray-matter`, `remark`, `remark-html`, `react-markdown`, and `react-syntax-highlighter`
@@ -13,13 +13,13 @@ my personal website powered by [Next.js](https://nextjs.org/)
 ## Overview
 
 - `pages/posts/*` - Static pre-rendered blog pages.
-- `pages/videos/*` -  Incremental static regeneration. YouTube videos and stastistics like: total channel views, total subscribers, and total videos uploaded.
+- `pages/videos/*` - Incremental static regeneration. YouTube videos and stastistics like: total channel views, total subscribers, and total videos uploaded.
 - `pages/*` - All other static pages.
 
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/maxwelldemaio/max-nextjs.git
+$ git clone https://github.com/maxdemaio/max-nextjs.git
 $ cd max-nextjs
 $ yarn install
 $ yarn run dev

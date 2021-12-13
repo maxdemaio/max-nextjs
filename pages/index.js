@@ -60,7 +60,7 @@ export default function Home() {
             of my work is open source and publicly available on{' '}
             <a
               className="underline text-blue-400 hover:text-blue-600"
-              href="https://github.com/maxwelldemaio"
+              href="https://github.com/maxdemaio"
             >
               GitHub
             </a>

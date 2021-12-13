@@ -76,7 +76,7 @@ export default function Container(props) {
         </a>
 
         <a
-          href="https://github.com/maxwelldemaio"
+          href="https://github.com/maxdemaio"
           aria-label="GitHub Link"
           className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800"
         >

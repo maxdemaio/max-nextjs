@@ -9,7 +9,7 @@ In this blog post I'm introducing a dangerously good application development duo
 
 ## Next.js
 
-[Next.js](https://nextjs.org/) is an open-source React framework built on top of Node.js. Next.js leverages a wide array of functionalities such as hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. In fact, [This website](https://github.com/maxwelldemaio/max-nextjs) was built using Next.js!
+[Next.js](https://nextjs.org/) is an open-source React framework built on top of Node.js. Next.js leverages a wide array of functionalities such as hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. In fact, [This website](https://github.com/maxdemaio/max-nextjs) was built using Next.js!
 
 Curious about giving it a try? Next.js has a [step-by-step tutorial](https://nextjs.org/learn/basics/create-nextjs-app) on building your first app. To get a Next.js app up and running in seconds you can use `npx create-next-app@latest` or `yarn create next-app`. Also, if you get stuck you can visit the [Create Next App documentation](https://nextjs.org/docs/api-reference/create-next-app). There are even [official Next.js templates](https://github.com/vercel/next.js/tree/canary/examples) you can snag.
 
@@ -43,7 +43,7 @@ Here are the most useful commands I found to get you up and running with Docker.
 
 ## Next.js and Docker
 
-Let's say you've crafted yourself a performant, stunning, and interactive Next.js application. 
+Let's say you've crafted yourself a performant, stunning, and interactive Next.js application.
 
 Once you create a Dockerfile for your Next.js application, you can use it to create a Docker image and then a Docker container. To create an image, we use `docker build` and then to create a container we use `docker run`. Take for example this Dockerfile I use to create an image of this website which should apply to most Next.js apps:
 

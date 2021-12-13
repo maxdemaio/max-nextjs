@@ -15,7 +15,7 @@ export default function Software() {
           source work is located on{' '}
           <a
             className="underline text-blue-400 hover:text-blue-600"
-            href="https://github.com/maxwelldemaio"
+            href="https://github.com/maxdemaio"
           >
             GitHub
           </a>
@@ -28,7 +28,7 @@ export default function Software() {
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
-                href="https://github.com/maxwelldemaio/langlab"
+                href="https://github.com/maxdemaio/langlab"
                 className="my-link"
               >
                 LangLab
@@ -42,7 +42,7 @@ export default function Software() {
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
-                href="https://github.com/maxwelldemaio/thelangbot"
+                href="https://github.com/maxdemaio/thelangbot"
                 className="my-link"
               >
                 The Language Bot
@@ -55,7 +55,7 @@ export default function Software() {
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
-                href="https://github.com/maxwelldemaio/finance"
+                href="https://github.com/maxdemaio/finance"
                 className="my-link"
               >
                 Finance
@@ -69,7 +69,7 @@ export default function Software() {
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
-                href="https://github.com/maxwelldemaio/house_party"
+                href="https://github.com/maxdemaio/house_party"
                 className="my-link"
               >
                 House Party

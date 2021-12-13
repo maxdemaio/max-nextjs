@@ -90,7 +90,7 @@ export default function Post({postData}) {
           <p className="my-para">
             For corrections (typos, factual inaccuracies), please file a{' '}
             <a
-              href="https://github.com/maxwelldemaio/max-nextjs/issues"
+              href="https://github.com/maxdemaio/max-nextjs/issues"
               className="underline text-blue-400 hover:text-blue-600"
             >
               GitHub issue

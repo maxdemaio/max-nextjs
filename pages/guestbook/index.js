@@ -1,5 +1,7 @@
 import Container from '@/components/Container';
 import Link from 'next/link';
+import Image from 'next/image';
+import { shimmer, toBase64 } from '@/lib/imageManip';
 import CcName from '@/components/CcName';
 import React, { useState, useEffect } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
@@ -99,6 +101,16 @@ export default function Guestbook() {
       <section className="mt-8">
         <div className="mt-4 space-y-8">{listEntries}</div>
       </section>
+
+      <Image
+        placeholder="blur"
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        src="/static/images/mononoke-guestbook.jpg"
+        className="rounded"
+        height={1038}
+        width={1920}
+        alt="Princess Mononoke - Guestbook Picture"
+      />
 
       <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-8">
         <Link href="/">

@@ -2,8 +2,13 @@ import Container from '@/components/Container';
 import Link from 'next/link';
 import CcName from '@/components/CcName';
 import React, {useState, useEffect} from 'react';
+import {signIn, signOut, useSession} from "next-auth/client";
 
 export default function Guestbook() {
+  // add ability to access the session
+  const [session, loading] = useSession();
+
+
   const entries = [
     {
       id: 1,
@@ -20,24 +25,24 @@ export default function Guestbook() {
   ];
 
   // Similar to componentDidMount and componentDidUpdate:
-  useEffect(() => {
-    fetch('http://localhost:8080/', {
-      method: 'get',
-      redirect: 'follow',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-      })
-      .catch(function (err) {
-        console.info('error lol ' + err);
-      });
-  });
+//  useEffect(() => {
+//    fetch('http://localhost:8080/', {
+//      method: 'get',
+//      redirect: 'follow',
+//      headers: {
+//        'Content-Type': 'application/json',
+//      },
+//    })
+//      .then((response) => {
+//        return response.json();
+//      })
+//      .then((data) => {
+//        console.log(data);
+//      })
+//      .catch(function (err) {
+//        console.info('error lol ' + err);
+//      });
+//  });
 
   const listEntries = entries.map((entry) => (
     // TODO: abstract into a component

@@ -2,11 +2,11 @@ import Container from '@/components/Container';
 import Link from 'next/link';
 import CcName from '@/components/CcName';
 import React, { useState, useEffect } from 'react';
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 export default function Guestbook() {
   // add ability to access the session (from _app.js)
-  const [session, loading] = useSession();
+  const { data: session, status } = useSession();
 
   const entries = [
     {
@@ -64,14 +64,34 @@ export default function Guestbook() {
         {!session && (
           <>
             <p>Not signed</p>
-            <button onClick={signIn}>Sign in</button>
+            <a
+              href={`/api/auth/signin`}
+              className="my-link"
+              onClick={(e) => {
+                e.preventDefault();
+                signIn();
+              }}
+            >
+              Sign in
+            </a>
           </>
         )}
         {session && (
           <>
             <p>Signed in as {session.user.email}</p>
+            <p>Here is your access token: {session.accessToken}</p>
+            <p>Here is your status: {status}</p>
             <p>Super secret access provided</p>
-            <button onClick={signOut}>Sign out</button>
+            <a
+              href={`/api/auth/signout`}
+              className="my-link"
+              onClick={(e) => {
+                e.preventDefault();
+                signOut();
+              }}
+            >
+              Sign out
+            </a>
           </>
         )}
       </section>

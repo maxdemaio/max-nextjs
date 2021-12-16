@@ -9,6 +9,7 @@ my personal website powered by [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Images**: [Studio Ghibli free non-commercial images](https://www.ghibli.jp/info/013344/)
 - **Testing**: [Cypress](https://dashboard.cypress.io/), [Cypress documentation](https://www.cypress.io/)
+- **CI**: GitHub Actions[]()
 
 ## Overview
 
@@ -32,6 +33,7 @@ Create a `.env` file similar to [`.env.example`](./env.example)
 - Frontend inspired by the personal websites of: [Lee Robinson](https://github.com/leerob), [Adam Richardson](https://github.com/adamrichardson14), and [Anthony Fu](https://github.com/antfu).
 - Development resources: [Adam's video on Next.js + the YouTubeAPI](https://www.youtube.com/watch?v=cyXQFjD_RAE), [Lee's video on his personal website](https://www.youtube.com/watch?v=xXQsF0q8KUg), and [Deploying a Next.js app on Vercel](https://www.youtube.com/watch?v=ben3vRAqvKE).
 - [NextAuth.js](https://next-auth.js.org/)
+- [Test the Preview Vercel Deploys by Gleb Bahmutov](https://glebbahmutov.com/blog/develop-preview-test/)
 
 ---
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://maxdemaio.com</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/dtos</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/morphology</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/mysql-crud-basics</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/next-and-docker</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/syntax</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/tailwind-react-typescript</loc>
+  </url>
+</urlset>

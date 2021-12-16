@@ -8,7 +8,7 @@ async function generate() {
     'pages/*.js', // all pages in home
     'data/**/*.md', // all my blog posts
     '!pages/_*.js', // things like _document, _app
-    '!pages/api',
+    '!pages/api', // don't include nextauth information
     '!pages/404.js', // don't include custom 404
   ]);
 

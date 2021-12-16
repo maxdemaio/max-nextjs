@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
+    "@types/react": "^17.0.37",
     "autoprefixer": "^10.4.0",
     "axios": "^0.21.4",
     "date-fns": "^2.23.0",
+    "globby": "^12.0.2",
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",
     "next-auth": "^4.0.5",
@@ -23,6 +25,7 @@
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-markdown": "^7.1.1",
@@ -32,5 +35,13 @@
   },
   "devDependencies": {
     "cypress": "^9.1.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "tabWidth": 2,
+    "semi": true,
+    "bracketSpacing": true,
+    "singleQuote": true
   }
 }

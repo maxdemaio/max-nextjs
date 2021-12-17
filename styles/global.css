@@ -5,7 +5,11 @@
 /* Tailwind’s @apply directive to easily extract 
 common utility patterns to CSS component classes.
 This essentially allows us to make our own tailwind-like classNames. */
-
+.my-svg-header {
+  vertical-align: -10%;
+  display: inline;
+  margin-right: 0.625rem;
+}
 .my-h1 {
   @apply font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white;
 }

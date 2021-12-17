@@ -15,7 +15,6 @@ export default function Software() {
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
-            fill="none"
           >
             <path d="M24 8H16V0H24V8ZM18 6H22V2H18V6Z" fill="currentColor" />
             <path

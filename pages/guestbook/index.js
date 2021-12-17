@@ -84,6 +84,16 @@ export default function Guestbook() {
             <p>Here is your access token: {session.accessToken}</p>
             <p>Here is your status: {status}</p>
             <p>Super secret access provided</p>
+            <Image
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(700, 475)
+              )}`}
+              className="rounded-full"
+              src={session.user.image}
+              width={40}
+              height={40}
+            />
             <a
               href={`/api/auth/signout`}
               className="my-link"

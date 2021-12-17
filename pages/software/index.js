@@ -9,6 +9,7 @@ export default function Software() {
     <Container title="Software – Max DeMaio">
       <section>
         <h1 className="my-h1">
+          Software
           <svg
             className="my-svg-header"
             width="1em"
@@ -26,7 +27,6 @@ export default function Software() {
               fill="currentColor"
             />
           </svg>
-          Software
         </h1>
 
         <p className="my-para">

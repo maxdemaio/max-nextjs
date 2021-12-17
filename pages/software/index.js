@@ -1,7 +1,7 @@
 import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
-import {shimmer, toBase64} from '@/lib/imageManip';
+import { shimmer, toBase64 } from '@/lib/imageManip';
 import CcName from '@/components/CcName';
 
 export default function Software() {

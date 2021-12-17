@@ -25,26 +25,6 @@ export default function Guestbook() {
     },
   ];
 
-  // Similar to componentDidMount and componentDidUpdate:
-  //  useEffect(() => {
-  //    fetch('http://localhost:8080/', {
-  //      method: 'get',
-  //      redirect: 'follow',
-  //      headers: {
-  //        'Content-Type': 'application/json',
-  //      },
-  //    })
-  //      .then((response) => {
-  //        return response.json();
-  //      })
-  //      .then((data) => {
-  //        console.log(data);
-  //      })
-  //      .catch(function (err) {
-  //        console.info('error lol ' + err);
-  //      });
-  //  });
-
   const listEntries = entries.map((entry) => (
     // TODO: abstract into a component
     <div key={entry.id} className="flex flex-col space-y-2">
@@ -55,7 +35,7 @@ export default function Guestbook() {
             {'@' + entry.name}
           </a>
         </p>
-        <span className="text-sm text-gray-200 dark:text-gray-800">x</span>
+        <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
         <p className="text-gray-500 dark:text-gray-500">{entry.timestamp}</p>
       </div>
     </div>
@@ -63,56 +43,63 @@ export default function Guestbook() {
 
   return (
     <Container title="Guestbook – Max DeMaio">
-      <section className="mb-8">
-        <h1 className="my-h1">Guestbook</h1>
-        <svg width="1em" height="1em" viewBox="0 0 24 24">
-          <path
-            d="M20.71 7.04c-.34.34-.67.67-.68 1c-.03.32.31.65.63.96c.48.5.95.95.93 1.44c-.02.49-.53 1-1.04 1.5l-4.13 4.14L15 14.66l4.25-4.24l-.96-.96l-1.42 1.41l-3.75-3.75l3.84-3.83c.39-.39 1.04-.39 1.41 0l2.34 2.34c.39.37.39 1.02 0 1.41M3 17.25l9.56-9.57l3.75 3.75L6.75 21H3v-3.75z"
-            fill="currentColor"
-          ></path>
-        </svg>
-        <p className="my-para">
-          Here you'll find my featured projects as well as the technology I use
-          to build business and software architecture. The remainder of my open
-          source work is located on GitHub.
-        </p>
-        <div>example sign-in modal</div>
+      <section>
+        <h1 className="my-h1">
+          Guestbook
+          <svg
+            className="my-svg-header"
+            width="1em"
+            height="1em"
+            viewBox="0 0 32 32"
+            preserveAspectRatio="xMidYMin"
+          >
+            <path
+              d="M29.707 5.293L26.707 2.293C26.5195 2.10553 26.2652 2.00021 26 2.00021C25.7349 2.00021 25.4806 2.10553 25.293 2.293L19.586 8H17.095C14.8147 8.00164 12.5911 8.71115 10.7313 10.0306C8.87142 11.35 7.46705 13.2143 6.71205 15.366L2.05605 28.67C1.99382 28.8478 1.98305 29.0395 2.02498 29.2231C2.0669 29.4067 2.15983 29.5747 2.29305 29.7078C2.42627 29.8409 2.59437 29.9337 2.77801 29.9755C2.96164 30.0173 3.15335 30.0064 3.33105 29.944L16.634 25.288C18.7858 24.533 20.65 23.1286 21.9695 21.2688C23.2889 19.4089 23.9984 17.1853 24 14.905V12.415L29.707 6.707C29.8945 6.51947 29.9998 6.26516 29.9998 6C29.9998 5.73484 29.8945 5.48053 29.707 5.293V5.293ZM22.293 11.293C22.1055 11.4805 22.0001 11.7348 22 12V14.905C21.9986 16.7707 21.418 18.59 20.3385 20.1117C19.2589 21.6333 17.7336 22.7823 15.973 23.4L6.80505 26.609L16 17.414L14.586 16L5.39005 25.195L8.60005 16.027C9.21775 14.2665 10.3667 12.7412 11.8884 11.6616C13.41 10.582 15.2293 10.0014 17.095 10H20C20.2652 9.99994 20.5196 9.89455 20.707 9.707L26 4.414L27.586 6L22.293 11.293Z"
+              fill="currentColor"
+            />
+          </svg>
+        </h1>
+
+        <p className="my-para">Example blahblahblah description</p>
+
         {!session && (
-          <>
-            <p>Not signed</p>
-            <a
-              href={`/api/auth/signin`}
-              className="my-link"
-              onClick={(e) => {
-                e.preventDefault();
-                signIn();
-              }}
-            >
-              Sign in
-            </a>
-          </>
+          <p className="my-para">
+            Not signed in, Here is your status: {status}
+            <div>
+              <a
+                href={`/api/auth/signin`}
+                className="my-link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  signIn();
+                }}
+              >
+                Sign in
+              </a>
+            </div>
+          </p>
         )}
         {session && (
-          <>
-            <p>Signed in as {session.user.email}</p>
-            <p>Here is your access token: {session.accessToken}</p>
-            <p>Here is your status: {status}</p>
-            <p>Super secret access provided</p>
-            <a
-              href={`/api/auth/signout`}
-              className="my-link"
-              onClick={(e) => {
-                e.preventDefault();
-                signOut();
-              }}
-            >
-              Sign out
-            </a>
-          </>
+          <p className="my-para">
+            Signed in as {session.user.name}, Here is your status: {status}
+            <div>
+              <a
+                href={`/api/auth/signout`}
+                className="my-link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  signOut();
+                }}
+              >
+                Sign out
+              </a>
+            </div>
+          </p>
         )}
       </section>
 
       <section className="mb-8">
+        <h2 className="my-h2">Entries</h2>
         <div className="mt-4 space-y-8">{listEntries}</div>
       </section>
 

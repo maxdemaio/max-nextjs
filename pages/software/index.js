@@ -8,7 +8,29 @@ export default function Software() {
   return (
     <Container title="Software – Max DeMaio">
       <section>
-        <h1 className="my-h1">Software</h1>
+        <h1 className="my-h1">
+          Software
+          <svg
+            className="my-svg-header"
+            width="1em"
+            height="1em"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M28 12H20V4H28V12ZM22 10H26V6H22V10Z"
+              fill="currentColor"
+            />
+            <path
+              d="M17 15V9H9V23H23V15H17ZM11 11H15V15H11V11ZM15 21H11V17H15V21ZM21 21H17V17H21V21Z"
+              fill="currentColor"
+            />
+            <path
+              d="M26 28H6C5.46973 27.9995 4.96133 27.7886 4.58637 27.4136C4.21141 27.0387 4.00053 26.5303 4 26V6C4.00053 5.46973 4.21141 4.96133 4.58637 4.58637C4.96133 4.21141 5.46973 4.00053 6 4H16V6H6V26H26V16H28V26C27.9995 26.5303 27.7886 27.0387 27.4136 27.4136C27.0387 27.7886 26.5303 27.9995 26 28Z"
+              fill="currentColor"
+            />
+          </svg>
+        </h1>
+
         <p className="my-para">
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open

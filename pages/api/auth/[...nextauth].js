@@ -1,5 +1,4 @@
 import NextAuth from 'next-auth';
-import GithubProvider from 'next-auth/providers/github';
 import TwitterProvider from 'next-auth/providers/twitter';
 
 // For more information on each option (and a full list of options) go to
@@ -8,14 +7,10 @@ export default NextAuth({
   // https://next-auth.js.org/configuration/providers
   providers: [
     TwitterProvider({
+      // Opt-in to the new Twitter API for now. Should be default in the future.
+      version: '2.0',
       clientId: process.env.TWITTER_ID,
       clientSecret: process.env.TWITTER_SECRET,
-    }),
-    GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-      // https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps
-      scope: 'read:user',
     }),
   ],
   // The secret should be set to a reasonably long random string.

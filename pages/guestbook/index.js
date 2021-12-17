@@ -59,9 +59,13 @@ export default function Guestbook() {
 
   return (
     <Container title="Guestbook – Max DeMaio">
-      <section>
+      <section className="mb-8">
         <h1 className="my-h1">Guestbook</h1>
-        <p className="my-para">Hey here's an example description</p>
+        <p className="my-para">
+          Here you'll find my featured projects as well as the technology I use
+          to build business and software architecture. The remainder of my open
+          source work is located on GitHub.
+        </p>
         <div>example sign-in modal</div>
         {!session && (
           <>
@@ -84,16 +88,6 @@ export default function Guestbook() {
             <p>Here is your access token: {session.accessToken}</p>
             <p>Here is your status: {status}</p>
             <p>Super secret access provided</p>
-            <Image
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(700, 475)
-              )}`}
-              className="rounded-full"
-              src={session.user.image}
-              width={40}
-              height={40}
-            />
             <a
               href={`/api/auth/signout`}
               className="my-link"
@@ -108,7 +102,7 @@ export default function Guestbook() {
         )}
       </section>
 
-      <section className="mt-8">
+      <section className="mb-8">
         <div className="mt-4 space-y-8">{listEntries}</div>
       </section>
 

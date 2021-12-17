@@ -13,13 +13,13 @@ export default function Guestbook() {
   const entries = [
     {
       id: 1,
-      name: 'example user',
+      name: 'maxwelldemaio',
       content: 'great website!',
       timestamp: '2021-10-06',
     },
     {
       id: 4,
-      name: 'example2',
+      name: 'TylerNickerson',
       content: 'great website again!',
       timestamp: '2021-11-06',
     },
@@ -50,8 +50,12 @@ export default function Guestbook() {
     <div key={entry.id} className="flex flex-col space-y-2">
       <div className="w-full">{entry.content}</div>
       <div className="flex items-center space-x-3">
-        <p className="text-gray-500 dark:text-gray-500">{entry.name}</p>
-        <span className="text-gray-200 dark:text-gray-800">•</span>
+        <p className="text-gray-500 dark:text-gray-500">
+          <a href={'https://twitter.com/' + entry.name} className="my-link">
+            {'@' + entry.name}
+          </a>
+        </p>
+        <span className="text-sm text-gray-200 dark:text-gray-800">x</span>
         <p className="text-gray-500 dark:text-gray-500">{entry.timestamp}</p>
       </div>
     </div>
@@ -61,6 +65,12 @@ export default function Guestbook() {
     <Container title="Guestbook – Max DeMaio">
       <section className="mb-8">
         <h1 className="my-h1">Guestbook</h1>
+        <svg width="1em" height="1em" viewBox="0 0 24 24">
+          <path
+            d="M20.71 7.04c-.34.34-.67.67-.68 1c-.03.32.31.65.63.96c.48.5.95.95.93 1.44c-.02.49-.53 1-1.04 1.5l-4.13 4.14L15 14.66l4.25-4.24l-.96-.96l-1.42 1.41l-3.75-3.75l3.84-3.83c.39-.39 1.04-.39 1.41 0l2.34 2.34c.39.37.39 1.02 0 1.41M3 17.25l9.56-9.57l3.75 3.75L6.75 21H3v-3.75z"
+            fill="currentColor"
+          ></path>
+        </svg>
         <p className="my-para">
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open

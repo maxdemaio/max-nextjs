@@ -6,10 +6,10 @@
 common utility patterns to CSS component classes.
 This essentially allows us to make our own tailwind-like classNames. */
 .my-svg-header {
-  vertical-align: -10%;
+  vertical-align: -16%;
   display: inline;
-  margin-left: 0.625rem;
-  margin-right: 0.625rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .my-h1 {
   @apply font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white;

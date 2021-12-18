@@ -72,7 +72,7 @@ export default function Container(props) {
             className="md:hidden w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
           >
             <svg width="1em" height="1em" viewBox="0 0 28 28">
-              <g clip-path="url(#clip0_1515_32)">
+              <g clipPath="url(#clip0_1515_32)">
                 <path
                   d="M27 17L23 20.2V18C22.9995 17.4697 22.7886 16.9613 22.4136 16.5864C22.0387 16.2114 21.5303 16.0005 21 16H13C12.4697 16.0005 11.9613 16.2114 11.5864 16.5864C11.2114 16.9613 11.0005 17.4697 11 18V24C11.0005 24.5303 11.2114 25.0387 11.5864 25.4136C11.9613 25.7886 12.4697 25.9995 13 26H21C21.5303 25.9995 22.0387 25.7886 22.4136 25.4136C22.7886 25.0387 22.9995 24.5303 23 24V21.8L27 25V17ZM13 24V18H21L21.002 24H13Z"
                   fill="currentColor"

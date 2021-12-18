@@ -9,7 +9,9 @@ import { signIn, signOut, useSession } from 'next-auth/react';
 export default function Guestbook() {
   // add ability to access the session (from _app.js)
   const { data: session, status } = useSession();
-  const [form, setForm] = useState();
+  const [entry, setEntry] = useState('');
+
+  console.log(session);
 
   const entries = [
     {
@@ -42,9 +44,12 @@ export default function Guestbook() {
     </div>
   ));
 
-  const handleSubmit = (e) => {
+  const leaveEntry = (e) => {
+    // prevent default action of form to refresh page
     e.preventDefault();
-    console.log(formData);
+    console.log(entry);
+
+    return;
   };
 
   return (
@@ -65,14 +70,16 @@ export default function Guestbook() {
           </svg>
         </h1>
 
-        <p className="my-para">Example blahblahblah description</p>
+        <p className="my-para">
+          Feel free to leave an entry in my guestbook below
+        </p>
 
         <div className="p-4 border border-gray-200 rounded w-full dark:border-gray-800 bg-gray-100 dark:bg-gray-900">
           <h2 className="my-h2">Sign the Guestbook</h2>
           {!session && (
             <div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Not signed in, Here is your status: {status}
+                You're currently not logged in yet.
               </p>
               <div className="mb-4 flex flex-row justify-between items-center">
                 <a
@@ -95,7 +102,11 @@ export default function Guestbook() {
           {session && (
             <div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Signed in as {session.user.name}, Here is your status: {status}
+                You're current logged in as{' '}
+                <a href={'https://twitter.com/' + session} className="my-link">
+                  {'@' + session.id}
+                </a>
+                .
               </p>
 
               <div className="mb-4 flex flex-row flex-wrap justify-between items-center">
@@ -109,12 +120,23 @@ export default function Guestbook() {
                 >
                   Logout
                 </a>
-                <form className="mb-2 grow ml-2 mr-2 flex flex-row">
+                <form
+                  onSubmit={leaveEntry}
+                  className="mb-2 grow ml-2 mr-2 flex flex-row"
+                >
                   <input
+                    value={entry}
+                    onChange={(e) => setEntry(e.target.value)}
+                    type="text"
+                    required
                     placeholder="Your entry..."
                     className="w-full rounded p-2"
-                  ></input>
-                  <button className="ml-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded">
+                  />
+                  <button
+                    type="submit"
+                    className="ml-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded"
+                  >
+                    {/* TODO: add ternary here if loading show spinner if not show 'Sign' */}
                     Sign
                   </button>
                 </form>

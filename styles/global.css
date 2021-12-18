@@ -28,6 +28,14 @@ This essentially allows us to make our own tailwind-like classNames. */
   @apply underline text-blue-400 hover:text-blue-600;
 }
 
+/* On screens that are 767px wide or less
+make the text menu links disappear */
+@media screen and (max-width: 767px) {
+  .nav-no-show {
+    display: none;
+  }
+}
+
 html {
   min-width: 360px;
   /* Notably for our "top" button in blog posts */

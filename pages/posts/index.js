@@ -1,13 +1,13 @@
-import {getSortedPostsData} from '../../lib/posts';
+import { getSortedPostsData } from '../../lib/posts';
 import DateComp from '@/components/DateComp';
 import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
-import {shimmer, toBase64} from '@/lib/imageManip';
+import { shimmer, toBase64 } from '@/lib/imageManip';
 import CcName from '@/components/CcName';
 
 // Pass our blogs as a prop to the Home component
-export default function PostHome({allPostsData}) {
+export default function PostHome({ allPostsData }) {
   const blogTitle = 'max overflow';
 
   return (
@@ -57,7 +57,7 @@ export default function PostHome({allPostsData}) {
 
       <section className="mb-8">
         <ul className="space-y-4">
-          {allPostsData.map(({id, date, title}) => (
+          {allPostsData.map(({ id, date, title }) => (
             <li key={id} className="opacity-80 hover:opacity-100">
               <Link href={`/posts/${id}`}>
                 <a>

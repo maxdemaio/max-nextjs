@@ -1,4 +1,4 @@
-const {spacing} = require('tailwindcss/defaultTheme');
+const { spacing } = require('tailwindcss/defaultTheme');
 
 // For more customization read the tailwind typography docs here:
 // https://github.com/tailwindlabs/tailwindcss-typography#customization
@@ -9,13 +9,26 @@ module.exports = {
   content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
   // Dark mode will change the styles on 'class' attribute
   darkMode: 'class',
-  // Here is where we can edit the prose theme
+  // Here is where we can extend tailwind classes (example: animations)
   theme: {
     extend: {
-      colors: {
-        'blue-opaque': 'rgb(13 42 148 / 18%)',
-      },
+      // colors: {
+      //   'blue-opaque': 'rgb(13 42 148 / 18%)',
+      //   gray: {
+      //     0: '#fff',
+      //     100: '#fafafa',
+      //     200: '#eaeaea',
+      //     300: '#999999',
+      //     400: '#888888',
+      //     500: '#666666',
+      //     600: '#444444',
+      //     700: '#333333',
+      //     800: '#222222',
+      //     900: '#111111'
+      //   }
+      // },
       typography: (theme) => ({
+        // Here is where we can edit the prose themes
         // Default prose styles low level customization
         // Instead of 'lg' for normal 'prose' you'd use 'DEFAULT'
         DEFAULT: {
@@ -37,7 +50,7 @@ module.exports = {
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32],
             },
-            code: {color: theme('colors.pink.600')},
+            code: { color: theme('colors.pink.600') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
           },
@@ -55,7 +68,7 @@ module.exports = {
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32],
             },
-            code: {color: theme('colors.pink.600')},
+            code: { color: theme('colors.pink.600') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
           },
@@ -73,18 +86,18 @@ module.exports = {
               color: theme('colors.gray.100'),
               'scroll-margin-top': spacing[32],
             },
-            hr: {borderColor: theme('colors.gray.700')},
+            hr: { borderColor: theme('colors.gray.700') },
             ol: {
               li: {
-                '&:before': {color: theme('colors.gray.500')},
+                '&:before': { color: theme('colors.gray.500') },
               },
             },
             ul: {
               li: {
-                '&:before': {backgroundColor: theme('colors.gray.500')},
+                '&:before': { backgroundColor: theme('colors.gray.500') },
               },
             },
-            strong: {color: theme('colors.gray.300')},
+            strong: { color: theme('colors.gray.300') },
             thead: {
               color: theme('colors.gray.100'),
             },

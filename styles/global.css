@@ -7,7 +7,7 @@ common utility patterns to CSS component classes.
 This essentially allows us to make our own tailwind-like classNames. */
 .my-svg-header {
   display: inline;
-  vertical-align: sub;
+  vertical-align: -0.15em;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }

@@ -9,6 +9,7 @@ import { signIn, signOut, useSession } from 'next-auth/react';
 export default function Guestbook() {
   // add ability to access the session (from _app.js)
   const { data: session, status } = useSession();
+  const [form, setForm] = useState();
 
   const entries = [
     {
@@ -41,9 +42,14 @@ export default function Guestbook() {
     </div>
   ));
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
     <Container title="Guestbook – Max DeMaio">
-      <section>
+      <section className="w-full">
         <h1 className="my-h1">
           Guestbook
           <svg
@@ -62,40 +68,57 @@ export default function Guestbook() {
 
         <p className="my-para">Example blahblahblah description</p>
 
-        {!session && (
-          <p className="my-para">
-            Not signed in, Here is your status: {status}
+        <div className="p-4 border border-gray-200 rounded w-full dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+          <h2 className="my-h2">Sign the Guestbook</h2>
+          {!session && (
             <div>
-              <a
-                href={`/api/auth/signin`}
-                className="my-link"
-                onClick={(e) => {
-                  e.preventDefault();
-                  signIn();
-                }}
-              >
-                Sign in
-              </a>
+              <p className="text-gray-700 dark:text-white mb-4">
+                Not signed in, Here is your status: {status}
+              </p>
+              <div className="mb-4 flex flex-row justify-between items-center">
+                <a
+                  href={`/api/auth/signin`}
+                  className="mb-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    signIn();
+                  }}
+                >
+                  Login
+                </a>
+              </div>
             </div>
-          </p>
-        )}
-        {session && (
-          <p className="my-para">
-            Signed in as {session.user.name}, Here is your status: {status}
+          )}
+          {session && (
             <div>
-              <a
-                href={`/api/auth/signout`}
-                className="my-link"
-                onClick={(e) => {
-                  e.preventDefault();
-                  signOut();
-                }}
-              >
-                Sign out
-              </a>
+              <p className="text-gray-700 dark:text-white mb-4">
+                Signed in as {session.user.name}, Here is your status: {status}
+              </p>
+
+              <div className="mb-4 flex flex-row flex-wrap justify-between items-center">
+                <a
+                  href={`/api/auth/signout`}
+                  className="mb-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    signOut();
+                  }}
+                >
+                  Logout
+                </a>
+                <form className="mb-2 grow ml-2 mr-2 flex flex-row">
+                  <input
+                    placeholder="Your entry..."
+                    className="w-full rounded p-2"
+                  ></input>
+                  <button className="ml-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded">
+                    Sign
+                  </button>
+                </form>
+              </div>
             </div>
-          </p>
-        )}
+          )}
+        </div>
       </section>
 
       <section className="mb-8">

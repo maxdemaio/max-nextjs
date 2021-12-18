@@ -3,12 +3,12 @@ import YoutubeStats from '@/components/YoutubeStats';
 import VidDisplayListItem from '@/components/VidDisplayListItem';
 import Link from 'next/link';
 import Image from 'next/image';
-import {shimmer, toBase64} from '@/lib/imageManip';
-import {fetchData} from '@/lib/utils';
-import {useState} from 'react';
+import { shimmer, toBase64 } from '@/lib/imageManip';
+import { fetchData } from '@/lib/utils';
+import { useState } from 'react';
 import CcName from '@/components/CcName';
 
-export default function Videos({stats, videos}) {
+export default function Videos({ stats, videos }) {
   const [searchValue, setSearchValue] = useState('');
   const sortedVids = videos
     .sort((a, b) =>
@@ -118,7 +118,7 @@ export default function Videos({stats, videos}) {
 
 export async function getStaticProps() {
   // Get API keys from env
-  const {YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID} = process.env;
+  const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = process.env;
   const statisticsURL = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`;
   const uploadsURL = `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`;
 
@@ -134,7 +134,7 @@ export async function getStaticProps() {
     };
   }
 
-  const {stats, videos} = await getData();
+  const { stats, videos } = await getData();
 
   return {
     // Refreshes every 24 hours

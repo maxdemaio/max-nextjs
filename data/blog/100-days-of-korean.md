@@ -3,8 +3,6 @@ title: 100DaysOfKorean - 100일 동안 한국어 배우기
 date: '2021-12-18'
 ---
 
-# 100DaysOfKorean - 100일 동안 한국어 배우기
-
 I've always wanted to learn Korean to take my sister who was born in South Korea on a trip there. My goal is to reach a basic level in Korean. This blog contains my language learning progress for 100 days! I'll be using [https://duolingo.com](https://duolingo.com/), [https://www.howtostudykorean.com/](https://www.howtostudykorean.com/), [https://youtube.com](https://youtube.com/), and other resources to help me learn. For more info on the challenge definitely check out my Twitter bot, [thelangbot](https://github.com/maxdemaio/thelangbot). With the help of my Twitter bot and the language learning community I'm hoping to achieve my language goals. 가자!
 
 ---

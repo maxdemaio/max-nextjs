@@ -67,7 +67,7 @@ export default function Guestbook() {
 
         <p className="my-para">Example blahblahblah description</p>
 
-        <div className="p-4 border border-gray-200 rounded w-full dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div className="p-4 border border-gray-200 rounded w-full dark:border-gray-800 bg-gray-100 dark:bg-gray-900">
           <h2 className="my-h2">Sign the Guestbook</h2>
           {!session && (
             <div>

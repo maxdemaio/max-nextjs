@@ -66,16 +66,12 @@ export default NextAuth({
   // https://next-auth.js.org/configuration/callbacks
 
   callbacks: {
-    async jwt({ token, account }) {
-      // Persist the OAuth access_token to the token right after signin
-      if (account) {
-        token.accessToken = account.access_token;
-      }
+    jwt: async ({ token, user, account, profile, isNewUser }) => {
+      user && (token.user = user);
       return token;
     },
-    async session({ session, token, user }) {
-      // Send properties to the client, like an access_token from a provider.
-      session.accessToken = token.accessToken;
+    session: async ({ session, token }) => {
+      session.user = token.user;
       return session;
     },
   },

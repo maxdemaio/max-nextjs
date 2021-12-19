@@ -10,7 +10,7 @@ export default function Guestbook() {
   // add ability to access the session (from _app.js)
   const { data: session, status } = useSession();
   const [entry, setEntry] = useState('');
-
+  console.log('session!');
   console.log(session);
 
   const entries = [
@@ -33,11 +33,7 @@ export default function Guestbook() {
     <div key={entry.id} className="flex flex-col space-y-2">
       <div className="w-full">{entry.content}</div>
       <div className="flex items-center space-x-3">
-        <p className="text-gray-500 dark:text-gray-500">
-          <a href={'https://twitter.com/' + entry.name} className="my-link">
-            {'@' + entry.name}
-          </a>
-        </p>
+        <p className="text-gray-500 dark:text-gray-500">{entry.name}</p>
         <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
         <p className="text-gray-500 dark:text-gray-500">{entry.timestamp}</p>
       </div>
@@ -94,19 +90,15 @@ export default function Guestbook() {
                 </a>
               </div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Your information is only used to display your Twitter handle,
-                Guestbook entry, and time posted.
+                Your information is only used to display your Twitter profile
+                name, Guestbook entry, and time posted.
               </p>
             </div>
           )}
           {session && (
             <div>
               <p className="text-gray-700 dark:text-white mb-4">
-                You're current logged in as{' '}
-                <a href={'https://twitter.com/' + session} className="my-link">
-                  {'@' + session.id}
-                </a>
-                .
+                You're currently logged in as {session.user.name}.
               </p>
 
               <div className="mb-4 flex flex-row flex-wrap justify-between items-center">
@@ -142,8 +134,8 @@ export default function Guestbook() {
                 </form>
               </div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Your information is only used to display your Twitter handle,
-                Guestbook entry, and time posted.
+                Your information is only used to display your Twitter profile
+                name, Guestbook entry, and time posted.
               </p>
             </div>
           )}

@@ -1,9 +1,13 @@
 import NextAuth from 'next-auth';
 import TwitterProvider from 'next-auth/providers/twitter';
+import { PrismaAdapter } from '@next-auth/prisma-adapter';
+import { PrismaClient } from '@prisma/client';
 
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
 export default NextAuth({
+  adapter: PrismaAdapter(prisma),
+
   // https://next-auth.js.org/configuration/providers
   providers: [
     TwitterProvider({

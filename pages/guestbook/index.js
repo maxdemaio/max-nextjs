@@ -4,19 +4,22 @@ import React, { useState } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import prisma from 'lib/prisma';
 import { format } from 'date-fns';
+import useSWR, { useSWRConfig } from 'swr';
 
 import Container from '@/components/Container';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import { shimmer, toBase64 } from '@/lib/imageManip';
 import CcName from '@/components/CcName';
+import fetcher from 'lib/fetcher';
 
 export default function GuestbookPage({ fallbackData }) {
-  // add ability to access the session (from _app.js)
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
   const [inputEl, setInputEl] = useState('');
   const [form, setForm] = useState({ state: 'Initial' });
-
-  const entries = fallbackData;
+  const { mutate } = useSWRConfig();
+  const { data: entries } = useSWR('/api/guestbook', fetcher, {
+    fallbackData,
+  });
 
   const listEntries = entries.map((entry) => (
     <div key={entry.id} className="flex flex-col space-y-2">
@@ -28,9 +31,8 @@ export default function GuestbookPage({ fallbackData }) {
           {format(new Date(entry.updated_at), "d MMM yyyy 'at' h:mm bb")}
         </p>
         <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
-        <button className="text-red-600 dark:text-red-400" onClick="">
-          Delete
-        </button>
+        {/* TODO: add onClick method */}
+        <button className="text-red-600 dark:text-red-400">Delete</button>
       </div>
     </div>
   ));
@@ -59,8 +61,6 @@ export default function GuestbookPage({ fallbackData }) {
     }
 
     setInputEl('');
-
-    // TODO: see what this does lol
     mutate('/api/guestbook');
     setForm({
       state: 'Success',
@@ -112,10 +112,21 @@ export default function GuestbookPage({ fallbackData }) {
                   Log in
                 </a>
               </div>
-              <p className="text-gray-700 dark:text-white mb-4">
-                Your information is only used to display your GitHub profile
-                name, Guestbook entry, and time posted.
-              </p>
+              {/* Based on form state, show message below input box */}
+              {form.state === 'Error' ? (
+                <p className="text-red-700 dark:text-red-400 mb-4">
+                  {form.message}
+                </p>
+              ) : form.state === 'Success' ? (
+                <p className="text-green-700 dark:text-green-400 mb-4">
+                  {form.message}
+                </p>
+              ) : (
+                <p className="text-gray-700 dark:text-white mb-4">
+                  Your information is only used to display your GitHub profile
+                  name, Guestbook entry, and time posted.
+                </p>
+              )}
             </div>
           )}
           {session && (

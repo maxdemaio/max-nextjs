@@ -9,9 +9,9 @@ I've always wanted to learn Korean to take my sister who was born in South Korea
 
 ### Day 1:
 
-**Today's Progress:** Jumped back into Duolingo and received a free year of Duolingo Plus for being a volunteer events host for French!
+**Today's Progress:** I received a free year of Duolingo Plus for being a volunteer events host for French! Jumped into learning the Korean alphabet, Hanguel. Unlike English it's organized into syllable blocks of two to four letters.
 
-**Thoughts:**
+**Thoughts:** Learning how syllable blocks sound how to write them and will be beneficial down the line. Knowing how consonants and vowels sound will be helpful despite edge cases.
 
 ### Day 2:
 

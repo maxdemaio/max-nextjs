@@ -5,37 +5,29 @@ import { shimmer, toBase64 } from '@/lib/imageManip';
 import CcName from '@/components/CcName';
 import React, { useState } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
+import prisma from 'lib/prisma';
+import { format } from 'date-fns';
 
-export default function Guestbook() {
+export default function GuestbookPage({ fallbackData }) {
   // add ability to access the session (from _app.js)
   const { data: session, status } = useSession();
   const [entry, setEntry] = useState('');
-  console.log('session!');
-  console.log(session);
 
-  const entries = [
-    {
-      id: 1,
-      name: 'maxwelldemaio',
-      content: 'great website!',
-      timestamp: '2021-10-06',
-    },
-    {
-      id: 4,
-      name: 'TylerNickerson',
-      content: 'great website again!',
-      timestamp: '2021-11-06',
-    },
-  ];
+  const entries = fallbackData;
 
   const listEntries = entries.map((entry) => (
-    // TODO: abstract into a component
     <div key={entry.id} className="flex flex-col space-y-2">
-      <div className="w-full">{entry.content}</div>
+      <div className="w-full">{entry.body}</div>
       <div className="flex items-center space-x-3">
-        <p className="text-gray-500 dark:text-gray-500">{entry.name}</p>
+        <p className="text-gray-500 dark:text-gray-500">{entry.created_by}</p>
         <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
-        <p className="text-gray-500 dark:text-gray-500">{entry.timestamp}</p>
+        <p className="text-gray-500 dark:text-gray-500">
+          {format(new Date(entry.updated_at), "d MMM yyyy 'at' h:mm bb")}
+        </p>
+        <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
+        <button className="text-red-600 dark:text-red-400" onClick="">
+          Delete
+        </button>
       </div>
     </div>
   ));
@@ -67,7 +59,8 @@ export default function Guestbook() {
         </h1>
 
         <p className="my-para">
-          Feel free to leave an entry in my guestbook below
+          This application allows guests on my website to log in with GitHub and
+          leave an entry for myself and future visitors on the website.
         </p>
 
         <div className="p-4 border border-gray-200 rounded w-full dark:border-gray-800 bg-gray-100 dark:bg-gray-900">
@@ -75,7 +68,9 @@ export default function Guestbook() {
           {!session && (
             <div>
               <p className="text-gray-700 dark:text-white mb-4">
-                You're currently not logged in yet.
+                Feel free to leave an entry in the guestbook! It could be
+                anything – appreciation, information, wisdom, or even humor.
+                Surprise me!
               </p>
               <div className="mb-4 flex flex-row justify-between items-center">
                 <a
@@ -86,11 +81,11 @@ export default function Guestbook() {
                     signIn();
                   }}
                 >
-                  Login
+                  Log in
                 </a>
               </div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Your information is only used to display your Twitter profile
+                Your information is only used to display your GitHub profile
                 name, Guestbook entry, and time posted.
               </p>
             </div>
@@ -98,13 +93,15 @@ export default function Guestbook() {
           {session && (
             <div>
               <p className="text-gray-700 dark:text-white mb-4">
-                You're currently logged in as {session.user.name}.
+                Feel free to leave an entry in the guestbook! It could be
+                anything – appreciation, information, wisdom, or even humor.
+                Surprise me!
               </p>
 
               <div className="mb-4 flex flex-row flex-wrap justify-between items-center">
                 <a
                   href={`/api/auth/signout`}
-                  className="mb-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
+                  className="mb-2 mr-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
                   onClick={(e) => {
                     e.preventDefault();
                     signOut();
@@ -114,7 +111,7 @@ export default function Guestbook() {
                 </a>
                 <form
                   onSubmit={leaveEntry}
-                  className="mb-2 grow ml-2 mr-2 flex flex-row"
+                  className="mb-2 grow mr-2 flex flex-row"
                 >
                   <input
                     value={entry}
@@ -134,7 +131,7 @@ export default function Guestbook() {
                 </form>
               </div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Your information is only used to display your Twitter profile
+                Your information is only used to display your GitHub profile
                 name, Guestbook entry, and time posted.
               </p>
             </div>
@@ -166,4 +163,26 @@ export default function Guestbook() {
       </footer>
     </Container>
   );
+}
+
+export async function getStaticProps() {
+  const entries = await prisma.guestbook.findMany({
+    orderBy: {
+      updated_at: 'desc',
+    },
+  });
+
+  const fallbackData = entries.map((entry) => ({
+    id: entry.id.toString(),
+    body: entry.body,
+    created_by: entry.created_by.toString(),
+    updated_at: entry.updated_at.toString(),
+  }));
+
+  return {
+    props: {
+      fallbackData,
+    },
+    revalidate: 60,
+  };
 }

@@ -1,17 +1,20 @@
-import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
-import { shimmer, toBase64 } from '@/lib/imageManip';
-import CcName from '@/components/CcName';
 import React, { useState } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import prisma from 'lib/prisma';
 import { format } from 'date-fns';
 
+import Container from '@/components/Container';
+import LoadingSpinner from '@/components/LoadingSpinner';
+import { shimmer, toBase64 } from '@/lib/imageManip';
+import CcName from '@/components/CcName';
+
 export default function GuestbookPage({ fallbackData }) {
   // add ability to access the session (from _app.js)
   const { data: session, status } = useSession();
-  const [entry, setEntry] = useState('');
+  const [inputEl, setInputEl] = useState('');
+  const [form, setForm] = useState({ state: 'Initial' });
 
   const entries = fallbackData;
 
@@ -32,12 +35,37 @@ export default function GuestbookPage({ fallbackData }) {
     </div>
   ));
 
-  const leaveEntry = (e) => {
-    // prevent default action of form to refresh page
+  const leaveEntry = async (e) => {
     e.preventDefault();
-    console.log(entry);
+    setForm({ state: 'Loading' });
 
-    return;
+    const res = await fetch('/api/guestbook', {
+      body: JSON.stringify({
+        body: inputEl,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      setForm({
+        state: 'Error',
+        message: error,
+      });
+      return;
+    }
+
+    setInputEl('');
+
+    // TODO: see what this does lol
+    mutate('/api/guestbook');
+    setForm({
+      state: 'Success',
+      message: `Sweet! Thanks for signing my Guestbook.`,
+    });
   };
 
   return (
@@ -114,8 +142,8 @@ export default function GuestbookPage({ fallbackData }) {
                   className="mb-2 grow mr-2 flex flex-row"
                 >
                   <input
-                    value={entry}
-                    onChange={(e) => setEntry(e.target.value)}
+                    value={inputEl}
+                    onChange={(e) => setInputEl(e.target.value)}
                     type="text"
                     required
                     placeholder="Your entry..."
@@ -125,8 +153,8 @@ export default function GuestbookPage({ fallbackData }) {
                     type="submit"
                     className="ml-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded"
                   >
-                    {/* TODO: add ternary here if loading show spinner if not show 'Sign' */}
-                    Sign
+                    {/* Ternary if loading show spinner if not show 'Sign' */}
+                    {form.state === 'Loading' ? <LoadingSpinner /> : 'Sign'}
                   </button>
                 </form>
               </div>

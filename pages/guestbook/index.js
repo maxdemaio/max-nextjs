@@ -132,9 +132,9 @@ export default function GuestbookPage({ fallbackData }) {
           {session && (
             <div>
               <p className="text-gray-700 dark:text-white mb-4">
-                Feel free to leave an entry in the guestbook! It could be
-                anything – appreciation, information, wisdom, or even humor.
-                Surprise me!
+                Logged in as {session.user.name}. Feel free to leave an entry in
+                the guestbook! It could be anything – appreciation, information,
+                wisdom, or even humor. Surprise me!
               </p>
 
               <div className="mb-4 flex flex-row flex-wrap justify-between items-center">

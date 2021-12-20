@@ -3,7 +3,7 @@ title: 100DaysOfKorean - 100일 동안 한국어 배우기
 date: '2021-12-18'
 ---
 
-I've always wanted to learn Korean to take my sister who was born in South Korea on a trip there. My goal is to reach a basic level in Korean. This blog contains my language learning progress for 100 days! I'll be using [https://duolingo.com](https://duolingo.com/), [https://www.howtostudykorean.com/](https://www.howtostudykorean.com/), [https://youtube.com](https://youtube.com/), and other resources to help me learn. For more info on the challenge definitely check out my Twitter bot, [thelangbot](https://github.com/maxdemaio/thelangbot). With the help of my Twitter bot and the language learning community I'm hoping to achieve my language goals. 가자!
+I've always wanted to learn Korean to take my sister who was born in South Korea on a trip there. My goal is to reach a basic level in Korean. This blog contains my language learning progress for 100 days! I'll be using [https://duolingo.com](https://duolingo.com/), [https://youtube.com](https://youtube.com/), and other resources to help me learn. For more info on the challenge definitely check out my Twitter bot, [thelangbot](https://github.com/maxdemaio/thelangbot). With the help of my Twitter bot and the language learning community I'm hoping to achieve my language goals. 가자!
 
 ---
 
@@ -15,9 +15,9 @@ I've always wanted to learn Korean to take my sister who was born in South Korea
 
 ### Day 2:
 
-**Today's Progress:**
+**Today's Progress:** Studied Duolingo's "basics 1" course and a little bit of "basics 2". Found a sweet playist with 100 videos to learn Korean, 멋있습니다! [Billy Go’s Beginner Korean Course](https://www.youtube.com/watch?v=sx0yyQqkpqo&list=PLbFrQnW0BNMUkAFj4MjYauXBPtO3I9O_k).
 
-**Thoughts:**
+**Thoughts:** Before moving on in the Duolingo tree I'm going to try and make the skill/course at least golden or legendary. Will keep taking notes and watching the videos day by day.
 
 ### Day 3:
 

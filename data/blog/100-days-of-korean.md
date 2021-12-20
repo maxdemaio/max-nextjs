@@ -15,7 +15,7 @@ I've always wanted to learn Korean to take my sister who was born in South Korea
 
 ### Day 2:
 
-**Today's Progress:** Studied Duolingo's "basics 1" course and a little bit of "basics 2". Found a sweet playist with 100 videos to learn Korean, 멋있습니다! [Billy Go’s Beginner Korean Course](https://www.youtube.com/watch?v=sx0yyQqkpqo&list=PLbFrQnW0BNMUkAFj4MjYauXBPtO3I9O_k).
+**Today's Progress:** Studied Duolingo's "basics 1" course and a little bit of "basics 2". Found a sweet playlist with 100 videos to learn Korean, 멋있습니다! [Billy Go’s Beginner Korean Course](https://www.youtube.com/watch?v=sx0yyQqkpqo&list=PLbFrQnW0BNMUkAFj4MjYauXBPtO3I9O_k).
 
 **Thoughts:** Before moving on in the Duolingo tree I'm going to try and make the skill/course at least golden or legendary. Will keep taking notes and watching the videos day by day.
 

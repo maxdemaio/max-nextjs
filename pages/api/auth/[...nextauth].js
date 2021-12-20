@@ -4,6 +4,7 @@ import GithubProvider from 'next-auth/providers/github';
 // https://next-auth.js.org/configuration/options
 export default NextAuth({
   secret: process.env.SECRET,
+
   // https://next-auth.js.org/configuration/providers
   providers: [
     GithubProvider({
@@ -11,6 +12,12 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
+
+  callbacks: {
+    redirect: async (url, baseUrl) => {
+      return Promise.resolve(url);
+    },
+  },
 
   // Enable debug messages in the console if you are having problems
   debug: false,

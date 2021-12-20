@@ -5,6 +5,7 @@
 .env
 /data/blogDrafts/
 /docker/docker-compose.yaml
+/cypress/screenshots/
 
 # dependencies
 /node_modules

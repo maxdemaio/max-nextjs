@@ -1,7 +1,7 @@
 import Container from '@/components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
-import {shimmer, toBase64} from '@/lib/imageManip';
+import { shimmer, toBase64 } from '@/lib/imageManip';
 import CcName from '@/components/CcName';
 
 export default function Software() {
@@ -14,18 +14,15 @@ export default function Software() {
             className="my-svg-header"
             width="1em"
             height="1em"
-            viewBox="0 0 32 32"
+            viewBox="0 0 24 24"
           >
+            <path d="M24 8H16V0H24V8ZM18 6H22V2H18V6Z" fill="currentColor" />
             <path
-              d="M28 12H20V4H28V12ZM22 10H26V6H22V10Z"
+              d="M13 11V5H5V19H19V11H13ZM7 7H11V11H7V7ZM11 17H7V13H11V17ZM17 17H13V13H17V17Z"
               fill="currentColor"
             />
             <path
-              d="M17 15V9H9V23H23V15H17ZM11 11H15V15H11V11ZM15 21H11V17H15V21ZM21 21H17V17H21V21Z"
-              fill="currentColor"
-            />
-            <path
-              d="M26 28H6C5.46973 27.9995 4.96133 27.7886 4.58637 27.4136C4.21141 27.0387 4.00053 26.5303 4 26V6C4.00053 5.46973 4.21141 4.96133 4.58637 4.58637C4.96133 4.21141 5.46973 4.00053 6 4H16V6H6V26H26V16H28V26C27.9995 26.5303 27.7886 27.0387 27.4136 27.4136C27.0387 27.7886 26.5303 27.9995 26 28Z"
+              d="M22 24H2C1.46973 23.9995 0.961329 23.7886 0.586371 23.4136C0.211413 23.0387 0.000529477 22.5303 0 22V2C0.000529477 1.46973 0.211413 0.961329 0.586371 0.586371C0.961329 0.211413 1.46973 0.000529477 2 0H12V2H2V22H22V12H24V22C23.9995 22.5303 23.7886 23.0387 23.4136 23.4136C23.0387 23.7886 22.5303 23.9995 22 24Z"
               fill="currentColor"
             />
           </svg>

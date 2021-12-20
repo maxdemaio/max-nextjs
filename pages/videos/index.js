@@ -3,12 +3,12 @@ import YoutubeStats from '@/components/YoutubeStats';
 import VidDisplayListItem from '@/components/VidDisplayListItem';
 import Link from 'next/link';
 import Image from 'next/image';
-import {shimmer, toBase64} from '@/lib/imageManip';
-import {fetchData} from '@/lib/utils';
-import {useState} from 'react';
+import { shimmer, toBase64 } from '@/lib/imageManip';
+import { fetchData } from '@/lib/utils';
+import { useState } from 'react';
 import CcName from '@/components/CcName';
 
-export default function Videos({stats, videos}) {
+export default function Videos({ stats, videos }) {
   const [searchValue, setSearchValue] = useState('');
   const sortedVids = videos
     .sort((a, b) =>
@@ -31,14 +31,14 @@ export default function Videos({stats, videos}) {
               className="my-svg-header"
               width="1em"
               height="1em"
-              viewBox="0 0 32 32"
+              viewBox="0 0 20 28"
             >
               <path
-                d="M25.7 9.3L18.7 2.3C18.5 2.1 18.3 2 18 2H8C6.9 2 6 2.9 6 4V28C6 29.1 6.9 30 8 30H24C25.1 30 26 29.1 26 28V10C26 9.7 25.9 9.5 25.7 9.3ZM18 4.4L23.6 10H18V4.4ZM24 28H8V4H16V10C16 11.1 16.9 12 18 12H24V28Z"
+                d="M19.7 7.3L12.7 0.3C12.5 0.0999999 12.3 0 12 0H2C0.9 0 0 0.9 0 2V26C0 27.1 0.9 28 2 28H18C19.1 28 20 27.1 20 26V8C20 7.7 19.9 7.5 19.7 7.3ZM12 2.4L17.6 8H12V2.4ZM18 26H2V2H10V8C10 9.1 10.9 10 12 10H18V26Z"
                 fill="currentColor"
               />
-              <path d="M10 22H22V24H10V22Z" fill="currentColor" />
-              <path d="M10 16H22V18H10V16Z" fill="currentColor" />
+              <path d="M4 20H16V22H4V20Z" fill="currentColor" />
+              <path d="M4 14H16V16H4V14Z" fill="currentColor" />
             </svg>
           </a>
         </Link>
@@ -47,16 +47,23 @@ export default function Videos({stats, videos}) {
           className="my-svg-header"
           width="1em"
           height="1em"
-          viewBox="0 0 32 32"
+          viewBox="0 0 24 28"
         >
-          <path
-            d="M30 19L26 22.2V20C25.9995 19.4697 25.7886 18.9613 25.4136 18.5864C25.0387 18.2114 24.5303 18.0005 24 18H16C15.4697 18.0005 14.9613 18.2114 14.5864 18.5864C14.2114 18.9613 14.0005 19.4697 14 20V26C14.0005 26.5303 14.2114 27.0387 14.5864 27.4136C14.9613 27.7886 15.4697 27.9995 16 28H24C24.5303 27.9995 25.0387 27.7886 25.4136 27.4136C25.7886 27.0387 25.9995 26.5303 26 26V23.8L30 27V19ZM16 26V20H24L24.002 26H16Z"
-            fill="currentColor"
-          />
-          <path
-            d="M12 28H8V4H16V10C16.0016 10.53 16.2128 11.0377 16.5875 11.4125C16.9623 11.7872 17.4701 11.9984 18 12H24V15H26V10C26.0035 9.86858 25.9785 9.73795 25.9268 9.61711C25.875 9.49627 25.7976 9.38809 25.7 9.3L18.7 2.3C18.612 2.20235 18.5038 2.12495 18.3829 2.07316C18.2621 2.02137 18.1314 1.99641 18 2H8C7.47005 2.00159 6.96227 2.21281 6.58753 2.58754C6.2128 2.96227 6.00158 3.47006 6 4V28C6.00158 28.53 6.2128 29.0377 6.58753 29.4125C6.96227 29.7872 7.47005 29.9984 8 30H12V28ZM18 4.4L23.6 10H18V4.4Z"
-            fill="currentColor"
-          />
+          <g clipPath="url(#clip0_1512_7)">
+            <path
+              d="M24 17.0003L20 20.2003V18.0003C19.9995 17.4701 19.7886 16.9617 19.4136 16.5867C19.0387 16.2117 18.5303 16.0009 18 16.0003H10C9.46973 16.0009 8.96133 16.2117 8.58637 16.5867C8.21141 16.9617 8.00053 17.4701 8 18.0003V24.0003C8.00053 24.5306 8.21141 25.039 8.58637 25.414C8.96133 25.7889 9.46973 25.9998 10 26.0003H18C18.5303 25.9998 19.0387 25.7889 19.4136 25.414C19.7886 25.039 19.9995 24.5306 20 24.0003V21.8003L24 25.0003V17.0003ZM10 24.0003V18.0003H18L18.002 24.0003H10Z"
+              fill="currentColor"
+            />
+            <path
+              d="M6 26.0003H2V2.00034H10V8.00034C10.0016 8.53029 10.2128 9.03808 10.5875 9.41281C10.9623 9.78754 11.4701 9.99876 12 10.0003H18V13.0003H20V8.00034C20.0035 7.86892 19.9785 7.73829 19.9268 7.61745C19.875 7.49661 19.7976 7.38842 19.7 7.30034L12.7 0.30034C12.612 0.202685 12.5038 0.12529 12.3829 0.0734971C12.2621 0.0217038 12.1314 -0.00325583 12 0.00034004H2C1.47005 0.00192277 0.962265 0.213145 0.587535 0.587875C0.212805 0.962605 0.00158273 1.47039 0 2.00034V26.0003C0.00158273 26.5303 0.212805 27.0381 0.587535 27.4128C0.962265 27.7875 1.47005 27.9988 2 28.0003H6V26.0003ZM12 2.40034L17.6 8.00034H12V2.40034Z"
+              fill="currentColor"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_1512_7">
+              <rect width="24" height="28.0003" fill="currentColor" />
+            </clipPath>
+          </defs>
         </svg>
       </h1>
 
@@ -118,7 +125,7 @@ export default function Videos({stats, videos}) {
 
 export async function getStaticProps() {
   // Get API keys from env
-  const {YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID} = process.env;
+  const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = process.env;
   const statisticsURL = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`;
   const uploadsURL = `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`;
 
@@ -134,7 +141,7 @@ export async function getStaticProps() {
     };
   }
 
-  const {stats, videos} = await getData();
+  const { stats, videos } = await getData();
 
   return {
     // Refreshes every 24 hours

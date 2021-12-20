@@ -4,7 +4,8 @@
 /cypress/videos/
 .env
 /data/blogDrafts/
-docker-compose.yaml
+/docker/docker-compose.yaml
+/cypress/screenshots/
 
 # dependencies
 /node_modules

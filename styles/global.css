@@ -7,15 +7,16 @@ common utility patterns to CSS component classes.
 This essentially allows us to make our own tailwind-like classNames. */
 .my-svg-header {
   display: inline;
-  vertical-align: sub;
+  vertical-align: -0.15em;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+
 .my-h1 {
-  @apply font-bold text-3xl md:text-5xl tracking-tight mb-8 text-black dark:text-white;
+  @apply font-bold text-4xl md:text-5xl tracking-tight mb-8 text-black dark:text-white;
 }
 .my-h2 {
-  @apply font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white;
+  @apply font-bold text-3xl md:text-4xl tracking-tight mb-8 mt-8 text-black dark:text-white;
 }
 .my-para {
   @apply text-gray-700 dark:text-gray-400 mb-8;
@@ -25,6 +26,14 @@ This essentially allows us to make our own tailwind-like classNames. */
 }
 .prose a {
   @apply underline text-blue-400 hover:text-blue-600;
+}
+
+/* On screens that are 767px wide or less
+make the text menu links disappear */
+@media screen and (max-width: 767px) {
+  .nav-no-show {
+    display: none;
+  }
 }
 
 html {

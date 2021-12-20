@@ -1,4 +1,4 @@
-import React, { useState, useRouter } from 'react';
+import React, { useState } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { format } from 'date-fns';
 import useSWR, { useSWRConfig } from 'swr';
@@ -51,7 +51,6 @@ export default function Guestbook({ fallbackData }) {
   const { data: session } = useSession();
   const [inputEl, setInputEl] = useState('');
   const [form, setForm] = useState({ state: 'Initial' });
-  const router = useRouter();
 
   const { mutate } = useSWRConfig();
   const { data: entries } = useSWR('/api/guestbook', fetcher, {
@@ -105,7 +104,7 @@ export default function Guestbook({ fallbackData }) {
                 className="mb-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
                 onClick={(e) => {
                   e.preventDefault();
-                  signIn('github', { callbackUrl: router.query.callbackUrl });
+                  signIn('github');
                 }}
               >
                 Log in
@@ -131,7 +130,7 @@ export default function Guestbook({ fallbackData }) {
                 className="mb-2 mr-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
                 onClick={(e) => {
                   e.preventDefault();
-                  signOut('github', { callbackUrl: router.query.callbackUrl });
+                  signOut('github');
                 }}
               >
                 Logout

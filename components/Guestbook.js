@@ -52,11 +52,9 @@ export default function Guestbook({ fallbackData }) {
   const [inputEl, setInputEl] = useState('');
   const [form, setForm] = useState({ state: 'Initial' });
 
-  // Workaround for redirect not working
-  let redirectUrl = 'https://maxdemaio.com';
   useEffect(() => {
     const url = window.location.href;
-    redirectUrl = url.searchParams.get('callbackUrl');
+    redirectUrl = url;
   });
 
   const { mutate } = useSWRConfig();

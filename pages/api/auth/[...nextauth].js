@@ -13,12 +13,6 @@ export default NextAuth({
     }),
   ],
 
-  callbacks: {
-    redirect: async (url, baseUrl) => {
-      return Promise.resolve(url);
-    },
-  },
-
   // Enable debug messages in the console if you are having problems
   debug: false,
 });

@@ -29,16 +29,19 @@ function GuestbookEntry({ entry, user }) {
         <p className="text-gray-500 dark:text-gray-500">
           {format(new Date(entry.updated_at), "d MMM yyyy 'at' h:mm bb")}
         </p>
-
-        <span className="text-center text-sm text-gray-300 dark:text-gray-700">
-          x
-        </span>
-        <button
-          className="text-red-600 dark:text-red-400"
-          onClick={deleteEntry}
-        >
-          Delete
-        </button>
+        {user && entry.created_by === user.name && (
+          <>
+            <span className="text-center text-sm text-gray-300 dark:text-gray-700">
+              x
+            </span>
+            <button
+              className="text-red-600 dark:text-red-400"
+              onClick={deleteEntry}
+            >
+              Delete
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

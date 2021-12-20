@@ -104,7 +104,9 @@ export default function Guestbook({ fallbackData }) {
                 className="mb-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
                 onClick={(e) => {
                   e.preventDefault();
-                  signIn('github');
+                  signIn('github', {
+                    callbackUrl: window.location.href,
+                  });
                 }}
               >
                 Log in
@@ -130,7 +132,9 @@ export default function Guestbook({ fallbackData }) {
                 className="mb-2 mr-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded-full"
                 onClick={(e) => {
                   e.preventDefault();
-                  signOut('github');
+                  signOut('github', {
+                    callbackUrl: window.location.href,
+                  });
                 }}
               >
                 Logout

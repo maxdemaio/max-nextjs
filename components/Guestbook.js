@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { format } from 'date-fns';
 import useSWR, { useSWRConfig } from 'swr';
@@ -51,6 +51,13 @@ export default function Guestbook({ fallbackData }) {
   const { data: session } = useSession();
   const [inputEl, setInputEl] = useState('');
   const [form, setForm] = useState({ state: 'Initial' });
+
+  // Workaround for redirect not working
+  let redirectUrl = 'https://maxdemaio.com';
+  useEffect(() => {
+    const url = window.location.href;
+    redirectUrl = url.searchParams.get('callbackUrl');
+  });
 
   const { mutate } = useSWRConfig();
   const { data: entries } = useSWR('/api/guestbook', fetcher, {
@@ -105,7 +112,7 @@ export default function Guestbook({ fallbackData }) {
                 onClick={(e) => {
                   e.preventDefault();
                   signIn('github', {
-                    callbackUrl: window.location.href,
+                    callbackUrl: redirectUrl,
                   });
                 }}
               >
@@ -133,7 +140,7 @@ export default function Guestbook({ fallbackData }) {
                 onClick={(e) => {
                   e.preventDefault();
                   signOut('github', {
-                    callbackUrl: window.location.href,
+                    callbackUrl: redirectUrl,
                   });
                 }}
               >

@@ -19,25 +19,26 @@ function GuestbookEntry({ entry, user }) {
   };
 
   return (
-    <div key={entry.id} className="flex flex-col space-y-2">
-      <div className="w-full">{entry.body}</div>
+    <div key={entry.id}>
+      <div className="mb-2">{entry.body}</div>
       <div className="flex items-center space-x-3">
         <p className="text-gray-500 dark:text-gray-500">{entry.created_by}</p>
-        <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
+        <span className="text-center text-sm text-gray-300 dark:text-gray-700">
+          x
+        </span>
         <p className="text-gray-500 dark:text-gray-500">
           {format(new Date(entry.updated_at), "d MMM yyyy 'at' h:mm bb")}
         </p>
-        {user && entry.created_by === user.name && (
-          <>
-            <span className="text-sm text-gray-300 dark:text-gray-700">x</span>
-            <button
-              className="text-red-600 dark:text-red-400"
-              onClick={deleteEntry}
-            >
-              Delete
-            </button>
-          </>
-        )}
+
+        <span className="text-center text-sm text-gray-300 dark:text-gray-700">
+          x
+        </span>
+        <button
+          className="text-red-600 dark:text-red-400"
+          onClick={deleteEntry}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );
@@ -170,9 +171,9 @@ export default function Guestbook({ fallbackData }) {
         )}
       </div>
 
-      <section className="mb-8">
+      <section className="mb-8 w-full">
         <h2 className="my-h2">Entries</h2>
-        <div className="mt-4 space-y-8">
+        <div className="space-y-8">
           {entries?.map((entry) => (
             <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />
           ))}

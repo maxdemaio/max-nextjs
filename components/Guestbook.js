@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { format } from 'date-fns';
 import useSWR, { useSWRConfig } from 'swr';
@@ -51,11 +51,6 @@ export default function Guestbook({ fallbackData }) {
   const { data: session } = useSession();
   const [inputEl, setInputEl] = useState('');
   const [form, setForm] = useState({ state: 'Initial' });
-
-  useEffect(() => {
-    const url = window.location.href;
-    redirectUrl = url;
-  });
 
   const { mutate } = useSWRConfig();
   const { data: entries } = useSWR('/api/guestbook', fetcher, {
@@ -110,7 +105,7 @@ export default function Guestbook({ fallbackData }) {
                 onClick={(e) => {
                   e.preventDefault();
                   signIn('github', {
-                    callbackUrl: redirectUrl,
+                    callbackUrl: 'https://maxdemaio.com/guestbook',
                   });
                 }}
               >
@@ -138,7 +133,7 @@ export default function Guestbook({ fallbackData }) {
                 onClick={(e) => {
                   e.preventDefault();
                   signOut('github', {
-                    callbackUrl: redirectUrl,
+                    callbackUrl: 'https://maxdemaio.com/guestbook',
                   });
                 }}
               >

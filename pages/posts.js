@@ -1,4 +1,4 @@
-import { getSortedPostsData } from '../../lib/posts';
+import { getSortedPostsData } from '../lib/posts';
 import DateComp from '@/components/DateComp';
 import Container from '@/components/Container';
 import Link from 'next/link';

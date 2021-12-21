@@ -110,8 +110,7 @@ export default function Software() {
             SQL.
           </li>
           <li>
-            <strong>Tools:</strong> Git, GitHub Actions, Docker, Postman, Figma,
-            GIMP, Visual Studio Code, and Eclipse.
+            <strong>Tools:</strong> Git, GitHub Actions, Docker, Postman, Figma, Yarn/NPM, Prettier/ESLint, Visual Studio Code, and Eclipse.
           </li>
         </ul>
       </section>

@@ -63,6 +63,9 @@ module.exports = {
             'pre code': false,
             'code::before': false,
             'code::after': false,
+            th: {
+              color: theme('colors.gray.700'),
+            },
             color: theme('colors.gray.700'),
             a: false,
             'h2,h3,h4': {
@@ -76,6 +79,9 @@ module.exports = {
         // Here we specify what happens on darkmode shift in prose
         dark: {
           css: {
+            th: {
+              color: theme('colors.gray.300'),
+            },
             color: theme('colors.gray.300'),
             a: false,
             blockquote: {

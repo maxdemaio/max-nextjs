@@ -1,13 +1,15 @@
-import {getAllPostIds, getPostData} from '@/lib/posts';
-import DateComp from '@/components/DateComp';
-import Container from '@/components/Container';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import CcName from '@/components/CcName';
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import {tomorrow} from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import remarkGfm from 'remark-gfm';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-export async function getStaticProps({params}) {
+import { getAllPostIds, getPostData } from '@/lib/posts';
+import DateComp from '@/components/DateComp';
+import Container from '@/components/Container';
+import CcName from '@/components/CcName';
+
+export async function getStaticProps({ params }) {
   // We added the async keyword to getPostData in lib/posts.js
   // We need to use await for remark
   // Async/await allows us to fetch data asynchronously.
@@ -27,7 +29,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({postData}) {
+export default function Post({ postData }) {
   const blogTitle = 'max overflow';
 
   const moveToTop = () => {
@@ -48,9 +50,10 @@ export default function Post({postData}) {
         <div className="prose prose-lg dark:prose-dark max-w-none w-full">
           {/* Blog post content */}
           <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
             children={postData.html}
             components={{
-              code({node, inline, className, children, ...props}) {
+              code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || '');
                 return !inline && match ? (
                   <SyntaxHighlighter

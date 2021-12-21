@@ -9,7 +9,7 @@ I've always wanted to learn Korean to take my sister who was born in South Korea
 
 ### Day 1:
 
-**Today's Progress:** I received a free year of Duolingo Plus for being a volunteer events host for French! Jumped into learning the Korean alphabet, Hanguel. Unlike English it's organized into syllable blocks of two to four letters.
+**Today's Progress:** I received a free year of Duolingo Plus for being a volunteer events host for French! Jumped into learning the Korean alphabet, 한글. Unlike English it's organized into syllable blocks of two to four letters.
 
 **Thoughts:** Learning how syllable blocks sound how to write them and will be beneficial down the line. Knowing how consonants and vowels sound will be helpful despite edge cases.
 
@@ -21,7 +21,29 @@ I've always wanted to learn Korean to take my sister who was born in South Korea
 
 ### Day 3:
 
-**Today's Progress:**
+**Today's Progress:** Practiced more of Duolingo's "basics 1" and "basics 2" course. Watched the 3rd video of Billy Go's series as well. I learned that Korean has a set of basic verbs that indicate existence. Two of the most common are 있다 and 없다:
+
+| Korean               | English                                     |
+| -------------------- | ------------------------------------------- |
+| 있다                 | there is/to exist/to be located             |
+| 없다                 | there is not/to not exist/to not be located |
+| 빵이 있습니다.       | There is bread.                             |
+| 빵이 없습니다.       | There is no bread.                          |
+| 제가 공원에 있습니다 | I am in the park                            |
+
+These two verbs also translate to "to have". The basic sentence is similar to the ones above, with the item marked with 이/가, the owner marked with 은/는. Locations are marked with 에.
+
+| Korean              | English              |
+| ------------------- | -------------------- |
+| 저는 차가 있습니다. | I have a car.        |
+| 저는 차가 없습니다. | I do not have a car. |
+
+You can even use 있다 and 없다 to form adjectives:
+
+| Korean | English                              |
+| ------ | ------------------------------------ |
+| 맛있다 | delicious/tasty (for food)           |
+| 맛없다 | not delicious, disgusting (for food) |
 
 **Thoughts:**
 

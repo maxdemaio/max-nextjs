@@ -3,7 +3,7 @@
 # personal
 /cypress/videos/
 .env
-/data/blogDrafts/
+/data/blog/drafts/
 /docker/docker-compose.yaml
 /cypress/screenshots/
 

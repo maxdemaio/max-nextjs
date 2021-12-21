@@ -45,7 +45,7 @@ You can even use 있다 and 없다 to form adjectives:
 | 맛있다 | delicious/tasty (for food)           |
 | 맛없다 | not delicious, disgusting (for food) |
 
-**Thoughts:**
+**Thoughts:** Starting to get the hang of using these sets of verbs for their meanings. Definitely need a refresher on vocabulary. More letters of 한글 learned!
 
 ### Day 4:
 

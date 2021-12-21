@@ -4,7 +4,6 @@ import VidDisplayListItem from '@/components/VidDisplayListItem';
 import Link from 'next/link';
 import Image from 'next/image';
 import { shimmer, toBase64 } from '@/lib/imageManip';
-import { fetchData } from '@/lib/utils';
 import { useState } from 'react';
 import CcName from '@/components/CcName';
 
@@ -124,31 +123,33 @@ export default function Videos({ stats, videos }) {
 }
 
 export async function getStaticProps() {
-  // Get API keys from env
-  const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = process.env;
-  const statisticsURL = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`;
-  const uploadsURL = `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`;
-
-  // Make two calls to the Google YouTube API
+  // Make two parallel calls to the Google YouTube API
   // Fetch stats and video upload data
-  async function getData() {
-    const statsData = fetchData(statisticsURL);
-    const uploadsData = fetchData(uploadsURL);
+  const fetchStatsAndUploads = async () => {
+    // Get API keys from env
+    const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = process.env;
 
-    return {
-      stats: await statsData,
-      videos: await uploadsData,
-    };
-  }
+    const [statsResponse, uploadsResponse] = await Promise.all([
+      fetch(
+        `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`
+      ),
+      fetch(
+        `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`
+      ),
+    ]);
+    const stats = await statsResponse.json();
+    const uploads = await uploadsResponse.json();
+    return [stats, uploads];
+  };
 
-  const { stats, videos } = await getData();
+  const data = await fetchStatsAndUploads();
 
   return {
     // Refreshes every 24 hours
     revalidate: 86400,
     props: {
-      stats: stats.items[0].statistics,
-      videos: videos.items,
+      stats: data[0].items[0].statistics,
+      videos: data[1].items,
     },
   };
 }

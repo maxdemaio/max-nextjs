@@ -41,7 +41,37 @@ Boolean identities relate to mathematics. For example, a + b = b + a. similarly 
 
 We can now apply these identities to boolean algebra to rearrange and rewrite expressions by laws. For example, Not(Not(x) And Not(x Or y)) = x Or y.
 
-## Boolean Functions
+### Boolean Functions
+
+Any boolean function can be represented using an expression only using the operations And, Or, and Not. This is thanks to the finite world of boolean algebra. In fact, you can represent any expression using only And and Not operations.
+
+**Proof (de morgan law):**
+
+(x Or y) = Not(Not(x) And Not(y))
+
+There is one operation that suffices to represent any expression, Nand. (x Nand y) = Not(x And y). It is the negation of x And y.
+
+| a   | b   | Nand |
+| --- | --- | ---- |
+| 0   | 0   | 1    |
+| 0   | 1   | 1    |
+| 1   | 0   | 1    |
+| 1   | 1   | 0    |
+
+**Proof:**
+
+If you can do Not and And, you can do everything. We can see that Not(x) = (x Nand x) and (x And y) = Not(x Nand y).
+
+### Logic Gates
+
+A logic gate is a technique to implement boolean functions. Can be used interchangeably with "chips" because we're talking about physical devices that implement boolean functions. Examples can be elementary like Nand, And, Or etc. or composite like Mux, Adder, and more. Here I show an And and a three way And:
+
+**put and svgs here**
+**put three way and which is composite here**
+
+We see only the inputs and outputs and not the implementation. If you wanted to briefly understand it, you'd take a look at the documentation/interface/abstraction of the chip. The implementation is the "how" and the interface is the "what". Think of chips as APIs where you could pass a request body and receive a response based on the chip's inner functions (business logic).
+
+...
 
 The art of logic design can be broken down into doing the most with the least amount possible. Let's take for example the Xor function:
 

@@ -49,7 +49,11 @@ You can even use 있다 and 없다 to form adjectives:
 
 ### Day 4:
 
-**Today's Progress:**
+**Today's Progress:** 예, 안녕하세요! There are two words for thank you, 고맙다 and 감사하다. 감사하다, a Sino-Korean word and has a more formal connotation. 고맙다 is a native Korean word which is less formal.
+
+죄송하다 is a formal form of an apology. 실례하다 is a small apology like when you're trying to get past someone politely.
+
+Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have met."
 
 **Thoughts:**
 

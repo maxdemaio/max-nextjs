@@ -71,6 +71,12 @@ A logic gate is a technique to implement boolean functions. Can be used intercha
 
 We see only the inputs and outputs and not the implementation. If you wanted to briefly understand it, you'd take a look at the documentation/interface/abstraction of the chip. The implementation is the "how" and the interface is the "what". Think of chips as APIs where you could pass a request body and receive a response based on the chip's inner functions (business logic).
 
+Circuit implementations can realize these gates with electricity. The light bulb in a circuit being on/off would represent the output of a gate.
+
+![And Circuit Diagram](/static/images/nand-tetris/and-circuit.png)
+
+However, I will not be diving into physical implementations since that would be more aligned with electrical engineering and physics than computer science.
+
 ...
 
 The art of logic design can be broken down into doing the most with the least amount possible. Let's take for example the Xor function:

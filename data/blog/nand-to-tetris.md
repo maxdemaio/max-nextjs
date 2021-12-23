@@ -69,13 +69,17 @@ A logic gate is a technique to implement boolean functions. Can be used intercha
 **put and svgs here**
 **put three way and which is composite here**
 
-We see only the inputs and outputs and not the implementation. If you wanted to briefly understand it, you'd take a look at the documentation/interface/abstraction of the chip. The implementation is the "how" and the interface is the "what". Think of chips as APIs where you could pass a request body and receive a response based on the chip's inner functions (business logic).
+We see only the inputs and outputs and not the implementation. If you wanted to briefly understand it, you'd take a look at the documentation/interface/abstraction of the chip. The implementation is the "how" and the interface is the "what". Think of chips as APIs where you could pass a request body (input) and receive a response (output) based on the chip's inner functions (business logic/implementation).
 
 Circuit implementations can realize these gates with electricity. The light bulb in a circuit being on/off would represent the output of a gate.
 
 ![And Circuit Diagram](/static/images/nand-tetris/and-circuit.png)
 
 However, I will not be diving into physical implementations since that would be more aligned with electrical engineering and physics than computer science.
+
+### HDL
+
+Hardware Description Language (HDL)
 
 ...
 

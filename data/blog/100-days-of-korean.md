@@ -55,7 +55,7 @@ You can even use 있다 and 없다 to form adjectives:
 
 Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have met."
 
-**Thoughts:**
+**Thoughts:** The phrases contain complex syllable blocks so the pronunciation is tricky.
 
 ### Day 5:
 

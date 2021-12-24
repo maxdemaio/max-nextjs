@@ -59,9 +59,9 @@ Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have 
 
 ### Day 5:
 
-**Today's Progress:**
+**Today's Progress:** Practiced basics 1, basics 2, and phrases. Also watched Billy Go's Korean video for day 5, Learning 한글 Part 3 More Vowels.
 
-**Thoughts:**
+**Thoughts:** For the alphabet, sheer repetition is key for getting the stroke order and pronunciation down. However still complex syllable blocks in words are difficult to guess and will take time.
 
 ### Day 6:
 

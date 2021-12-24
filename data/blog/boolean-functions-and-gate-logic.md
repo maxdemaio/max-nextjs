@@ -9,15 +9,13 @@ In programming we normally start with how to make a "hello, world" application. 
 
 Programming allows us to have multiple levels of abstraction that lets us forget about the "how". Here I'm going to learn the "how" by traversing these levels. At each step we can take the last level as given, focus on the current level's implementation, and test that it works and continue.
 
-This series of blog posts will contain my reflections while teaching myself about elementary logic gates, ALUs, memory systems, low level programs, computer architecture, assemblers, and how to build a [Hack Computer](https://en.wikipedia.org/wiki/Hack_computer). This computer will have 3 components (ROM, CPU, RAM) and the final product can be connected to a keyboard and a display unit. This will be done by auditing the university course [Build a Modern Computer from First Principles](https://click.linksynergy.com/deeplink?id=PtFMiHYfEVk&mid=40328&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fbuild-a-computer).
+This series of blog posts will contain my reflections while teaching myself about elementary logic gates, ALUs, memory systems, low level programs, computer architecture, assemblers, and how to build a [Hack Computer](https://en.wikipedia.org/wiki/Hack_computer). This computer will have 3 components (ROM, CPU, RAM) and the final product can be connected to a keyboard and a display unit. I'll teach myself this by going through the course [Build a Modern Computer from First Principles](https://click.linksynergy.com/deeplink?id=PtFMiHYfEVk&mid=40328&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fbuild-a-computer).
 
 ![The Hack Computer Block Diagram](/static/images/nand-tetris/Hack_Diagram.png)
 
 ---
 
-## Boolean Functions and Gate Logic
-
-### Boolean logic
+## Boolean logic
 
 Boolean values can either be 0 or 1. We can perform boolean operations like And, Or, and Not:
 
@@ -46,7 +44,7 @@ Boolean identities relate to mathematics. For example, a + b = b + a. Similarly 
 
 We can now apply these identities to boolean algebra to rearrange and rewrite expressions by laws. For example, Not(Not(x) And Not(x Or y)) = x Or y.
 
-### Boolean Functions
+## Boolean Functions
 
 Any boolean function can be represented using an expression only using the operations And, Or, and Not. This is thanks to the finite world of boolean algebra. In fact, you can represent any expression using only And and Not operations.
 
@@ -67,7 +65,7 @@ There is one operation that suffices to represent any expression, **Nand**. (x N
 
 If you can do Not and And, you can do everything. We can see that Not(x) = (x Nand x) and (x And y) = Not(x Nand y).
 
-### Logic Gates
+## Logic Gates
 
 A logic gate is a technique to implement boolean functions. I'm going to be using "gates" interchangeably with "chips" because we're talking about physical devices that implement boolean functions. Examples can be elementary like Nand, And, Or etc. or composite like Mux, Adder, and more.
 
@@ -79,7 +77,7 @@ Circuit implementations can realize these gates with electricity. The light bulb
 
 However, I will not be diving into physical implementations since that would be more aligned with electrical engineering and physics than computer science.
 
-### HDL
+## HDL
 
 Hardware Description Language (HDL) allows us to simulate and test logic gates. Let's take a look at how we'd write a Xor gate:
 
@@ -115,12 +113,12 @@ Steps for writing HDL usually follow the following steps:
 
 HDL should be well documented and readable just like when we're programming in any other language. HDL is a functional and declarative language. It is a static description of a gate diagram. Before using chip parts, you must know their interfaces. There are many HDLs out there with the most popular being VHDL and Verilog. Here's a [general survival guide](https://www.nand2tetris.org/hdl-survival-guide).
 
-### Hardware Simulation
+## Hardware Simulation
 
 How do we know our HDL is correct? We can do so through hardware simulation. This can be done interactively, with test scripts, and with/without output and compare files.
 
 The simulator allows us to debug through the logic gate architecture. You can load a chip, change the input pins, and calculate the output. Also, after calculating the output you can take a closer look at the internal pins.
 
-### Multi-Bit Buses
+## Multi-Bit Buses
 
 A bunch of bits together as one entity are sometimes termed as a bus. For example, if you wanted to add two 16-bit binary numbers you'd want to take two buses of 16-bits as inputs and a 16-bit number as an output. Buses can be composed from and broken into sub-buses. A 16-bit bus can be formed from two 8-bit buses.

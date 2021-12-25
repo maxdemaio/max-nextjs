@@ -12,6 +12,11 @@ This essentially allows us to make our own tailwind-like classNames. */
   margin-right: 0.5rem;
 }
 
+.my-svg-side {
+  display: inline;
+  vertical-align: -0.15em;
+}
+
 .my-h1 {
   @apply font-bold text-4xl md:text-5xl tracking-tight mb-8 text-black dark:text-white;
 }

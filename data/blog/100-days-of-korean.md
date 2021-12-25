@@ -49,21 +49,25 @@ You can even use 있다 and 없다 to form adjectives:
 
 ### Day 4:
 
-**Today's Progress:**
+**Today's Progress:** 예, 안녕하세요! There are two words for thank you, 고맙다 and 감사하다. 감사하다, a Sino-Korean word and has a more formal connotation. 고맙다 is a native Korean word which is less formal.
 
-**Thoughts:**
+죄송하다 is a formal form of an apology. 실례하다 is a small apology like when you're trying to get past someone politely.
+
+Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have met."
+
+**Thoughts:** The phrases contain complex syllable blocks so the pronunciation is tricky.
 
 ### Day 5:
 
-**Today's Progress:**
+**Today's Progress:** Practiced basics 1, basics 2, and phrases. Also watched Billy Go's Korean video for day 5, Learning 한글 Part 3 More Vowels.
 
-**Thoughts:**
+**Thoughts:** For the alphabet, sheer repetition is key for getting the stroke order and pronunciation down. However still complex syllable blocks in words are difficult to guess and will take time.
 
 ### Day 6:
 
-**Today's Progress:**
+**Today's Progress:** Made alphabet 1, alphabet 2, and basics 1 all legendary in Duolingo. Also, watched Billy Go's video for day 6, Learning 한글 Part 4 More Syllables, while taking notes. Quick tip for four letter syllable blocks: when one of the two bottom syllables is ㄹ and the following syllable block doesn't start with ㅇ you can usually not pronounce the ㄹ.
 
-**Thoughts:**
+**Thoughts:** Basics 2 and phrases are a tough hurdle in Duolingo to get over. However, with enough consistent practice I should be able to get them down.
 
 ### Day 7:
 

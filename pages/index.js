@@ -8,10 +8,10 @@ export default function Home() {
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <div className="header-section flex items-center justify-center flex-wrap mb-10">
           <div className="flex-1 header-frame pr-2 pb-4">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight text-black dark:text-white">
+            <h1 className="font-bold text-5xl tracking-tight text-black dark:text-white">
               Maxwell DeMaio
             </h1>
-            <h2 className="font-bold text-3xl tracking-tight text-gray-600 dark:text-gray-400">
+            <h2 className="font-bold text-4xl tracking-tight text-gray-600 dark:text-gray-400">
               Software Developer in Providence, RI
             </h2>
           </div>

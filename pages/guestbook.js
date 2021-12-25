@@ -25,6 +25,11 @@ export default function GuestbookPage({ fallbackData }) {
         </svg>
       </h1>
 
+      <p className="my-para">
+        An artifact of the 90's web. This application lets you leave an entry
+        for future visitors. Feel free to write anything!
+      </p>
+
       <Guestbook fallbackData={fallbackData} />
 
       <Image

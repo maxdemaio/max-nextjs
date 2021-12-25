@@ -65,7 +65,7 @@ Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have 
 
 ### Day 6:
 
-**Today's Progress:** Made alphabet 1, alphabet 2, and basics 1 all legendary in Duolingo. Also, watched Billy Go's video for day 6, Learning 한글 Part 4 More Syllables, while taking notes.
+**Today's Progress:** Made alphabet 1, alphabet 2, and basics 1 all legendary in Duolingo. Also, watched Billy Go's video for day 6, Learning 한글 Part 4 More Syllables, while taking notes. Quick tip for four letter syllable blocks: when one of the two bottom syllables is ㄹ and the following syllable block doesn't start with ㅇ you can usually not pronounce the ㄹ.
 
 **Thoughts:** Basics 2 and phrases are a tough hurdle in Duolingo to get over. However, with enough consistent practice I should be able to get them down.
 

@@ -5,9 +5,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <Container title="Home - Max DeMaio">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto">
         <div className="header-section flex items-center justify-center flex-wrap mb-6">
-          <div className="flex-1 header-frame mb-6">
+          <div className="flex-1 header-frame pr-2 mb-6">
             <h1 className="font-bold text-5xl tracking-tight text-black dark:text-white">
               Maxwell DeMaio
             </h1>

@@ -56,8 +56,8 @@ export default function Home() {
             >
               Twitter
             </a>{' '}
-            where I mostly post about language, technology, and business. Most
-            of my work is open source and publicly available on{' '}
+            where I mostly post about language, technology, and business. My
+            open source projects can be found publicly on{' '}
             <a
               className="underline text-blue-400 hover:text-blue-600"
               href="https://github.com/maxdemaio"

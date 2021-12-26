@@ -40,10 +40,10 @@ These two verbs also translate to "to have". The basic sentence is similar to th
 
 You can even use 있다 and 없다 to form adjectives:
 
-| Korean | English                              |
-| ------ | ------------------------------------ |
-| 맛있다 | delicious/tasty (for food)           |
-| 맛없다 | not delicious, disgusting (for food) |
+| Korean | English                                         |
+| ------ | ----------------------------------------------- |
+| 맛있다 | delicious/tasty (when used with food)           |
+| 맛없다 | not delicious, disgusting (when used with food) |
 
 **Thoughts:** Starting to get the hang of using these sets of verbs for their meanings. Definitely need a refresher on vocabulary. More letters of 한글 learned!
 
@@ -71,9 +71,9 @@ Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have 
 
 ### Day 7:
 
-**Today's Progress:**
+**Today's Progress:** Made the basics 2 skill on Duolingo legendary finally after many attempts. After I practiced phrases a bit more. Also, watched Billy Go's video for day 7, Learning 한글 Part 5 Double and Strong Consonants.
 
-**Thoughts:**
+**Thoughts:** So far it's been hard to remember adjectives like 의미, 매력, and 인기. My goal is to get all 1st checkpoint skills on Duolingo to legendary. After that I think getting everything gold should be good.
 
 ### Day 8:
 

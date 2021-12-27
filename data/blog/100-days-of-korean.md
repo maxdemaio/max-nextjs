@@ -73,11 +73,23 @@ Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have 
 
 **Today's Progress:** Made the basics 2 skill on Duolingo legendary finally after many attempts. After I practiced phrases a bit more. Also, watched Billy Go's video for day 7, Learning 한글 Part 5 Double and Strong Consonants.
 
+When pronouncing consonants vs their strong and doubled versions hold a piece of tissue paper in front of your mouth. Strong consonants (different from double consonants) sound the same as their normal versions but just with more force.
+
+- When pronouncing regular consonants the tissue paper should move noticeably
+- When pronouncing strong consonants the tissue paper should move more noticeably
+- When pronouncing double consonants the tissue paper should not move because of the tenseness
+
+| Korean | English           |
+| ------ | ----------------- |
+| 불     | fire              |
+| 뿔     | horns             |
+| 풀     | 'grass' or 'glue' |
+
 **Thoughts:** So far it's been hard to remember adjectives like 의미, 매력, and 인기. My goal is to get all 1st checkpoint skills on Duolingo to legendary. After that I think getting everything gold should be good.
 
 ### Day 8:
 
-**Today's Progress:**
+**Today's Progress:** Started working on adjectives on Duolingo. However, in Korean you mainly use descriptive verbs instead of adjectives. Also, watched Billy Go's video for day 8, Learning 한글 Part 6 Diphthongs.
 
 **Thoughts:**
 

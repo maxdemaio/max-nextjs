@@ -35,7 +35,7 @@ We can implement all of these adders as chips in HDL. The goal is to build up to
 ## Negative Numbers
 
 To represent negative numbers in binary, almost all computers use what's known as 2's complement or the radix complement. The complement of a binary digit x would be (2^n - x).
-If x is 0 it would just remain as 0. For all combinations 2^n, the maximum would be (2^(n-1) - 1) and the minimum would be (-2^(n-1)). Another trick to get -x from x is to leave all trailing 0s in tact, keep the least significant 1 bit in tact, then flip all the remaining bits to the left (remaining).
+If x is 0 it would just remain as 0. For all combinations 2^n, the maximum would be (2^(n-1) - 1) and the minimum would be (-2^(n-1)). Another trick to get -x from x is to leave all trailing 0s intact, keep the least significant 1 bit intact, then flip all the remaining bits to the left (remaining).
 
 | Positive Decimal | Positive Binary | Negative Binary | Negative Decimal |
 | ---------------- | --------------- | --------------- | ---------------- |
@@ -90,4 +90,4 @@ You can use a truth table to show the complete specification for this ALU.
 
 ## Conclusion
 
-The way I described the construction of a multi=bit adder was standard with no attention to efficiency. Actually, even the adder implementation is rather inefficient because of delays when carrying over bits. However, these shortcomings can be allayed by using logic circuits that use look-ahead techniques. Low-level improvements can drastically help out the computer. The overall functionality of a computer is derived from the ALU and the OS that runs on top of it. Making our computer involves design trade-offs with implementing functions at the ALU level and the software level. In the next blog post we'll start to focus on RAM.
+The way I described the construction of a multi-bit adder was standard with no attention to efficiency. Actually, even the adder implementation is rather inefficient because of delays when carrying over bits. However, these shortcomings can be allayed by using logic circuits that use look-ahead techniques. Low-level improvements can drastically help out the computer. The overall functionality of a computer is derived from the ALU and the OS that runs on top of it. Making our computer involves design trade-offs with implementing functions at the ALU level and the software level. In the next blog post, we'll start to focus on RAM.

@@ -89,13 +89,27 @@ When pronouncing consonants vs their strong and doubled versions hold a piece of
 
 ### Day 8:
 
-**Today's Progress:** Started working on adjectives on Duolingo. However, in Korean you mainly use descriptive verbs instead of adjectives. Also, watched Billy Go's video for day 8, Learning 한글 Part 6 Diphthongs.
+**Today's Progress:** Started working on adjectives on Duolingo. However, in Korean you mainly use descriptive verbs instead of adjectives. Also, watched Billy Go's video for day 8, Learning 한글 Part 6 Diphthongs. We can form the names of the Korean alphabet by taking the consonant, adding ㅣ to form a syllable block with the consonant, and then making a second syllable block with 으 and that consonant:
 
-**Thoughts:**
+| Consonant | Name      |
+| --------- | --------- |
+| ㄱ        | 기역 (\*) |
+| ㄴ        | 니은      |
+| ㄷ        | 디귿 (\*) |
+| ㄹ        | 리을      |
+| ㅁ        | 미음      |
+| ㅂ        | 비읍      |
+| ㅅ        | 시옷 (\*) |
+| ㅇ        | 이응      |
+| ㅈ        | 지읒      |
+
+For the doubled versions you can just add 쌍 before the name. Vowels can be read as-is with the consonant ㅇ.
+
+**Thoughts:** Dipthongs can be tricky but with enough practice and exposure they won't be bad at all.
 
 ### Day 9:
 
-**Today's Progress:**
+**Today's Progress:** Watched Billy Go's video for day 9, Sound Change Rules for 한글. This one was quite the long video. In the video, they talk about how sound change rules help with Korean's efficiency in pronunciation. Although tricky at first, they'll be learned naturally.
 
 **Thoughts:**
 

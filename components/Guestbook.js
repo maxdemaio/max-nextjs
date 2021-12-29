@@ -98,7 +98,7 @@ export default function Guestbook({ fallbackData }) {
             <div className="mb-4 flex flex-row justify-between items-center">
               <a
                 href={`/api/auth/signin`}
-                className="mb-4 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded"
+                className="mb-4 bg-blue-500 hover:bg-blue-700 text-md text-white font-bold py-2 px-4 rounded"
                 onClick={(e) => {
                   e.preventDefault();
                   signIn('github', {
@@ -153,7 +153,7 @@ export default function Guestbook({ fallbackData }) {
                 />
                 <button
                   type="submit"
-                  className="ml-2 bg-gray-600 hover:bg-gray-700 text-md text-white font-bold py-2 px-4 rounded"
+                  className="ml-2 bg-blue-500 hover:bg-blue-700 text-md text-white font-bold py-2 px-4 rounded"
                 >
                   {/* Ternary if loading show spinner if not show 'Sign' */}
                   {form.state === 'Loading' ? <LoadingSpinner /> : 'Sign'}

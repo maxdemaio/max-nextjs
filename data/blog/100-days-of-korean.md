@@ -73,37 +73,114 @@ Nice to meet you can be translate to 만나서 반갑습니다 or "Glad to have 
 
 **Today's Progress:** Made the basics 2 skill on Duolingo legendary finally after many attempts. After I practiced phrases a bit more. Also, watched Billy Go's video for day 7, Learning 한글 Part 5 Double and Strong Consonants.
 
+When pronouncing consonants vs their strong and doubled versions hold a piece of tissue paper in front of your mouth. Strong consonants (different from double consonants) sound the same as their normal versions but just with more force.
+
+- When pronouncing regular consonants the tissue paper should move noticeably
+- When pronouncing strong consonants the tissue paper should move more noticeably
+- When pronouncing double consonants the tissue paper should not move because of the tenseness
+
+| Korean | English           |
+| ------ | ----------------- |
+| 불     | fire              |
+| 뿔     | horns             |
+| 풀     | 'grass' or 'glue' |
+
 **Thoughts:** So far it's been hard to remember adjectives like 의미, 매력, and 인기. My goal is to get all 1st checkpoint skills on Duolingo to legendary. After that I think getting everything gold should be good.
 
 ### Day 8:
 
-**Today's Progress:**
+**Today's Progress:** Started working on adjectives on Duolingo. However, in Korean you mainly use descriptive verbs instead of adjectives. Also, watched Billy Go's video for day 8, Learning 한글 Part 6 Diphthongs. We can form the names of the Korean alphabet by taking the consonant, adding ㅣ to form a syllable block with the consonant, and then making a second syllable block with 으 and that consonant:
 
-**Thoughts:**
+| Consonant | Name      |
+| --------- | --------- |
+| ㄱ        | 기역 (\*) |
+| ㄴ        | 니은      |
+| ㄷ        | 디귿 (\*) |
+| ㄹ        | 리을      |
+| ㅁ        | 미음      |
+| ㅂ        | 비읍      |
+| ㅅ        | 시옷 (\*) |
+| ㅇ        | 이응      |
+| ㅈ        | 지읒      |
+
+For the doubled versions you can just add 쌍 before the name. Vowels can be read as-is with the consonant ㅇ.
+
+These three dipthongs have the same pronunciation: ㅙ, ㅚ, and ㅞ.
+
+**Thoughts:** Dipthongs can be tricky but with enough practice and exposure they won't be bad at all.
 
 ### Day 9:
 
-**Today's Progress:**
+**Today's Progress:** Watched Billy Go's video for day 9, Sound Change Rules for 한글. This one was quite the long video. In the video, they talk about how sound change rules help with Korean's efficiency in pronunciation. Although tricky at first, they'll be learned naturally.
 
-**Thoughts:**
+**Pronouncing the bottom**
+
+When a syllable ends with a consonant that cannot be pronounced as-is; they are pronounced as ㄷ:
+
+- 만 --> 맏
+- 밌 --> 맏
+- 갖 --> 갇
+- 및 --> 믿
+- 밭 --> 받
+- 낳 --> 낟
+
+Consonants that can be pronounced as-is: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, and ㅇ.
+
+**Pronouncing the bottom with strong/doubles**
+
+These consonants become pronounced as their normal versions:
+
+- 겪 --> 격
+- 부엌 --> 부억
+- 잎 --> 입
+
+**Between two syllables**
+
+When the 1st syllable ends with any consonant sound (besides ㅁ, ㄴ, or ㄹ).
+
+And the 2nd syllable begins with any of the following 5 consonants: ㄱ, ㄷ, ㅂ, ㅅ, and ㅈ.
+
+You pronounce the 2nd syllable's consonant as a double consonant:
+
+- 학교 --> 학꾜
+- 받다 --> 받따
+- 았던 --> 얻떤
+- 백보 --> 백뽀
+- 국수 --> 국쑤
+- 먹자 --> 먹짜
+- 없다 --> 업따
+
+These are just small examples from the pronunciation video out of 14 general rules: https://www.youtube.com/watch?v=VbOWbrPoW00
+
+**Thoughts:** What I previously thought was the most difficult part of learning Korean became a bit easier. Syllable blocks are intimidating but with some general pronunciation rules it's very helpful.
 
 ### Day 10:
 
-**Today's Progress:**
+**Today's Progress:** Practiced essential phrases like hello and goodbye. Fun fact: Korea was actually one big country until after the Korean war (1950-1953). Korean sentence structure is subject, object, verb or SOV. In english we have subject verb, object or SVO.
 
-**Thoughts:**
+- 안녕 = hello/goodbye (friends and people same age or younger)
+- 안녕하세요 = hello (anyone else)
+- 안녕히 가세요 = goodbye (anyone else and they're leaving)
+- 안녕히 계세요 = goodbye (anyone else and they're staying and you're leaving)
+
+**Thoughts:** I've heard that Korean actually has a lot of formal levels. In French I'm only really familiar with 2. Italian has more or less 3. English has 1 but you can just speak with more polite language.
 
 ### Day 11:
 
-**Today's Progress:**
+**Today's Progress:** Practiced how to introduce myself.
+저는 막스예요! You'd use ...이에요 if your name ended with a consonant.
 
-**Thoughts:**
+**Thoughts:** Saying my name is pretty cool!
 
 ### Day 12:
 
-**Today's Progress:**
+**Today's Progress:** Practiced how to say thank you and please.
 
-**Thoughts:**
+감사합니다!
+
+주세요 can be used in most situations to mean please. For example, 돼지갈비 2인분 주세요 = Two portions of pork ribs, please.
+
+**Thoughts:** Hello, goodbye, please, and thank you. These are essential to know and it feels good I've got them down.
 
 ### Day 13:
 

@@ -105,17 +105,63 @@ When pronouncing consonants vs their strong and doubled versions hold a piece of
 
 For the doubled versions you can just add 쌍 before the name. Vowels can be read as-is with the consonant ㅇ.
 
+These three dipthongs have the same pronunciation: ㅙ, ㅚ, and ㅞ.
+
 **Thoughts:** Dipthongs can be tricky but with enough practice and exposure they won't be bad at all.
 
 ### Day 9:
 
 **Today's Progress:** Watched Billy Go's video for day 9, Sound Change Rules for 한글. This one was quite the long video. In the video, they talk about how sound change rules help with Korean's efficiency in pronunciation. Although tricky at first, they'll be learned naturally.
 
-**Thoughts:**
+**Pronouncing the bottom**
+
+When a syllable ends with a consonant that cannot be pronounced as-is; they are pronounced as ㄷ:
+
+- 만 --> 맏
+- 밌 --> 맏
+- 갖 --> 갇
+- 및 --> 믿
+- 밭 --> 받
+- 낳 --> 낟
+
+Consonants that can be pronounced as-is: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, and ㅇ.
+
+**Pronouncing the bottom with strong/doubles**
+
+These consonants become pronounced as their normal versions:
+
+- 겪 --> 격
+- 부엌 --> 부억
+- 잎 --> 입
+
+**Between two syllables**
+
+When the 1st syllable ends with any consonant sound (besides ㅁ, ㄴ, or ㄹ).
+
+And the 2nd syllable begins with any of the following 5 consonants: ㄱ, ㄷ, ㅂ, ㅅ, and ㅈ.
+
+You pronounce the 2nd syllable's consonant as a double consonant:
+
+- 학교 --> 학꾜
+- 받다 --> 받따
+- 았던 --> 얻떤
+- 백보 --> 백뽀
+- 국수 --> 국쑤
+- 먹자 --> 먹짜
+- 없다 --> 업따
+
+These are just small examples from the pronunciation video out of 14 general rules: https://www.youtube.com/watch?v=VbOWbrPoW00
+
+**Thoughts:** What I previously thought was the most difficult part of learning Korean became a bit easier. Syllable blocks are intimidating but with some general pronunciation rules it's very helpful.
 
 ### Day 10:
 
-**Today's Progress:**
+**Today's Progress:** Practiced essential phrases like hello and goodbye. Fun fact: Korea was actually one big country until after the Korean war (1950-1953). Korean sentence structure is subject, object, verb or SOV. In english we have subject verb, object or SVO.
+
+- 안녕 = hello/goodbye (friends and people same age or younger)
+- 안녕하세요 = hello (anyone else)
+- 안녕히 가세요 = goodbye (anyone else and they're leaving)
+- 안녕히 계세요 = goodbye (anyone else and they're staying and you're leaving)
 
 **Thoughts:**
 

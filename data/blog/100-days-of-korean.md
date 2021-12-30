@@ -163,19 +163,24 @@ These are just small examples from the pronunciation video out of 14 general rul
 - 안녕히 가세요 = goodbye (anyone else and they're leaving)
 - 안녕히 계세요 = goodbye (anyone else and they're staying and you're leaving)
 
-**Thoughts:**
+**Thoughts:** I've heard that Korean actually has a lot of formal levels. In French I'm only really familiar with 2. Italian has more or less 3. English has 1 but you can just speak with more polite language.
 
 ### Day 11:
 
-**Today's Progress:**
+**Today's Progress:** Practiced how to introduce myself.
+저는 막스예요! You'd use ...이에요 if your name ended with a consonant.
 
-**Thoughts:**
+**Thoughts:** Saying my name is pretty cool!
 
 ### Day 12:
 
-**Today's Progress:**
+**Today's Progress:** Practiced how to say thank you and please.
 
-**Thoughts:**
+감사합니다!
+
+주세요 can be used in most situations to mean please. For example, 돼지갈비 2인분 주세요 = Two portions of pork ribs, please.
+
+**Thoughts:** Hello, goodbye, please, and thank you. These are essential to know and it feels good I've got them down.
 
 ### Day 13:
 

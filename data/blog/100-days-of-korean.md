@@ -184,13 +184,13 @@ These are just small examples from the pronunciation video out of 14 general rul
 
 ### Day 13:
 
-**Today's Progress:**
+**Today's Progress:** Learned how to say excuse me in different situations. Also, practiced more alphabet stroke order.
 
 **Thoughts:**
 
 ### Day 14:
 
-**Today's Progress:**
+**Today's Progress:** Verbs! Object markers exist btw...
 
 **Thoughts:**
 

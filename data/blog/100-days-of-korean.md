@@ -200,11 +200,11 @@ To get past a crowd you can just say 잠시만요 (only a brief moment!).
 - 먹고 싶다 = I want to eat
 - 보고 싶다 = I want to see/watch
 
-ex) 저는 영화를 보고샆어요 = I want to see a movie
+ex) 저는 영화를 보고 샆어요 = I want to see a movie
 
 If you want to say you want to have something, you.
 
-ex) 저는 영화를 보고샆어요 = I want to see a movie
+ex) 저는 영화를 보고 샆어요 = I want to see a movie
 
 Note you can only use this sort of format for the pronouns I/you.
 
@@ -218,7 +218,7 @@ To use the object marker there are two rules:
 - When the object ends in a vowel, attach 를
 
 ex) 저는 피자를 좋아해요 = I like pizza
-ex) 저는 한극은 봐요 = I learn Korean
+ex) 저는 한극은 배우고 샆어요 = I want to learn Hangul
 
 ### Day 17:
 

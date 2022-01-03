@@ -218,6 +218,7 @@ To use the object marker there are two rules:
 - When the object ends in a vowel, attach 를
 
 ex) 저는 피자를 좋아해요 = I like pizza
+
 ex) 저는 한극은 배우고 샆어요 = I want to learn Hangul
 
 ### Day 17:

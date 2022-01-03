@@ -184,27 +184,41 @@ These are just small examples from the pronunciation video out of 14 general rul
 
 ### Day 13:
 
-**Today's Progress:** Learned how to say excuse me in different situations. Also, practiced more alphabet stroke order.
+**Today's Progress:** Learned how to say excuse me in different situations. Also, practiced more alphabet stroke order. To get a stranger's attention (for example a waiter) you say 여기요 (over here!) or 저기요 (you over there!).
 
-**Thoughts:**
+To get past a crowd you can just say 잠시만요 (only a brief moment!).
 
 ### Day 14:
 
-**Today's Progress:** Verbs! Object markers exist btw...
-
-**Thoughts:**
+**Today's Progress:** Watched an introductory video on verbs! Basically all verbs end with 다 before it's conjugated. Unlike English, you don't conjugate the verb based on who is completing the action. So there are no tables based on the pronoun affecting the verb. However there are still ending changes for verb tenses.
 
 ### Day 15:
 
-**Today's Progress:**
+**Today's Progress:** Today I learned do to say that "I want to do x" and how to say "I want to have y". This is done using two grammar formats. To say you want to do something, you take the verb stem of the verb you want to do and attach 거싶다.
 
-**Thoughts:**
+- 가고 싶다 = I want to go
+- 먹고 싶다 = I want to eat
+- 보고 싶다 = I want to see/watch
+
+ex) 저는 영화를 보고 샆어요 = I want to see a movie
+
+If you want to say you want to have something, you.
+
+ex) 저는 영화를 보고 샆어요 = I want to see a movie
+
+Note you can only use this sort of format for the pronouns I/you.
 
 ### Day 16:
 
-**Today's Progress:**
+**Today's Progress:** You can use particles to denote meaning in a Korean sentence. Korean sentences are SOV. The object marker in Korean always attached directly after a noun (a person, place, or thing). It marks the object of an action verb - whoever or whatever is receiving that action. It shows who or what a verb is doing something to.
 
-**Thoughts:**
+To use the object marker there are two rules:
+
+- When the object ends in a consonant, attach 을
+- When the object ends in a vowel, attach 를
+
+ex) 저는 피자를 좋아해요 = I like pizza
+ex) 저는 한극은 배우고 샆어요 = I want to learn Hangul
 
 ### Day 17:
 

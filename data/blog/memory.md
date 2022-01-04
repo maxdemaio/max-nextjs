@@ -21,6 +21,20 @@ Sequential: out[t] = function(in[t-1])
 
 ## Flip Flops
 
+state[t] = function(state[t-1])
+
+We now need a chip that can remember one bit of information from time t-1 so it can be used at time 1. There are two possible states, remembering t-1 or not remembering t-1 (1 or 0). Flipping between two possible states allows for this. Gates that can flip between two states are called Flip-Flops.
+
+How is this done? Clocked data flip flops remembers the data from the previous time unit it and can output it in the current time unit. In the diagram, the triangle represents that the chip depends on time. The chip depends upon what happened in a previous state.
+
+![DFF Diagram](/static/images/nand-tetris/dff.png)
+
+To remember a value forever until requested to load a new value we can use registers. If load(t-1) then out(t)=in(t-1) otherwise out(t)=out(t-1). Let's take this 1-bit register as an example:
+
+![Register Diagram](/static/images/nand-tetris/register.png)
+
+The implementation would consist of one MUX chip and one DFF chip. Once we have made a basic mechanism to remember a single bit over time, we can construct arbitrarily wide registers. To do this, we form an array of as many single-bit registers as needed, creating a register that holds multi-bit values.
+
 ## Memory Units
 
 ## Counters

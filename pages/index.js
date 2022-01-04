@@ -36,10 +36,7 @@ export default function Home() {
             architecture. I like creating practical business solutions and
             making development processes as efficient as possible. Currently,
             I'm working as an Associate Software Developer at{' '}
-            <a
-              className="underline text-blue-400 hover:text-blue-600"
-              href="https://www.infosys.com/"
-            >
+            <a className="my-link" href="https://www.infosys.com/">
               Infosys
             </a>{' '}
             where I work on client facing applications in an agile environment.
@@ -50,22 +47,19 @@ export default function Home() {
           </p>
           <p className="my-para">
             You can follow me on{' '}
-            <a
-              className="underline text-blue-400 hover:text-blue-600"
-              href="https://twitter.com/maxwelldemaio"
-            >
+            <a className="my-link" href="https://twitter.com/maxwelldemaio">
               Twitter
             </a>{' '}
             where I mostly post about language, technology, and business. My
             open source projects can be found publicly on{' '}
-            <a
-              className="underline text-blue-400 hover:text-blue-600"
-              href="https://github.com/maxdemaio"
-            >
+            <a className="my-link" href="https://github.com/maxdemaio">
               GitHub
             </a>
-            . Feel free to reach out and contact me at any of the links on my
-            website.
+            . Please feel free to reach out and contact me at{' '}
+            <a className="my-link" href="mailto:maxwell.demaio@gmail.com">
+              maxwell.demaio@gmail.com
+            </a>
+            .
           </p>
         </section>
 

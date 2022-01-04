@@ -223,9 +223,9 @@ ex) 저는 한극은 배우고 샆어요 = I want to learn Hangul
 
 ### Day 17:
 
-**Today's Progress:**
+**Today's Progress:** Learned about the topic marker. The topic marker marks the topic of a conversation. You would add 은 if the topic ends in a consonant. You would add 는 if the topic ends in a vowel. It's almost like in English saying "As for..." or "When it comes to...".
 
-**Thoughts:**
+If you use the topic marker and don't change the topic, you don't need to reiterate the topic marker. However, once the topic changes you need a new topic marker.
 
 ### Day 18:
 

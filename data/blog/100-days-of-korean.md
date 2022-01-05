@@ -229,9 +229,16 @@ If you use the topic marker and don't change the topic, you don't need to reiter
 
 ### Day 18:
 
-**Today's Progress:** Demonstrative adjectives! This and that. This thing and that thing (nouns).
+**Today's Progress:** Practiced demonstrative adjectives aka this and that. Also learned about this thing and that thing (nouns).
 
-**Thoughts:**
+- 이 = this
+- 그 = that (far from speaker and close to listener)
+- 저 = that (far from speaker and listener)
+- 이것 = this thing (noun)
+- 그것 = that thing (noun)
+- 저것 = that thing (noun)
+
+In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그거.
 
 ### Day 19:
 

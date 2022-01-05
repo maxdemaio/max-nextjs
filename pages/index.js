@@ -45,7 +45,7 @@ export default function Home() {
             I'm working on growing my skills and gaining exposure to a variety
             of technology, whether that be through work or personal projects.
             When I'm not glued to my computer, I enjoy playing the guitar,
-            chess, and learning languages. Also, I am a person who believes in
+            chess, and learning languages. Also, I'm a person who believes in
             hard work, curiosity, and diversity.
           </p>
           <p className="my-para">

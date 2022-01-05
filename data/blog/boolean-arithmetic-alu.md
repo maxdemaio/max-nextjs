@@ -91,3 +91,7 @@ You can use a truth table to show the complete specification for this ALU.
 ## Conclusion
 
 The way I described the construction of a multi-bit adder was standard with no attention to efficiency. Actually, even the adder implementation is rather inefficient because of delays when carrying over bits. However, these shortcomings can be allayed by using logic circuits that use look-ahead techniques. Low-level improvements can drastically help out the computer. The overall functionality of a computer is derived from the ALU and the OS that runs on top of it. Making our computer involves design trade-offs with implementing functions at the ALU level and the software level. In the next blog post, we'll start to focus on RAM.
+
+## Works Cited
+
+- Nisan, Noam, and Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles. MIT, 2021.

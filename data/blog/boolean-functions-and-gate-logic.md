@@ -122,3 +122,7 @@ The simulator allows us to debug through the logic gate architecture. You can lo
 ## Multi-Bit Buses
 
 A bunch of bits together as one entity are sometimes termed as a bus. For example, if you wanted to add two 16-bit binary numbers you'd want to take two buses of 16-bits as inputs and a 16-bit number as an output. Buses can be composed from and broken into sub-buses. A 16-bit bus can be formed from two 8-bit buses.
+
+## Works Cited
+
+- Nisan, Noam, and Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles. MIT, 2021.

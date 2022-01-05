@@ -1,15 +1,15 @@
 ---
 title: Nand to Tetris - Memory
-date: '2022-01-03'
+date: '2022-01-05'
 ---
 
-Example description
+Memory is built from sequential chips. In this blog post, we'll explore what sequential chips are, examples of them, and how they compose RAM.
 
 ---
 
 ## Sequential Logic
 
-Before, I completely ignored the issue of time. The ALU took input and spit out an output. The output was a function of the input. This is know as Combinatorial logic.
+Before, I completely ignored the issue of time. The ALU took input and spit out an output. The output was a function of the input. This is known as Combinatorial logic.
 
 We want to be able to remember state. Physical time in the real world is continuous. We can't mimic real time, but we can use [discretization](https://en.wikipedia.org/wiki/Discretization). This is like how we can use riemann sums to approximate the area under a function's curve.
 
@@ -46,3 +46,35 @@ The width of the address input is equal to k. k is equal to log base 2 of n. For
 RAM is called "random access memory" because irrespective of the RAM size, we can access any register at the same time complexity - O(1)!
 
 ## Counters
+
+Counters have 3 generic functions: reset to the first instruction, fetch the next instruction, and then fetch instruction n. The counter is a chip has realized these 3 primitive operations. Counters have 3 control bits load, inc, and reset to help with these operations. Let's take a look at the HDL for a counter:
+
+```hdl
+/**
+ * A 16-bit counter with 3 control bits.
+ * if      (reset[t]==1) out[t+1] = 0 (reset counter)
+ * else if (load[t]==1)  out[t+1] = in[t] (set counter = value)
+ * else if (inc[t]==1)   out[t+1] = out[t] + 1  (integer addition)
+ * else                  out[t+1] = out[t] (counter does not change)
+ */
+
+CHIP PC {
+    IN in[16],load,inc,reset;
+    OUT out[16];
+
+    PARTS:
+	Inc16(in=oo,out=incd);
+
+	Mux16(a=oo,b=incd,sel=inc,out=o);
+
+	Mux16(a=o,b=in,sel=load,out=uu);
+
+	Mux16(a=uu,b[0..15]=false,sel=reset,out=this);
+
+	Register(in=this,load=true,out=out,out=oo);
+}
+```
+
+## Works Cited
+
+- Nisan, Noam, and Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles. MIT, 2021.

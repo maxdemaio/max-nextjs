@@ -43,7 +43,8 @@ export default function Home() {
             I'm working on growing my skills and gaining exposure to a variety
             of technology, whether that be through work or personal projects.
             When I'm not glued to my computer, I enjoy playing the guitar,
-            chess, and learning languages.
+            chess, and learning languages. Moreover, I am a person who believes
+            in hard work, curiosity, and diversity.
           </p>
           <p className="my-para">
             You can follow me on{' '}
@@ -51,7 +52,7 @@ export default function Home() {
               Twitter
             </a>{' '}
             where I mostly post about language, technology, and business. My
-            open source projects can be found publicly on{' '}
+            open source projects are publicly available on{' '}
             <a className="my-link" href="https://github.com/maxdemaio">
               GitHub
             </a>

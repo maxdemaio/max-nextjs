@@ -40,6 +40,8 @@ export default function Home() {
               Infosys
             </a>{' '}
             where I work on client facing applications in an agile environment.
+          </p>
+          <p className="my-para">
             I'm working on growing my skills and gaining exposure to a variety
             of technology, whether that be through work or personal projects.
             When I'm not glued to my computer, I enjoy playing the guitar,

@@ -229,7 +229,7 @@ If you use the topic marker and don't change the topic, you don't need to reiter
 
 ### Day 18:
 
-**Today's Progress:**
+**Today's Progress:** Demonstrative adjectives! This and that. This thing and that thing (nouns).
 
 **Thoughts:**
 

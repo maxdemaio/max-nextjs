@@ -242,19 +242,28 @@ In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그
 
 ### Day 19:
 
-**Today's Progress:**
+**Today's Progress:** The particle 도! This particle replaces any marker such as the object or topic marker. It means "even, also, too".
 
-**Thoughts:**
+- 저도 = me too, even me, me also
+- 피저도 = even pizza, also pizza, pizza too
+- 한국어도 = even Korean, also Korean, Korean too
 
 ### Day 20:
 
-**Today's Progress:**
+**Today's Progress:** Logging a good amount of adjective examples I've found while practicing on Duolingo. These adjectives are quite hard to remember without lots of repetition.
 
-**Thoughts:**
+- 개는 영리합니다 = the dog is **clever**
+- 아이가 개으릅니다 = The child is **lazy**
+- 여자아이가 착합니다 = The girl is **nice**
+- 저는 아픕니다 = I am **ill**
+- 고양이가 항복합니다 = The cat is **happy**
+- 저는 슬픕니다 = I am **sad**
+- 가수들이 피곤하니다 = The singers are **tired**
+- 사람들은 지루합니다 = people are **boring**
 
 ### Day 21:
 
-**Today's Progress:**
+**Today's Progress:** Introduction to conjugation? Yes, sir.
 
 **Thoughts:**
 

@@ -260,6 +260,12 @@ In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그
 - 저는 슬픕니다 = I am **sad**
 - 가수들이 피곤하니다 = The singers are **tired**
 - 사람들은 지루합니다 = people are **boring**
+- 집은 큽니다 = the house is **big**
+- 물건이 작습니다 = the thing is **small**
+- 사과가 나쁩니다 = the apple is **bad**
+- 학교가 좋습니다 = the school is **good**
+- 영화가 짧습니다 = the movie is **short**
+- 영화가 깁니다 = the movie is **long**
 
 ### Day 21:
 

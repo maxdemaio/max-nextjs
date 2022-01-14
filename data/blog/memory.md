@@ -9,7 +9,7 @@ Memory is built from sequential chips. In this blog post, we'll explore what seq
 
 ## Sequential Logic
 
-Before, I completely ignored the issue of time. The ALU took input and spit out an output. The output was a function of the input. This is known as Combinatorial logic.
+In my post on boolean arithmetic and the ALU I completely ignored the issue of time. The ALU took input and spit out an output. The output was a function of the input. This is known as Combinatorial logic.
 
 We want to be able to remember state. Physical time in the real world is continuous. We can't mimic real time, but we can use [discretization](https://en.wikipedia.org/wiki/Discretization). This is like how we can use riemann sums to approximate the area under a function's curve.
 

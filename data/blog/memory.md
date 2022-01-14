@@ -43,7 +43,7 @@ When you stack registers together you can create RAM units. RAM as an abstractio
 
 The width of the address input is equal to k. k is equal to log base 2 of n. For example, let's say we have 16 registers. We need 4-bits to represent each register. 1111 would represent the last register's address and 0000 would represent the first register's address.
 
-RAM is called "random access memory" because irrespective of the RAM size, we can access any register at the same time complexity - O(1)!
+RAM is called "random access memory" because irrespective of the RAM size, we can access any register at the same time complexity - O(1).
 
 ## Counters
 

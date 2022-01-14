@@ -218,19 +218,27 @@ To use the object marker there are two rules:
 - When the object ends in a vowel, attach 를
 
 ex) 저는 피자를 좋아해요 = I like pizza
+
 ex) 저는 한극은 배우고 샆어요 = I want to learn Hangul
 
 ### Day 17:
 
-**Today's Progress:**
+**Today's Progress:** Learned about the topic marker. The topic marker marks the topic of a conversation. You would add 은 if the topic ends in a consonant. You would add 는 if the topic ends in a vowel. It's almost like in English saying "As for..." or "When it comes to...".
 
-**Thoughts:**
+If you use the topic marker and don't change the topic, you don't need to reiterate the topic marker. However, once the topic changes you need a new topic marker.
 
 ### Day 18:
 
-**Today's Progress:**
+**Today's Progress:** Practiced demonstrative adjectives aka this and that. Also learned about this thing and that thing (nouns).
 
-**Thoughts:**
+- 이 = this
+- 그 = that (far from speaker and close to listener)
+- 저 = that (far from speaker and listener)
+- 이것 = this thing (noun)
+- 그것 = that thing (noun)
+- 저것 = that thing (noun)
+
+In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그거.
 
 ### Day 19:
 

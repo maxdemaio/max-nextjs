@@ -20,7 +20,7 @@ export default function Home() {
             <Image
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAEAAQQCAwAAAAAAAAAAAAABAgAEBhEDBSJBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxJR/9oADAMBAAIRAxEAPwCYzXpIY9kd3Y9ZfX/HbRnIIvKL4yYbXW1SAq+1+UpSkxg0Fl+1uz//2Q=="
-              src="/static/images/picOfMe.jpg"
+              src="/static/images/me.jpg"
               className="rounded-3xl"
               height={260}
               width={260}

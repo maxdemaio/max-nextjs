@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 import CcName from '@/components/CcName';
 import Container from '@/components/Container';
-import Image from 'next/image';
+import FooterSocials from '@/components/FooterSocials';
 
 export default function Home() {
   return (
@@ -48,7 +50,7 @@ export default function Home() {
             chess, and learning languages. Also, I believe in hard work,
             curiosity, and diversity.
           </p>
-          <p className="my-para">
+          <p>
             You can follow me on{' '}
             <a className="my-link" href="https://twitter.com/maxwelldemaio">
               Twitter
@@ -66,8 +68,9 @@ export default function Home() {
           </p>
         </section>
 
-        <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
-          <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+        <footer className="w-full">
+          <hr className="border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+          <FooterSocials />
           <CcName></CcName>
         </footer>
       </div>

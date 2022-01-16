@@ -29,6 +29,9 @@ This essentially allows us to make our own tailwind-like classNames. */
 .my-link {
   @apply underline text-blue-400 hover:text-blue-600;
 }
+.my-nav-link {
+  @apply text-blue-400 hover:text-blue-600;
+}
 .prose a {
   @apply underline text-blue-400 hover:text-blue-600;
 }

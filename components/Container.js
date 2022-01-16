@@ -129,22 +129,6 @@ export default function Container(props) {
           </a>
         </Link>
 
-        <a
-          href="https://twitter.com/maxwelldemaio"
-          aria-label="Twitter link"
-          className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          <TwitterIcon />
-        </a>
-
-        <a
-          href="https://github.com/maxdemaio"
-          aria-label="GitHub link"
-          className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          <GithubIcon />
-        </a>
-
         <button
           aria-label="Toggle Dark and Light Mode"
           type="button"

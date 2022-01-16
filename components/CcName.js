@@ -1,6 +1,6 @@
 export default function CcName() {
   return (
-    <div className="mb-8">
+    <div>
       <span>
         <a
           className="underline text-blue-400 hover:text-blue-600"

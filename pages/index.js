@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 import CcName from '@/components/CcName';
 import Container from '@/components/Container';
-import Image from 'next/image';
+import FooterSocials from '@/components/FooterSocials';
 
 export default function Home() {
   return (
@@ -66,8 +68,9 @@ export default function Home() {
           </p>
         </section>
 
-        <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
-          <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+        <footer className="w-full mb-8">
+          <hr className="border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
+          <FooterSocials />
           <CcName></CcName>
         </footer>
       </div>

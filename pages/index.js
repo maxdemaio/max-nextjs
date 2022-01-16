@@ -50,7 +50,7 @@ export default function Home() {
             chess, and learning languages. Also, I believe in hard work,
             curiosity, and diversity.
           </p>
-          <p className="my-para">
+          <p>
             You can follow me on{' '}
             <a className="my-link" href="https://twitter.com/maxwelldemaio">
               Twitter
@@ -68,7 +68,7 @@ export default function Home() {
           </p>
         </section>
 
-        <footer className="w-full mb-8">
+        <footer className="w-full">
           <hr className="border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
           <FooterSocials />
           <CcName></CcName>

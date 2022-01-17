@@ -52,11 +52,6 @@ function FooterSocials() {
 
       <div>
         <div>
-          <Link href="/posts/100-days-of-korean">
-            <a className="my-nav-link">100 Days of Language</a>
-          </Link>
-        </div>
-        <div>
           <a
             className="my-nav-link"
             href="https://www.duolingo.com/profile/maxwelldemaio"

@@ -1,9 +1,9 @@
 ---
 title: Nand to Tetris - Machine Language
-date: '2022-01-12'
+date: '2022-01-17'
 ---
 
-Machine language is any low-level programming language that has machine language instructions. These instructions are used to control a computer's central processing unit (CPU).
+Machine language is any low-level programming language that has machine language instructions. These instructions control a computer's central processing unit (CPU).
 
 ---
 
@@ -11,9 +11,9 @@ Machine language is any low-level programming language that has machine language
 
 There is a universality in technology. The same hardware can run many different software programs. The most primitive form of a program is a sequence of instructions in binary. These sequences cause our hardware to apply the functionality of the program.
 
-How do we specify these sequences of instructions? We need operations, program counters, and addressing. We could write programs in binary but it would be very difficult. High-level languages can be compiled into machine language for hardware to understand.
+How do we specify these sequences of instructions? We need operations, program counters, and addressing. We could write programs in binary but it would be very difficult. High-level languages compile into machine language for hardware to understand its instructions.
 
-To learn how to build a computer we need to deal directly with machine language. It's very good for highly optimized code because you can tell the hardware exactly what you want. Writing code closer to the hardware is known as [hardware acceleration](https://en.wikipedia.org/wiki/Hardware_acceleration).
+To learn how to build a computer we need to deal directly with machine language. It's very good for optimized code because you can tell the hardware exactly what you want. Writing code closer to the hardware is known as [hardware acceleration](https://en.wikipedia.org/wiki/Hardware_acceleration).
 
 Instruction: 010001000110010
 
@@ -21,7 +21,7 @@ Instruction: 010001000110010
 - R3: 0011
 - R2: 0010
 
-Now instead of coding directly in binary we can use a machine language instructions using assembly language. This assembly language will have an Assembler program to convert it into its binary counterpart.
+Now instead of coding in binary we can use symbolic assembly language. This assembly language will have an assembler program to convert it into its binary counterpart.
 
 ```asm
 ADD R2, R1, R3
@@ -35,7 +35,7 @@ Throughout these sequences of instructions accessing memory is costly. We need t
 
 A memory hierarchy consists of a small memory that is easy to access and fast. This is the cache. The main memory is larger and less cheap to access. Then the slowest memory can sit on disk. The farther away you get from the ALU/CPU the more expensive it becomes to get that data.
 
-Also, the CPU usually contains a few easily accessed registers. They are central to machine language. Not only can you use them to store data, but you can store addresses in them.
+Also, the CPU usually contains a few accessible registers. They are central to machine language. Not only can you use them to store data, but you can store addresses in them.
 
 Addressing Modes:
 
@@ -63,7 +63,7 @@ Add R1, @A
 Add 73, R1
 ```
 
-Input and output devices interact with the CPU with drivers. Drivers know the protocol on how to talk to the CPU. Example I/O devices would be a keyboard, mouse, camera, screen, and many more. This can be done by memory mapping locations specific to the I/O devices.
+Input and output devices interact with the CPU with drivers. Drivers know the protocol on how to talk to the CPU. Example I/O devices would be a keyboard, mouse, camera, screen, and many more. This can work by memory mapping locations specific to the I/O devices.
 
 When the CPU executes these machine instructions in sequence there is a flow control. Occasionally you need to jump unconditionally to another location to loop. You can also do condition jumps to check if conditions are met.
 
@@ -83,8 +83,8 @@ The Hack Computer is a 16-bit machine.
 **Software**
 
 - Hack machine language
-  - 16-bit A instructions
-  - 16-bit C instructions
+- 16-bit A instructions
+- 16-bit C instructions
 - Hack program: sequence of instructions written in the Hack machine language
 
 **Control**
@@ -147,3 +147,26 @@ D-1;JEQ // if (D-1==0) goto 56
 ```
 
 ## Input/Output
+
+Computers have input and output devices. For example, a keyboard can enter inputs and a screen can display outputs. I/O devices get data from users and display data to them. That's why coding applications is so rewarding. You can manipulate the computer to do what you'd like! Controlling the I/O beast, aka the computer.
+
+So, how would we manipulate the screen? We can use a screen memory map/matrix. This is a designated area of the RAM. The physical display unit will refresh many times per second from the memory map. If we change these bits, we can change the display.
+
+Our keyboard is into a keyboard memory map/matrix. It represents the keyboard inside the computer. Only a 16-bit register is necessary. When a key is pressed on the keyboard, the key's [scancode](https://en.wikipedia.org/wiki/Scancode) is sent into the memory map.
+
+## Conclusion
+
+In conclusion, the hack assembly language is symbolic with two types of instructions (A/C). An assembler translates the symbolic assembly language into binary code. After, the computer executes the binary code.
+
+The hack programming language is low level. A low level programming language deals with:
+
+- Working with registers and memory
+- Branching
+- Variables
+- Iteration
+- Pointers
+- Input/Output
+
+## Works Cited
+
+- Nisan, Noam, and Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles. MIT, 2021.

@@ -3,7 +3,7 @@ title: Nand to Tetris - Machine Language
 date: '2022-01-17'
 ---
 
-Machine language is any low-level programming language that has machine language instructions. These instructions control a computer's central processing unit (CPU).
+Machine language is any low level programming language that has machine language instructions. These instructions control a computer's central processing unit (CPU).
 
 ---
 
@@ -13,7 +13,7 @@ There is a universality in technology. The same hardware can run many different 
 
 How do we specify these sequences of instructions? We need operations, program counters, and addressing. We could write programs in binary but it would be very difficult. High-level languages compile into machine language for hardware to understand its instructions.
 
-To learn how to build a computer we need to deal directly with machine language. It's very good for optimized code because you can tell the hardware exactly what you want. Writing code closer to the hardware is known as [hardware acceleration](https://en.wikipedia.org/wiki/Hardware_acceleration).
+To learn how to build a computer we need to deal directly with machine language. It's very good for optimized code because we can tell the hardware exactly what we want. Writing code closer to the hardware is known as [hardware acceleration](https://en.wikipedia.org/wiki/Hardware_acceleration).
 
 Instruction: 010001000110010
 
@@ -33,9 +33,9 @@ Machine languages are the most important interface in the world of computer scie
 
 Throughout these sequences of instructions accessing memory is costly. We need to supply a long address to get data and supplying its contents to the CPU is slow. A solution to this is having a memory hierarchy.
 
-A memory hierarchy consists of a small memory that is easy to access and fast. This is the cache. The main memory is larger and less cheap to access. Then the slowest memory can sit on disk. The farther away you get from the ALU/CPU the more expensive it becomes to get that data.
+A memory hierarchy consists of a small memory that is easy to access and fast. This is the cache. The main memory is larger and less cheap to access. Then the slowest memory can sit on disk. The farther away we get from the ALU/CPU the more expensive it becomes to get that data.
 
-Also, the CPU usually contains a few accessible registers. They are central to machine language. Not only can you use them to store data, but you can store addresses in them.
+Also, the CPU usually contains a few accessible registers. They are central to machine language. Not only can we use them to store data, but we can store addresses in them.
 
 Addressing Modes:
 
@@ -65,7 +65,7 @@ Add 73, R1
 
 Input and output devices interact with the CPU with drivers. Drivers know the protocol on how to talk to the CPU. Example I/O devices would be a keyboard, mouse, camera, screen, and many more. This can work by memory mapping locations specific to the I/O devices.
 
-When the CPU executes these machine instructions in sequence there is a flow control. Occasionally you need to jump unconditionally to another location to loop. You can also do condition jumps to check if conditions are met.
+When the CPU executes these machine instructions in sequence there is a flow control. Occasionally we need to jump unconditionally to another location to loop. We can also do condition jumps to check if conditions are met.
 
 ## The Hack Computer and Machine Language
 
@@ -98,7 +98,7 @@ The Hack Computer is a 16-bit machine.
 - CPU has two registers close to it, A (data or address) and D (data) registers
 - The RAM can also be called the M register (addressed by A)
 
-You can write machine languages in two different flavors. You can write machine language in symbolic language or binary code.
+We can write machine languages in two different flavors. We can write machine language in symbolic language or binary code.
 
 ```hack
 @17
@@ -148,7 +148,7 @@ D-1;JEQ // if (D-1==0) goto 56
 
 ## Input/Output
 
-Computers have input and output devices. For example, a keyboard can enter inputs and a screen can display outputs. I/O devices get data from users and display data to them. That's why coding applications is so rewarding. You can manipulate the computer to do what you'd like! Controlling the I/O beast, aka the computer.
+Computers have input and output devices. For example, a keyboard can enter inputs and a screen can display outputs. I/O devices get data from users and display data to them. That's why coding applications is so rewarding. we can manipulate the computer to do what we'd like! Controlling the I/O beast, aka the computer.
 
 So, how would we manipulate the screen? We can use a screen memory map/matrix. This is a designated area of the RAM. The physical display unit will refresh many times per second from the memory map. If we change these bits, we can change the display.
 
@@ -156,7 +156,7 @@ Our keyboard is into a keyboard memory map/matrix. It represents the keyboard in
 
 ## Conclusion
 
-In conclusion, the hack assembly language is symbolic with two types of instructions (A/C). An assembler translates the symbolic assembly language into binary code. After, the computer executes the binary code.
+The hack assembly language is symbolic with two types of instructions (A/C). An assembler translates the symbolic assembly language into binary code. After, the computer executes the binary code.
 
 The hack programming language is low level. A low level programming language deals with:
 

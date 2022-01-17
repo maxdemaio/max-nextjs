@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FooterSocials from '@/components/FooterSocials';
 import CcName from '@/components/CcName';
 
 export default function BlogFooter() {
@@ -31,7 +32,8 @@ export default function BlogFooter() {
         </a>
         .
       </p>
-      <CcName></CcName>
+      <FooterSocials />
+      <CcName />
     </footer>
   );
 }

@@ -11,7 +11,7 @@ import BlogFooter from '@/components/BlogFooter';
 export default function Post({ id, html, meta }) {
   return (
     <Container title={meta.title}>
-      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         <div className="mb-8">
           <h1 className="my-h1">{meta.title}</h1>
           <div className="text-gray-500">

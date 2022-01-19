@@ -152,7 +152,7 @@ Computers have input and output devices. For example, a keyboard can enter input
 
 So, how would we manipulate the screen? We can use a screen memory map/matrix. This is a designated area of the RAM. The physical display unit will refresh many times per second from the memory map. If we change these bits, we can change the display.
 
-Our keyboard is into a keyboard memory map/matrix. It represents the keyboard inside the computer. Only a 16-bit register is necessary. When a key is pressed on the keyboard, the key's [scancode](https://en.wikipedia.org/wiki/Scancode) is sent into the memory map.
+Our keyboard is connected to a keyboard memory map/matrix. It represents the keyboard inside the computer. Only a 16-bit register is necessary. When a key is pressed on the keyboard, the key's [scancode](https://en.wikipedia.org/wiki/Scancode) is sent into the memory map.
 
 ## Conclusion
 

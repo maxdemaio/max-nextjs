@@ -13,7 +13,7 @@ There is a universality in technology. The same hardware can run many different 
 
 How do we specify these sequences of instructions? We need operations, program counters, and addressing. We could write programs in binary but it would be very difficult. High-level languages compile into machine language for hardware to understand its instructions.
 
-To learn how to build a computer we need to deal directly with machine language. It's very good for optimized code because we can tell the hardware exactly what we want. Writing code closer to the hardware is known as [hardware acceleration](https://en.wikipedia.org/wiki/Hardware_acceleration).
+To learn how to build a computer we need to deal directly with machine language. It's very good for optimized code because we can tell the hardware exactly what we want. Programs can be written at a low level to reap the benefits of [hardware acceleration](https://en.wikipedia.org/wiki/Hardware_acceleration).
 
 Instruction: 010001000110010
 

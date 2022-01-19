@@ -50,7 +50,7 @@ export default function Home() {
             chess, and learning languages. Also, I believe in hard work,
             curiosity, and diversity.
           </p>
-          <p>
+          <p className="text-gray-700 dark:text-gray-400">
             You can follow me on{' '}
             <a className="my-link" href="https://twitter.com/maxwelldemaio">
               Twitter

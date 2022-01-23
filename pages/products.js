@@ -2,6 +2,7 @@ import Container from '@/components/Container';
 import Image from 'next/image';
 
 import { shimmer, toBase64 } from '@/lib/imageManip';
+import SubpageFooter from '@/components/SubpageFooter';
 
 function Products() {
   return (
@@ -22,28 +23,35 @@ function Products() {
           </svg>
         </h1>
 
-        <p className="my-para">Here you'll find my products I've created.</p>
+        <p className="my-para">
+          Home for the products I've created. If you'd like to support my open
+          source work instead, feel free to visit my{' '}
+          <a href="https://github.com/sponsors/maxdemaio" className="my-link">
+            GitHub Sponsors page ♥
+          </a>
+          .
+        </p>
       </section>
 
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="shadow rounded">
+        <div className="grid grid-cols-1 gap-6">
+          <div className="transition ease-in-out delay-75 hover:-translate-y-1 hover:shadow-lg hover:scale-105 duration-500 rounded shadow-md outline outline-1 outline-gray-200 dark:outline-gray-800">
             <div>
               <Image
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(700, 475)
+                  shimmer(1920, 1074)
                 )}`}
                 src="/static/images/products/homeCloseView.png"
                 className="rounded-t"
-                height={224}
-                width={400}
+                height={1074}
+                width={1920}
                 alt="Notion Development & Content HQ Picture"
               />
             </div>
 
-            <div className="p-2">
-              <h3 className="font-semibold">Notion Development & Content HQ</h3>
+            <div className="p-4">
+              <h3 className="font-semibold">Development & Content HQ</h3>
               <p>Notion dashboard for projects, planning, content, & notes.</p>
               <p>
                 <a
@@ -57,6 +65,7 @@ function Products() {
           </div>
         </div>
       </section>
+      <SubpageFooter />
     </Container>
   );
 }

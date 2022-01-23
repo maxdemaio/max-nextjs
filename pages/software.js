@@ -32,10 +32,7 @@ export default function Software() {
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open
           source work is located on{' '}
-          <a
-            className="underline text-blue-400 hover:text-blue-600"
-            href="https://github.com/maxdemaio"
-          >
+          <a className="my-link" href="https://github.com/maxdemaio">
             GitHub
           </a>
           .
@@ -119,7 +116,9 @@ export default function Software() {
 
       <Image
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+          shimmer(1920, 1038)
+        )}`}
         src="/static/images/castle-software.jpg"
         className="rounded"
         height={1038}

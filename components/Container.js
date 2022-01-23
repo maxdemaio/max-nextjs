@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-import TwitterIcon from '@/components/TwitterIcon';
-import GithubIcon from '@/components/GithubIcon';
 import VideoBlogIcon from '@/components/VideoBlogIcon';
 
 export default function Container(props) {
@@ -125,6 +123,28 @@ export default function Container(props) {
                 d="M27.707 3.293L24.707 0.293C24.5195 0.105529 24.2652 0.000213623 24 0.000213623C23.7349 0.000213623 23.4806 0.105529 23.293 0.293L17.586 6H15.095C12.8147 6.00164 10.5911 6.71115 8.73127 8.03058C6.87142 9.35001 5.46705 11.2143 4.71205 13.366L0.0560471 26.67C-0.00618216 26.8478 -0.0169525 27.0395 0.0249762 27.2231C0.0669048 27.4067 0.159828 27.5747 0.293049 27.7078C0.42627 27.8409 0.594373 27.9337 0.778008 27.9755C0.961643 28.0173 1.15335 28.0064 1.33105 27.944L14.634 23.288C16.7858 22.533 18.65 21.1286 19.9695 19.2688C21.2889 17.4089 21.9984 15.1853 22 12.905V10.415L27.707 4.707C27.8945 4.51947 27.9998 4.26516 27.9998 4C27.9998 3.73484 27.8945 3.48053 27.707 3.293V3.293ZM20.293 9.293C20.1055 9.48049 20.0001 9.73481 20 10V12.905C19.9986 14.7707 19.418 16.59 18.3385 18.1117C17.2589 19.6333 15.7336 20.7823 13.973 21.4L4.80505 24.609L14 15.414L12.586 14L3.39005 23.195L6.60005 14.027C7.21775 12.2665 8.36673 10.7412 9.88839 9.66158C11.41 8.582 13.2293 8.00142 15.095 8H18C18.2652 7.99994 18.5196 7.89455 18.707 7.707L24 2.414L25.586 4L20.293 9.293Z"
                 fill="currentColor"
               />
+            </svg>
+          </a>
+        </Link>
+
+        <Link href="/products">
+          <a
+            aria-label="Products link"
+            className="nav-no-show text-blue-400 hover:text-blue-600"
+          >
+            Products
+          </a>
+        </Link>
+        <Link href="/products">
+          <a
+            aria-label="Product link"
+            className="md:hidden w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <svg width="1em" height="1em" viewBox="0 0 32 32">
+              <path
+                d="M25 2a11.01 11.01 0 0 0-10.245 7.024A6.994 6.994 0 0 0 9 6H6v3a7.008 7.008 0 0 0 7 7h1v9.05a9.923 9.923 0 0 0-6.071 2.879l1.414 1.414a8 8 0 0 1 12.309 1.213l1.661-1.113A9.98 9.98 0 0 0 16 25.062V16h1A11.012 11.012 0 0 0 28 5V2zM13 14a5.006 5.006 0 0 1-5-5V8h1a5.005 5.005 0 0 1 5 5v1zm13-9a9.01 9.01 0 0 1-9 9h-1v-1a9.01 9.01 0 0 1 9-9h1z"
+                fill="currentColor"
+              ></path>
             </svg>
           </a>
         </Link>

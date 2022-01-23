@@ -34,7 +34,9 @@ export default function GuestbookPage({ fallbackData }) {
 
       <Image
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+          shimmer(1920, 1038)
+        )}`}
         src="/static/images/mononoke-guestbook.jpg"
         className="rounded"
         height={1038}

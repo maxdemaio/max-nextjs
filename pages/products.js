@@ -41,27 +41,19 @@ function Products() {
                 alt="Notion Development & Content HQ Picture"
               />
             </div>
-            <h3>card title with icon to the left</h3>
-            <p>card description</p>
-            <p>card link</p>
-          </div>
-          <div className="shadow rounded">
-            <div>
-              <Image
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(700, 475)
-                )}`}
-                src="/static/images/products/homeCloseView.png"
-                className="rounded-t"
-                height={224}
-                width={400}
-                alt="Notion Development & Content HQ Picture"
-              />
+
+            <div className="p-2">
+              <h3 className="font-semibold">Notion Development & Content HQ</h3>
+              <p>Notion dashboard for projects, planning, content, & notes.</p>
+              <p>
+                <a
+                  className="my-link"
+                  href="https://maxdemaio.gumroad.com/l/notion-dev-content-hq"
+                >
+                  maxdemaio.gumroad.com
+                </a>
+              </p>
             </div>
-            <h3>card title with icon to the left</h3>
-            <p>card description</p>
-            <p>card link</p>
           </div>
         </div>
       </section>

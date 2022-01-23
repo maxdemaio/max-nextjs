@@ -32,10 +32,7 @@ export default function Software() {
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open
           source work is located on{' '}
-          <a
-            className="underline text-blue-400 hover:text-blue-600"
-            href="https://github.com/maxdemaio"
-          >
+          <a className="my-link" href="https://github.com/maxdemaio">
             GitHub
           </a>
           .

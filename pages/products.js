@@ -26,7 +26,10 @@ function Products() {
         <p className="my-para">
           Home for the products I've created. If you'd like to support my open
           source work instead, feel free to visit my{' '}
-          <a href="https://github.com/sponsors/maxdemaio" className="my-link">
+          <a
+            href="https://github.com/sponsors/maxdemaio"
+            className="underline text-pink-400 hover:text-pink-600"
+          >
             GitHub Sponsors page ♥
           </a>
           .

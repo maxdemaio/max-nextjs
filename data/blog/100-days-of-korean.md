@@ -267,107 +267,27 @@ In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그
 - 영화가 짧습니다 = the movie is **short**
 - 영화가 깁니다 = the movie is **long**
 
-### Day 21:
+### Days 21 through 37...:
 
-**Today's Progress:** Introduction to conjugation? Yes, sir.
+**Progress:** Did not log any entries for these days however I am still practicing daily. For a recap, I mainly focused on an introduction to verb conjugation.
 
-**Thoughts:**
+Verbs in the infinitive always end in 다. Verb conjugations depend on the tense and formality. Luckily when we learn them in Korean, we can apply the rules to all verbs.
 
-### Day 22:
+Present tense informal (요 form):
 
-**Today's Progress:**
+1. Get verb stem
+2. If verb stem ends in ㅏ or ㅗ, attach 아. Otherwise, attach 어.
+3. Attach 요
 
-**Thoughts:**
+**Example**
 
-### Day 23:
+먹다 (to eat)
 
-**Today's Progress:**
+1. Verb stem (먹)
+2. Does not end in ㅏ or ㅗ, attach 어.
+3. Form 먹어요
 
-**Thoughts:**
-
-### Day 24:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 25:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 26:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 27:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 28:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 29:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 30:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 31:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 32:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 33:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 34:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 35:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 36:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 37:
-
-**Today's Progress:**
-
-**Thoughts:**
+저는 피자를 먹어요 = I eat pizza
 
 ### Day 38:
 

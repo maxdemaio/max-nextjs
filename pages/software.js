@@ -1,8 +1,8 @@
 import Container from '@/components/Container';
-import Link from 'next/link';
 import Image from 'next/image';
+
 import { shimmer, toBase64 } from '@/lib/imageManip';
-import CcName from '@/components/CcName';
+import SubpageFooter from '@/components/SubpageFooter';
 
 export default function Software() {
   return (
@@ -32,10 +32,7 @@ export default function Software() {
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open
           source work is located on{' '}
-          <a
-            className="underline text-blue-400 hover:text-blue-600"
-            href="https://github.com/maxdemaio"
-          >
+          <a className="my-link" href="https://github.com/maxdemaio">
             GitHub
           </a>
           .
@@ -110,14 +107,18 @@ export default function Software() {
             SQL.
           </li>
           <li>
-            <strong>Tools:</strong> Git, GitHub Actions, Docker, Postman, Figma, Yarn/NPM, Prettier/ESLint, Visual Studio Code, Eclipse, Jira, and Notion.
+            <strong>Tools:</strong> Git, GitHub Actions, Docker, Postman, Figma,
+            Yarn/NPM, Prettier/ESLint, Visual Studio Code, Eclipse, Jira, and
+            Notion.
           </li>
         </ul>
       </section>
 
       <Image
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+          shimmer(1920, 1038)
+        )}`}
         src="/static/images/castle-software.jpg"
         className="rounded"
         height={1038}
@@ -125,13 +126,7 @@ export default function Software() {
         alt="Castle in the Sky - Blog Picture"
       />
 
-      <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-8">
-        <Link href="/">
-          <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
-        </Link>
-        <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-        <CcName></CcName>
-      </footer>
+      <SubpageFooter />
     </Container>
   );
 }

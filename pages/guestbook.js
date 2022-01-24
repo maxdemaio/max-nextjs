@@ -4,7 +4,7 @@ import prisma from 'lib/prisma';
 
 import Container from '@/components/Container';
 import { shimmer, toBase64 } from '@/lib/imageManip';
-import CcName from '@/components/CcName';
+import SubpageFooter from '@/components/SubpageFooter';
 import Guestbook from '@/components/Guestbook';
 
 export default function GuestbookPage({ fallbackData }) {
@@ -34,7 +34,9 @@ export default function GuestbookPage({ fallbackData }) {
 
       <Image
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+          shimmer(1920, 1038)
+        )}`}
         src="/static/images/mononoke-guestbook.jpg"
         className="rounded"
         height={1038}
@@ -42,13 +44,7 @@ export default function GuestbookPage({ fallbackData }) {
         alt="Princess Mononoke - Guestbook Picture"
       />
 
-      <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-8">
-        <Link href="/">
-          <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
-        </Link>
-        <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-        <CcName></CcName>
-      </footer>
+      <SubpageFooter />
     </Container>
   );
 }

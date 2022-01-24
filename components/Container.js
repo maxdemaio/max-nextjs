@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-import TwitterIcon from '@/components/TwitterIcon';
-import GithubIcon from '@/components/GithubIcon';
 import VideoBlogIcon from '@/components/VideoBlogIcon';
 
 export default function Container(props) {
@@ -129,21 +127,27 @@ export default function Container(props) {
           </a>
         </Link>
 
-        <a
-          href="https://twitter.com/maxwelldemaio"
-          aria-label="Twitter link"
-          className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          <TwitterIcon />
-        </a>
-
-        <a
-          href="https://github.com/maxdemaio"
-          aria-label="GitHub link"
-          className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          <GithubIcon />
-        </a>
+        <Link href="/products">
+          <a
+            aria-label="Products link"
+            className="nav-no-show text-blue-400 hover:text-blue-600"
+          >
+            Products
+          </a>
+        </Link>
+        <Link href="/products">
+          <a
+            aria-label="Product link"
+            className="md:hidden w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <svg width="1em" height="1em" viewBox="0 0 32 32">
+              <path
+                d="M25 2a11.01 11.01 0 0 0-10.245 7.024A6.994 6.994 0 0 0 9 6H6v3a7.008 7.008 0 0 0 7 7h1v9.05a9.923 9.923 0 0 0-6.071 2.879l1.414 1.414a8 8 0 0 1 12.309 1.213l1.661-1.113A9.98 9.98 0 0 0 16 25.062V16h1A11.012 11.012 0 0 0 28 5V2zM13 14a5.006 5.006 0 0 1-5-5V8h1a5.005 5.005 0 0 1 5 5v1zm13-9a9.01 9.01 0 0 1-9 9h-1v-1a9.01 9.01 0 0 1 9-9h1z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </Link>
 
         <button
           aria-label="Toggle Dark and Light Mode"

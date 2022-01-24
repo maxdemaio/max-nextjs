@@ -1,11 +1,12 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 import Container from '@/components/Container';
 import YoutubeStats from '@/components/YoutubeStats';
 import VidDisplayListItem from '@/components/VidDisplayListItem';
-import Link from 'next/link';
-import Image from 'next/image';
 import { shimmer, toBase64 } from '@/lib/imageManip';
 import { useState } from 'react';
-import CcName from '@/components/CcName';
+import SubpageFooter from '@/components/SubpageFooter';
 
 export default function Videos({ stats, videos }) {
   const [searchValue, setSearchValue] = useState('');
@@ -103,7 +104,9 @@ export default function Videos({ stats, videos }) {
 
       <Image
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+          shimmer(1920, 1038)
+        )}`}
         src="/static/images/howl-videos.jpg"
         className="rounded"
         height={1038}
@@ -111,13 +114,7 @@ export default function Videos({ stats, videos }) {
         alt="Howl's Moving Castle - Videos Picture"
       />
 
-      <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mt-8">
-        <Link href="/">
-          <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
-        </Link>
-        <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
-        <CcName></CcName>
-      </footer>
+      <SubpageFooter />
     </Container>
   );
 }

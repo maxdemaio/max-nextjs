@@ -18,10 +18,10 @@ This essentially allows us to make our own tailwind-like classNames. */
 }
 
 .my-h1 {
-  @apply font-bold text-4xl tracking-tight mb-8 dark:text-white;
+  @apply font-bold text-4xl tracking-tight mb-8;
 }
 .my-h2 {
-  @apply font-bold text-3xl tracking-tight mb-8 mt-8 dark:text-white;
+  @apply font-bold text-3xl tracking-tight mb-8 mt-8;
 }
 .my-para {
   @apply text-gray-700 dark:text-gray-400 mb-8;

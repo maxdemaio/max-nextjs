@@ -1,9 +1,9 @@
-import Document, {Html, Head, Main, NextScript} from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return {...initialProps};
+    return { ...initialProps };
   }
 
   render() {
@@ -30,7 +30,7 @@ class MyDocument extends Document {
             type="image/png"
           />
         </Head>
-        <body className="bg-white text-black dark:bg-black dark:text-white">
+        <body className="dark:bg-black dark:text-white">
           <Main />
           <NextScript />
         </body>

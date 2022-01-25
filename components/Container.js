@@ -51,7 +51,7 @@ export default function Container(props) {
         )}
       </Head>
 
-      <nav className="mt-2 mb-8 flex items-center justify-between w-full max-w-4xl p-4 mx-auto text-gray-900 dark:bg-black bg-opacity-60 dark:text-gray-100">
+      <nav className="mt-2 mb-8 flex items-center justify-between w-full max-w-4xl p-4 mx-auto text-gray-900 bg-white sticky-nav dark:bg-black bg-opacity-60 dark:text-gray-100">
         <Link href="/">
           <a
             id="home-nav"
@@ -150,18 +150,19 @@ export default function Container(props) {
         </Link>
 
         <button
-          aria-label="Toggle Dark Mode"
+          aria-label="Toggle Dark and Light Mode"
           type="button"
-          className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
+          className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           {mounted && (
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
               viewBox="0 0 24 24"
-              fill="none"
+              fill="currentColor"
               stroke="currentColor"
-              className="w-5 h-5 text-gray-800 dark:text-gray-200"
+              className="text-gray-800 dark:text-gray-200"
             >
               {resolvedTheme === 'dark' ? (
                 <path

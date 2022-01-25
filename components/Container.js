@@ -150,19 +150,18 @@ export default function Container(props) {
         </Link>
 
         <button
-          aria-label="Toggle Dark and Light Mode"
+          aria-label="Toggle Dark Mode"
           type="button"
-          className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
+          className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           {mounted && (
             <svg
-              width="1em"
-              height="1em"
+              xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              fill="currentColor"
+              fill="none"
               stroke="currentColor"
-              className="text-gray-800 dark:text-gray-200"
+              className="w-5 h-5 text-gray-800 dark:text-gray-200"
             >
               {resolvedTheme === 'dark' ? (
                 <path

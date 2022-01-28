@@ -9,8 +9,8 @@ Spring modules are loosely coupled. Developers can pick and choose modules as ne
 
 Demos for this post:
 
-- [https://github.com/maxdemaio/demos/tree/main/demo1-blog-post-java](https://github.com/maxdemaio/demos/tree/main/demo1-blog-post-java)
-- [https://github.com/maxdemaio/demos/tree/main/demo2-spring-ioc](https://github.com/maxdemaio/demos/tree/main/demo2-spring-ioc)
+- [demo without version control](https://github.com/maxdemaio/demos/tree/main/demo1-blog-post-java)
+- [demo with version control](https://github.com/maxdemaio/demos/tree/main/demo2-spring-ioc)
 
 ---
 

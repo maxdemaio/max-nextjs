@@ -38,7 +38,7 @@ function Products() {
 
       <section>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="transition ease-in-out delay-75 hover:-translate-y-4 hover:shadow-lg duration-500 rounded outline outline-1 outline-gray-200 dark:outline-gray-800">
+          <div className="transition ease-in-out hover:-translate-y-4 hover:shadow-lg duration-500 rounded shadow-md outline outline-1 outline-gray-200 dark:outline-gray-800">
             <div>
               <Image
                 placeholder="blur"

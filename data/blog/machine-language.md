@@ -21,7 +21,7 @@ Instruction: 010001000110010
 - R3: 0011
 - R2: 0010
 
-Now instead of coding in binary we can use symbolic assembly language. This assembly language will have an assembler program to convert it into its binary counterpart.
+Now instead of coding in binary we can use symbolic assembly language. This assembly language will have an assembler program to convert it into its binary counterpart. Throughout this blog post I will be detailing [hack assembly](<https://en.wikipedia.org/wiki/Hack_computer#Instruction_set_architecture_(ISA)_and_machine_language>).
 
 ```asm
 ADD R2, R1, R3
@@ -100,7 +100,7 @@ The Hack Computer is a 16-bit machine.
 
 We can write machine languages in two different flavors. We can write machine language in symbolic language or binary code.
 
-```hack
+```asm
 @17
 D+1;JLE
 ```
@@ -118,7 +118,7 @@ The symbolic language is translated into binary code (assembler) which can then 
 
 - `@value` (non-negative decimal or symbol referring to such a constant):
 
-```hack
+```asm
 // Set RAM[100] to -8
 @100 // A=100
 M=-8 // RAM[100] = -8
@@ -133,13 +133,13 @@ This will set the A-register to 100. Then RAM[100] becomes the selected RAM regi
 - dest field is where the computation result will be stored
 - jump directive if(comparing jump to 0) jumps to execute the instruction in ROM[A]
 
-```hack
+```asm
 // Set RAM[12] to the value of the D register minus 1
 @12 // A=12
 M=D-1 // RAM[12]=D-1
 ```
 
-```hack
+```asm
 // If (D-1==0) then jump to execute instruction stored in ROM[68]
 // Check to terminate loop pretty much
 @68 // A=56

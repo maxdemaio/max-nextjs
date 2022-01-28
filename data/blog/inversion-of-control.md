@@ -40,7 +40,7 @@ Spring 5.x has the following key module groups:
 
 Usually, it's the developer's responsibility to create the dependent application objects using the `new` operator. Hence any change in the application dependencies requires code changes. This results in tight coupling and more complexity as the application grows bigger.
 
-Inversion of Control (IoC) creates a more loosely coupled application. IoC inverts the responsibility of the application objects’ creation, initialization, and destruction from the application to a third-party aka the framework. The third party will take care of application object management and dependencies. This makes an application easy to maintain, test, and reuse. The Spring framework provides IoC implementation using Dependency Injection (DI).
+Inversion of Control (IoC) creates a more loosely coupled application. IoC inverts the responsibility of the application objects’ creation, initialization, and destruction from the application to a third-party aka the framework. The third party will take care of application object management and dependencies. This makes an application easy to maintain, test, and reuse. The Spring framework provides IoC implementation using dependency injection (DI).
 
 Objects managed by Spring are called beans. Thanks to Spring, we don’t need to create objects ourselves. Dependency injection allows us to describe how objects should be created through configuration.
 
@@ -77,7 +77,7 @@ Spring allows multiple methods to configure the metadata into our POJOs:
 
 ## Conclusion
 
-To conclude, I will introduce a small example with XML based configuration.
+To conclude, I will introduce a small IoC example with XML based configuration.
 
 ```java
 package com.maxdemaio.service;

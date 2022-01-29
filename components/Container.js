@@ -112,7 +112,7 @@ export default function Container(props) {
 
         <a
           aria-label="Twitter link"
-          href="https://twitter.com/maxdemaio"
+          href="https://twitter.com/maxwelldemaio"
           className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <TwitterIcon />

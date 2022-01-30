@@ -108,7 +108,7 @@ export default function Software() {
           </li>
           <li>
             <strong>Tools:</strong> Git, GitHub Actions, Docker, Postman, Figma,
-            Yarn/NPM, Prettier/ESLint, Visual Studio Code, Eclipse, Jira, and
+            Yarn/NPM, Prettier/ESLint, Visual Studio Code, IntelliJ, Jira, and
             Notion.
           </li>
         </ul>

@@ -65,6 +65,7 @@ export default function Container(props) {
         </Link>
 
         <div className="nav-no-show"></div>
+        <div className="nav-no-show"></div>
 
         <Link href="/posts">
           <a

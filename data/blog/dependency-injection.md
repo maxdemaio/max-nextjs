@@ -193,7 +193,7 @@ public class BlogPostService {
 </beans>
 ```
 
-For setter injection, we need a default constructor and setter methods of dependent properties. Spring will use the default constructor to create a bean. Then, Spring invokes the setter method of the respective property. This is based on the `name` attribute to initialize the values. Also, `property`` tags are mandatory in the bean definition.
+For setter injection, we need a default constructor and setter methods of dependent properties. Spring will use the default constructor to create a bean. Then, Spring invokes the setter method of the respective property. This is based on the `name` attribute to initialize the values. Also, `property` tags are mandatory in the bean definition.
 
 ### **Collection Values**
 

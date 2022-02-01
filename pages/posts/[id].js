@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 import { getAllPostIds, getPostData } from '@/lib/posts';
 import DateComp from '@/components/DateComp';
@@ -31,8 +31,8 @@ export default function Post({ id, html, meta }) {
                 return !inline && match ? (
                   <SyntaxHighlighter
                     children={String(children).replace(/\n$/, '')}
-                    style={tomorrow}
                     language={match[1]}
+                    style={nord}
                     PreTag="div"
                     {...props}
                   />

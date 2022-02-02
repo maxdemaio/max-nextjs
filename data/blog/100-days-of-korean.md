@@ -267,11 +267,19 @@ In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그
 - 영화가 짧습니다 = the movie is **short**
 - 영화가 깁니다 = the movie is **long**
 
-### Days 21 through 37...:
+### Days 21 through 46:
 
-**Progress:** Did not log any entries for these days however I am still practicing daily. For a recap, I mainly focused on an introduction to verb conjugation.
+**Progress:** Did not log any entries for these days but I'm still practicing daily. I'd like to criticize Duolingo for a bit here. I've had great experiences with their French and Italian trees. But, I've had some major difficulties with their Korean tree.
 
-Verbs in the infinitive always end in 다. Verb conjugations depend on the tense and formality. Luckily when we learn them in Korean, we can apply the rules to all verbs.
+My difficulties are understandable since I am a beginner and the tree isn't as mature as French/Italian. But, I'd like to point out that the content towards the end of the first checkpoint isn't constructive. For example, when you're beginning in a language you're looking to build a solid base in principles. You'd want to learn words that you'd find in day to day conversation.
+
+Before the first checkpoint, Duolingo has presented me approximately **94 unique verbs/adjectives**. I've confirmed this by going to the "words" section of Duolingo, filtering for words that end with "다". Also, since the Korean tree is new there are no visuals/images provided to help remember these verbs/adjectives. They're presented to you as text without images and it becomes a struggle to remember. This is in no way helpful. We build meaningful connections with words through context. Words recollection strengthens through experiences you can recall with imagery and thoughts.
+
+Presenting this many verbs/adjectives is like trying to build a house with paper. It's frustrating because a smaller set of common verbs and adjectives the tree would be better. This would help to focus on sentence patterns, not playing a guessing game with "what's this new verb mean"?
+
+I understand that learning a new language involves an intense amount of vocabulary recall. I know this because I have a B2 level of French. What I'm trying to point out is that I'm only trying to achieve a basic knowledge of Korean. Duolingo's users are mostly beginners. We shouldn't have to get bombarded with a large quantity words you'll never use and fail to recall.
+
+For a quick recap, I'll focus on the informal present tense of verbs. Infinitive verbs always end in 다. Verb conjugations depend on the tense and formality. Luckily when we learn them in Korean, we can apply the rules to all verbs.
 
 Present tense informal (요 form):
 
@@ -288,60 +296,6 @@ Present tense informal (요 form):
 3. Form 먹어요
 
 저는 피자를 먹어요 = I eat pizza
-
-### Day 38:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 39:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 40:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 41:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 42:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 43:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 44:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 45:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 46:
-
-**Today's Progress:**
-
-**Thoughts:**
 
 ### Day 47:
 

@@ -41,9 +41,6 @@ function FooterSocials() {
         >
           YouTube
         </a>
-      </div>
-
-      <div className="flex flex-col space-y-4 mb-8">
         <a
           className="my-nav-link"
           href="https://www.duolingo.com/profile/maxwelldemaio"
@@ -51,6 +48,20 @@ function FooterSocials() {
         >
           Duolingo
         </a>
+      </div>
+
+      <div className="flex flex-col space-y-4 mb-8">
+        <Link href="/guestbook">
+          <a aria-label="Guestbook link" className="my-nav-link">
+            Guestbook
+          </a>
+        </Link>
+
+        <Link href="/products">
+          <a aria-label="Products link" className="my-nav-link">
+            Products
+          </a>
+        </Link>
       </div>
     </div>
   );

@@ -18,10 +18,10 @@ This essentially allows us to make our own tailwind-like classNames. */
 }
 
 .my-h1 {
-  @apply font-bold text-4xl tracking-tight mb-8 text-black dark:text-white;
+  @apply font-bold text-4xl tracking-tight mb-8;
 }
 .my-h2 {
-  @apply font-bold text-3xl tracking-tight mb-8 mt-8 text-black dark:text-white;
+  @apply font-bold text-3xl tracking-tight mb-8 mt-8;
 }
 .my-para {
   @apply text-gray-700 dark:text-gray-400 mb-8;
@@ -111,21 +111,6 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.sticky-nav {
-  position: sticky;
-  z-index: 10;
-  top: 0;
-  backdrop-filter: saturate(180%) blur(20px);
-  transition: background-color 0.1 ease-in-out;
-}
-
-@supports not (backdrop-filter: none) {
-  .sticky-nav {
-    backdrop-filter: none;
-    @apply bg-opacity-100;
-  }
 }
 
 pre::-webkit-scrollbar {

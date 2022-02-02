@@ -242,171 +242,60 @@ In normal everyday speech, 이것 is often shortened to 이거 and 그것 to 그
 
 ### Day 19:
 
-**Today's Progress:**
+**Today's Progress:** The particle 도! This particle replaces any marker such as the object or topic marker. It means "even, also, too".
 
-**Thoughts:**
+- 저도 = me too, even me, me also
+- 피저도 = even pizza, also pizza, pizza too
+- 한국어도 = even Korean, also Korean, Korean too
 
 ### Day 20:
 
-**Today's Progress:**
+**Today's Progress:** Logging a good amount of adjective examples I've found while practicing on Duolingo. These adjectives are quite hard to remember without lots of repetition.
 
-**Thoughts:**
+- 개는 영리합니다 = the dog is **clever**
+- 아이가 개으릅니다 = The child is **lazy**
+- 여자아이가 착합니다 = The girl is **nice**
+- 저는 아픕니다 = I am **ill**
+- 고양이가 항복합니다 = The cat is **happy**
+- 저는 슬픕니다 = I am **sad**
+- 가수들이 피곤하니다 = The singers are **tired**
+- 사람들은 지루합니다 = people are **boring**
+- 집은 큽니다 = the house is **big**
+- 물건이 작습니다 = the thing is **small**
+- 사과가 나쁩니다 = the apple is **bad**
+- 학교가 좋습니다 = the school is **good**
+- 영화가 짧습니다 = the movie is **short**
+- 영화가 깁니다 = the movie is **long**
 
-### Day 21:
+### Days 21 through 46:
 
-**Today's Progress:**
+**Progress:** Did not log any entries for these days but I'm still practicing daily. I'd like to criticize Duolingo for a bit here. I've had great experiences with their French and Italian trees. But, I've had some major difficulties with their Korean tree.
 
-**Thoughts:**
+My difficulties are understandable since I am a beginner and the tree isn't as mature as French/Italian. But, I'd like to point out that the content towards the end of the first checkpoint isn't constructive. For example, when you're beginning in a language you're looking to build a solid base in principles. You'd want to learn words that you'd find in day to day conversation.
 
-### Day 22:
+Before the first checkpoint, Duolingo has presented me approximately **94 unique verbs/adjectives**. I've confirmed this by going to the "words" section of Duolingo, filtering for words that end with "다". Also, since the Korean tree is new there are no visuals/images provided to help remember these verbs/adjectives. They're presented to you as text without images and it becomes a struggle to remember. This is in no way helpful. We build meaningful connections with words through context. Words recollection strengthens through experiences you can recall with imagery and thoughts.
 
-**Today's Progress:**
+Presenting this many verbs/adjectives is like trying to build a house with paper. It's frustrating because a smaller set of common verbs and adjectives the tree would be better. This would help to focus on sentence patterns, not playing a guessing game with "what's this new verb mean"?
 
-**Thoughts:**
+I understand that learning a new language involves an intense amount of vocabulary recall. I know this because I have a B2 level of French. What I'm trying to point out is that I'm only trying to achieve a basic knowledge of Korean. Duolingo's users are mostly beginners. We shouldn't have to get bombarded with a large quantity words you'll never use and fail to recall.
 
-### Day 23:
+For a quick recap, I'll focus on the informal present tense of verbs. Infinitive verbs always end in 다. Verb conjugations depend on the tense and formality. Luckily when we learn them in Korean, we can apply the rules to all verbs.
 
-**Today's Progress:**
+Present tense informal (요 form):
 
-**Thoughts:**
+1. Get verb stem
+2. If verb stem ends in ㅏ or ㅗ, attach 아. Otherwise, attach 어.
+3. Attach 요
 
-### Day 24:
+**Example**
 
-**Today's Progress:**
+먹다 (to eat)
 
-**Thoughts:**
+1. Verb stem (먹)
+2. Does not end in ㅏ or ㅗ, attach 어.
+3. Form 먹어요
 
-### Day 25:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 26:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 27:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 28:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 29:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 30:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 31:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 32:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 33:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 34:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 35:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 36:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 37:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 38:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 39:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 40:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 41:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 42:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 43:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 44:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 45:
-
-**Today's Progress:**
-
-**Thoughts:**
-
-### Day 46:
-
-**Today's Progress:**
-
-**Thoughts:**
+저는 피자를 먹어요 = I eat pizza
 
 ### Day 47:
 

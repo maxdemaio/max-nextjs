@@ -53,7 +53,7 @@ export default function Container(props) {
         )}
       </Head>
 
-      <nav className="px-8 mt-8 mb-12 flex items-center justify-between max-w-3xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
+      <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-3xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
         <Link href="/">
           <a
             id="home-nav"

@@ -53,7 +53,7 @@ export default function Container(props) {
         )}
       </Head>
 
-      <nav className="p-8 mb-6 flex items-center justify-between max-w-4xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
+      <nav className="px-8 my-8 flex items-center justify-between max-w-3xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
         <Link href="/">
           <a
             id="home-nav"
@@ -63,9 +63,6 @@ export default function Container(props) {
             Home
           </a>
         </Link>
-
-        <div className="nav-no-show"></div>
-        <div className="nav-no-show"></div>
 
         <Link href="/posts">
           <a

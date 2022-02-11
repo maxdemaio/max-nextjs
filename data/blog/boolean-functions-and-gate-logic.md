@@ -102,7 +102,7 @@ CHIP Xor {
 
 Steps for writing HDL usually follow the following steps:
 
-1.  Look at the truth table an synthesize the boolean functions that generate an output of 1.
+1.  Look at the truth table and synthesize the boolean functions that generate an output of 1.
 2.  Use this insight and come up with a gate logic diagram to build the boolean function with basic logic gates (comes with experience).
     - Draw the boundary of the gate interface
     - Draw the inner gate implementation with basic logic gates

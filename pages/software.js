@@ -44,20 +44,6 @@ export default function Software() {
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
-                href="https://github.com/maxdemaio/langlab"
-                className="my-link"
-              >
-                LangLab
-              </a>{' '}
-              is a free and open source language learning website that allows
-              users to practice the conjugations of the 25 most common verbs in
-              English. Helpful resources have also been provided to help
-              learners on their path.
-            </p>
-          </div>
-          <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
-            <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
-              <a
                 href="https://github.com/maxdemaio/thelangbot"
                 className="my-link"
               >
@@ -71,15 +57,28 @@ export default function Software() {
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
-                href="https://github.com/maxdemaio/finance"
+                href="https://github.com/maxdemaio/hack-computer"
                 className="my-link"
               >
-                Finance
+                Hack Computer
               </a>{' '}
-              is a business application via which you can manage portfolios of
-              stocks, check stock prices, and buy/sell stocks utlizing IEX's
-              API. Also, with Chart.js investors can view a pie chart of their
-              portfolio distribution.
+              is a computer system built from the ground up as described in the
+              book, "The Elements of Computing Systems". Made with hardware
+              description language, assembly, and Java.
+            </p>
+          </div>
+          <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">
+            <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
+              <a
+                href="https://github.com/maxdemaio/langlab"
+                className="my-link"
+              >
+                LangLab
+              </a>{' '}
+              is a free and open source language learning website that allows
+              users to practice the conjugations of the 25 most common verbs in
+              English. Helpful resources have also been provided to help
+              learners on their path.
             </p>
           </div>
           <div className="transform transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-900 rounded p-4">

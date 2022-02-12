@@ -62,11 +62,11 @@ Symbolic example:
 
 Binary example:
 
-```
+```code
 0valueInBinary // starts with 0 bc it's an a-instruction
 ```
 
-```
+```code
 00000000000010101
 ```
 
@@ -76,7 +76,7 @@ For c-instructions we'd go through the same translation process. Based on the tr
 
 Symbolic example:
 
-```
+```code
 dest = comp ; jump
 ```
 

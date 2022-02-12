@@ -113,6 +113,7 @@ html {
   min-height: 100vh;
 }
 
+/* Code stylings */
 pre::-webkit-scrollbar {
   display: none;
 }
@@ -120,4 +121,9 @@ pre::-webkit-scrollbar {
 pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.prose :where(code):not(:where([class~='not-prose'] *)) {
+  font-size: 0.8em;
+  font-weight: 400;
 }

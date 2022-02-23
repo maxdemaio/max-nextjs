@@ -7,7 +7,7 @@ React is a modern JavaScript library for building interactive user interfaces. I
 
 Demos:
 
-- [React rendering demo](https://github.com/maxdemaio/demos/tree/main/my-demo-react-app-1)
+- [Create React App demo](https://github.com/maxdemaio/demos/tree/main/my-demo-react-app-1)
 
 ---
 

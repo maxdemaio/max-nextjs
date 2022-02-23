@@ -137,5 +137,5 @@ In this blog post we learned about what React is and how to start a React applic
 
 ## Works Cited
 
-- [http://economice.ulbsibiu.ro/revista.economica/archive/71404fuciu.pdf](http://economice.ulbsibiu.ro/revista.economica/archive/71404fuciu.pdf)
+- FUCIU, Mircea. “The Rise Of Instagram – Evolution, Statistics, Advantages And Disatvantages.” Lucian Blaga University of Sibiu, Romania, https://doi.org/http://economice.ulbsibiu.ro/revista.economica/archive/71404fuciu.pdf.
 - [https://reactjs.org/](https://reactjs.org/)

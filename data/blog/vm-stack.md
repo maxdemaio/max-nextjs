@@ -9,7 +9,7 @@ We'll be going through the 2-tier system used by Java and C#. We'll compile a hi
 
 Demos:
 
-- [VM translator built in Java](https://github.com/maxdemaio/hack-computer/tree/main/VMTranslator)
+- [VM translator made with Java](https://github.com/maxdemaio/hack-computer/tree/main/vmTranslator)
 
 ---
 

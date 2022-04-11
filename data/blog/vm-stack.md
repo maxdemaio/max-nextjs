@@ -1,5 +1,5 @@
 ---
-title: Nand to Tetris - VM Stack
+title: Nand to Tetris - Virtual Machine I
 date: '2022-04-11'
 ---
 

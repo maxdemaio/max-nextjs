@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { shimmer, toBase64 } from '@/lib/imageManip';
 import SubpageFooter from '@/components/SubpageFooter';
+import TopTracks from '@/components/TopTracks';
 
 export default function Music() {
   return (
@@ -22,22 +23,26 @@ export default function Music() {
             ></path>
           </svg>
         </h1>
-        <p className="my-para">Here you'll find my music stuff.</p>
+        <p>
+          A place for all things music related in my life. Here you'll find my
+          favorite tracks and possibly my own music in the future.
+        </p>
       </section>
-      <section>
-        <h2 className="my-h2">Top Tracks</h2>
-      </section>
+
+      <h2 className="my-h2">Top Tracks</h2>
+      <p className="my-para">My top tracks on Spotify over the last 4 weeks.</p>
+      <TopTracks />
 
       <Image
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(
           shimmer(1920, 1038)
         )}`}
-        src="/static/images/mimi-music.jpg"
+        src="/static/images/naus-music.jpg"
         className="rounded"
         height={1038}
         width={1920}
-        alt="Whisper of the Heart - Music Picture"
+        alt="Nausicaä of the Valley of the Wind - Music Picture"
       />
 
       <SubpageFooter />

@@ -1,6 +1,7 @@
 ---
 title: Spring Basics - XML Autowiring and Bean Scope
 date: '2022-02-12'
+description: How XML autowiring works in the Spring framework.
 ---
 
 In this blog post we’ll approach how autowiring works in the Spring framework. We’ll showcase autowiring via XML configuration. Also, we’ll dive into understanding singleton and prototype bean scopes.

@@ -1,6 +1,7 @@
 ---
 title: Spring Data Transfer Objects
 date: '2021-10-06'
+description: What data transfer objects are and their importance in REST calls.
 ---
 
 Data Transfer Objects (DTOs) carry data between processes. Each call to an application is expensive so we should try to keep them to a minimum. DTOs help solve this pesky problem! DTOs need to be serializable to go across remote connections. Usually, an assembler is used on the server side to transfer data between DTOs and any domain objects.

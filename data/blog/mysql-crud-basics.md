@@ -1,6 +1,7 @@
 ---
 title: MySQL CRUD Basics - Creating a Database
 date: '2021-07-14'
+description: MySQL basics and how to use it while building applications.
 ---
 
 Structured Query Language (SQL) is used to manage data in all relational database management systems such as MySQL, Oracle, SQL Server, and more. SQL standards are maintained by [ISO](https://en.wikipedia.org/wiki/ISO/IEC_9075). While most database products comply with the ISO standard, they also offer additional proprietary features. In this blog post we're going to restrict ourselves to the feature set offered by [MySQL](https://www.mysql.com/) databases.
@@ -31,7 +32,7 @@ The `CREATE TABLE` statement allows us to create a table with a given name. Ther
 CREATE DATABASE MaxOverflowExample;
 USE MaxOverflowExample;
 
-CREATE TABLE Customer ( 
+CREATE TABLE Customer (
 	CustNo 	CHAR(8),
 	CustFirstName	VARCHAR(20) NOT NULL,
 	CustLastName	VARCHAR(30) NOT NULL,
@@ -39,20 +40,20 @@ CREATE TABLE Customer (
 	CustState	CHAR(2),
 	CustZip	CHAR(10),
 	CustBal		DECIMAL(12,2),
-	CONSTRAINT PKCustomer PRIMARY KEY (CustNo)  
+	CONSTRAINT PKCustomer PRIMARY KEY (CustNo)
  );
 
- CREATE TABLE Employee( 
+ CREATE TABLE Employee(
 	EmpNo 	 CHAR(8),
 	EmpFirstName VARCHAR(20) NOT NULL,
 	EmpLastName VARCHAR(30) NOT NULL,
 	EmpPhone		 CHAR(15),
 	EmpEMail		 VARCHAR(50) NOT NULL,
 	CONSTRAINT PKEmployee PRIMARY KEY (EmpNo),
-	CONSTRAINT UniqueEMail UNIQUE (EmpEMail) 
+	CONSTRAINT UniqueEMail UNIQUE (EmpEMail)
 );
 
-CREATE TABLE OrderTbl ( 
+CREATE TABLE OrderTbl (
     OrdNo 	CHAR(8),
     OrdDate	DATE NOT NULL,
     CustNo		CHAR(8) NOT NULL,
@@ -75,14 +76,14 @@ Note the order I insert the data as well. I insert data into the employee and cu
 USE MaxOverflowExample;
 
 INSERT INTO Customer
-    (CustNo, CustFirstName, CustLastName, CustCity, CustState, CustZip, CustBal) 
+    (CustNo, CustFirstName, CustLastName, CustCity, CustState, CustZip, CustBal)
     VALUES('C0954327','Sheri','Gordon','Littleton','CO','80129-5543',230.00);
 
 INSERT INTO Employee
     (EmpNo, EmpFirstName, EmpLastName, EmpPhone, EmpEMail)
     VALUES ('E8544399','Joe','Jenkins','(303) 221-9875','JJenkins@bigco.com');
 
-INSERT INTO OrderTbl 
+INSERT INTO OrderTbl
     (OrdNo, OrdDate, CustNo, EmpNo)
     VALUES ('O9919699','2017-02-11','C0954327','E8544399');
 ```
@@ -116,18 +117,18 @@ UPDATE Customer
 -- Delete rows added
 DELETE FROM OrderTbl
   WHERE OrdNo = 'O9919699';
-  
+
 DELETE FROM Employee
   WHERE EmpNo = 'E8544399';
-  
+
 DELETE FROM Customer
   WHERE CustNo = 'C0954327';
 ```
 
 ---
 
-
 I hope this post helped boost your MySQL [power level](https://dragonball.fandom.com/wiki/Power_Level). If you like video format better, I have a [YouTube playlist](https://www.youtube.com/playlist?list=PLg7mHz5jVDueWom70v1JjpaCfxwh99_fC) where I demonstrate everything in the MySQL workbench. MySQL is a database management system that allows us to interact with and design databases. With a solid foundation of MySQL basics, you can start designing and interacting with databases.
 
 ## Works Cited
-- “MySQL 8.0 Reference Manual.” *MySQL*, [https://dev.mysql.com/doc/refman/8.0/en/](https://dev.mysql.com/doc/refman/8.0/en/).
+
+- “MySQL 8.0 Reference Manual.” _MySQL_, [https://dev.mysql.com/doc/refman/8.0/en/](https://dev.mysql.com/doc/refman/8.0/en/).

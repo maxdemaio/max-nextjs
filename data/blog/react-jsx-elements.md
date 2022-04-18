@@ -1,6 +1,7 @@
 ---
 title: Intro to React - JSX and Elements
 date: '2022-02-23'
+description: Introduction to React and why we use it.
 ---
 
 React is a modern JavaScript library for building interactive user interfaces. In this blog post, we'll get a brief introduction and how to get started with React.

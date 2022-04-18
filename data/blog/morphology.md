@@ -1,6 +1,7 @@
 ---
 title: Morphology - How Words Are Studied
 date: '2021-07-04'
+description: The study of words, how they are constructed, and their relationship to other words in the same language.
 ---
 
 The study of words, how they are constructed, and their relationship to other words in the same language.

@@ -13,6 +13,7 @@ export default function Post({ id, html, meta }) {
     <Container
       title={meta.title}
       image="https://maxdemaio.com/static/images/spirited-blog.jpg"
+      description={meta.description}
     >
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         <div className="mb-8">

@@ -9,7 +9,12 @@ import Guestbook from '@/components/Guestbook';
 
 export default function GuestbookPage({ fallbackData }) {
   return (
-    <Container title="Guestbook – Max DeMaio">
+    <Container
+      title="Guestbook – Max DeMaio"
+      image="https://maxdemaio.com/static/images/mononoke-guestbook.jpg"
+      description="Guestbook where you can leave an entry
+        for future visitors."
+    >
       <h1 className="my-h1">
         Guestbook
         <svg

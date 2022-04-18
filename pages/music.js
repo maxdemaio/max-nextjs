@@ -7,7 +7,11 @@ import TopTracks from '@/components/TopTracks';
 
 export default function Music() {
   return (
-    <Container title="Music – Max DeMaio">
+    <Container
+      title="Music – Max DeMaio"
+      image="https://maxdemaio.com/static/images/naus-music.jpg"
+      description="A place for all things music related in my life."
+    >
       <section>
         <h1 className="my-h1">
           Music
@@ -23,7 +27,7 @@ export default function Music() {
             ></path>
           </svg>
         </h1>
-        <p>
+        <p className="my-para">
           A place for all things music related in my life. Here you'll find my
           favorite tracks and possibly my own music in the future.
         </p>

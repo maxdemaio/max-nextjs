@@ -6,7 +6,10 @@ import SubpageFooter from '@/components/SubpageFooter';
 
 function Products() {
   return (
-    <Container title="Products – Max DeMaio">
+    <Container
+      title="Products – Max DeMaio"
+      description="Home for the products I've created."
+    >
       <section>
         <h1 className="my-h1">
           Products

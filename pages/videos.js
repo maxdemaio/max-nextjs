@@ -22,7 +22,11 @@ export default function Videos({ stats, videos }) {
     );
 
   return (
-    <Container title="Posts | Videos – Max DeMaio">
+    <Container
+      title="Posts | Videos – Max DeMaio"
+      image="https://maxdemaio.com/static/images/howl-videos.jpg"
+      description="All my YouTube videos in one place."
+    >
       <h1 className="my-h1">
         <Link href="/posts">
           <a className="text-gray-800 dark:text-gray-100 opacity-20 hover:opacity-50">

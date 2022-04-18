@@ -12,7 +12,11 @@ export default function PostHome({ allPostsData }) {
   const blogTitle = 'max overflow';
 
   return (
-    <Container title="Posts | Blog – Max DeMaio">
+    <Container
+      title="Posts | Blog – Max DeMaio"
+      image="https://maxdemaio.com/static/images/spirited-blog.jpg"
+      description="All my blog posts in one place."
+    >
       <h1 className="my-h1">
         Blog
         <svg

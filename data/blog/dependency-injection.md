@@ -1,6 +1,8 @@
 ---
 title: Spring Basics - Dependency Injection
 date: '2022-02-01'
+image: https://maxdemaio.com/static/images/spirited-blog.jpg
+description: How to use different types of dependency injection in the Spring framework.
 ---
 
 In this blog post we’ll learn about Dependency Injection (DI) and how to use it. We can do this using constructor and setter injection. Also, I recommend checking out this [YouTube video by Ryan Schachte if it’s still available](https://www.youtube.com/watch?v=EPv9-cHEmQw).

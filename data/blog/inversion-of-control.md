@@ -1,6 +1,8 @@
 ---
 title: Spring Basics - Inversion of Control
 date: '2022-01-27'
+image: https://maxdemaio.com/static/images/spirited-blog.jpg
+description: Inversion of control and its importance in the Spring framework.
 ---
 
 Spring is an open source Java application development framework that supports all types of Java applications such as: enterprise applications, web applications, cloud based applications, and more. Spring applications are simple, easily testable, reusable, and maintainable.

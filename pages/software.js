@@ -6,7 +6,12 @@ import SubpageFooter from '@/components/SubpageFooter';
 
 export default function Software() {
   return (
-    <Container title="Software – Max DeMaio">
+    <Container
+      title="Software – Max DeMaio"
+      image="https://maxdemaio.com/static/images/castle-software.jpg"
+      description="Featured projects as well as the technology I use
+          to build business and software architecture."
+    >
       <section>
         <h1 className="my-h1">
           Software

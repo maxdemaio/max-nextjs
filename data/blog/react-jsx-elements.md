@@ -1,7 +1,6 @@
 ---
 title: Intro to React - JSX and Elements
 date: '2022-02-23'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: Introduction to React and why we use it.
 ---
 

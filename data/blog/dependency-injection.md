@@ -1,7 +1,6 @@
 ---
 title: Spring Basics - Dependency Injection
 date: '2022-02-01'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: How to use different types of dependency injection in the Spring framework.
 ---
 

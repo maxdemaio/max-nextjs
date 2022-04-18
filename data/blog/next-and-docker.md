@@ -1,7 +1,6 @@
 ---
 title: Next.js and Docker
 date: '2021-12-11'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: How to use Next.js and Docker together.
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Spring Basics - XML Autowiring and Bean Scope
 date: '2022-02-12'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: How XML autowiring works in the Spring framework.
 ---
 

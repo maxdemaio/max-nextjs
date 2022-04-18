@@ -1,7 +1,6 @@
 ---
 title: Nand to Tetris - Boolean Functions & Gate Logic
 date: '2021-12-23'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: All about boolean functions and gate logic.
 ---
 

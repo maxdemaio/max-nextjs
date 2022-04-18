@@ -1,7 +1,6 @@
 ---
 title: MySQL CRUD Basics - Creating a Database
 date: '2021-07-14'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: MySQL basics and how to use it while building applications.
 ---
 

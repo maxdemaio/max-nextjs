@@ -1,7 +1,6 @@
 ---
 title: Spring Basics - Annotation and Java Based Configuration
 date: '2022-02-17'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: All about annotation and Java Based Configuration in Spring.
 ---
 

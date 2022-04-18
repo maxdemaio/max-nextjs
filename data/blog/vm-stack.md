@@ -1,7 +1,6 @@
 ---
 title: Nand to Tetris - Virtual Machine I
 date: '2022-04-11'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: Building a virtual machine and its specification over the Hack computer.
 ---
 

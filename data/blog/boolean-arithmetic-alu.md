@@ -1,7 +1,6 @@
 ---
 title: Nand to Tetris - Boolean Arithmetic & the ALU
 date: '2021-12-27'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: How gate logic works and specification for the ALU.
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Nand to Tetris - Machine Language
 date: '2022-01-17'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: All about machine language.
 ---
 

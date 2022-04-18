@@ -1,7 +1,6 @@
 ---
 title: Spring Data Transfer Objects
 date: '2021-10-06'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: What data transfer objects are and their importance in REST calls.
 ---
 

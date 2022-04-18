@@ -1,7 +1,6 @@
 ---
 title: Tailwind, React, and TypeScript - How to Get Started
 date: '2021-09-04'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: How to get set up with Tailwind, React, and Typescript.
 ---
 

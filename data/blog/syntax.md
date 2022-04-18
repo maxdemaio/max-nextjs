@@ -1,7 +1,6 @@
 ---
 title: Syntax - The Science of Sentences
 date: '2021-08-07'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: Syntax, the study of word order and how words are put together into larger units.
 ---
 

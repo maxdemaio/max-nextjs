@@ -1,7 +1,6 @@
 ---
 title: Nand to Tetris - Building an Assembler
 date: '2022-02-11'
-image: https://maxdemaio.com/static/images/spirited-blog.jpg
 description: What assemblers are and how to build one.
 ---
 

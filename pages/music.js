@@ -53,6 +53,12 @@ export default function Music() {
             <h3 className="my-h3 pl-3">Originals</h3>
             <MyTrack
               artist=""
+              songUrl="https://soundcloud.com/maxdemaio/whiplash"
+              title="whiplash"
+              original={true}
+            />
+            <MyTrack
+              artist=""
               songUrl="https://soundcloud.com/maxdemaio/from-the-heart"
               title="from the heart"
               original={true}

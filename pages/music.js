@@ -84,7 +84,15 @@ export default function Music() {
 
       <h2 className="my-h2">Top Spotify Tracks</h2>
       <p className="my-para">
-        My most played tracks on Spotify over the last 4 weeks.
+        My most played tracks on Spotify over the last 4 weeks. To check out all
+        my playlists, feel free to check out{' '}
+        <a
+          href="https://open.spotify.com/user/max_dem"
+          className="font-medium underline decoration-green-300 decoration-2 text-gray-900 dark:text-gray-100"
+        >
+          my Spotify profile
+        </a>
+        .
       </p>
       <TopTracks />
 

@@ -20,6 +20,14 @@ function FooterSocials() {
       <div className="flex flex-col space-y-4 mb-8">
         <a
           className="my-nav-link"
+          href="https://www.linkedin.com/in/maxdemaio/"
+          aria-label="LinkedIn link"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          className="my-nav-link"
           href="https://twitter.com/maxwelldemaio"
           aria-label="Twitter link"
         >

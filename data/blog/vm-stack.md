@@ -6,7 +6,7 @@ description: Building a virtual machine and its specification over the Hack comp
 
 In my previous blog posts, we built a computer from the ground up using HDL, assembly, and binary. This was the hardware hierarchy. Now, we'll be diving into the world of software where the assembler bridges this gap.
 
-We'll be going through the 2-tier system used by Java and C#. We'll compile a high-level language, Jack, to virtual machine (VM) language and translate it to assembly. We can swap out our VM translator to suit any platform. In this case it will translate hack assembly to run on our hack computer.
+We'll be going through the 2-tier system used by Java and C#. We'll compile a high-level language, Jack, to virtual machine (VM) language and translate it to assembly. We can swap out our VM translator to suit any platform. In this case it will translate to hack assembly to run on our hack computer.
 
 Demos:
 

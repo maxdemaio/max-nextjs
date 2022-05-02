@@ -136,7 +136,7 @@ Setting this up is tedious. We have to write the code to perform common database
 
 ## Spring Data
 
-There is a high-level project called Spring Data project that searches to unify data access with SQL and NoSQL data stores. There are also sub projects for technologies like MongoDB, Redis, Neo4j and more. It simplifies the data access layer by removing the implementations as shown above from your application. The only artifact that needed is the interface.
+Spring Data is a high-level project that searches to unify data access with SQL and NoSQL data stores. There are also sub projects for technologies like MongoDB, Redis, Neo4j and more. It simplifies the data access layer by removing the implementations as shown above from your application. The only artifact that needed is the interface.
 
 ![Spring Data Image](/static/images/jpa/jpa.png)
 

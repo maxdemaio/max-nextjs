@@ -1,5 +1,5 @@
 ---
-title: Spring Data Access - JDBC, Spring Boot, and Spring Data
+title: Spring Data Access - JDBC, Boot, and Spring Data
 date: '2022-05-02'
 description: Introduction to Spring Boot and advantages to using Spring Data
 ---
@@ -153,6 +153,21 @@ The main Spring Boot features are:
 - Spring Boot actuator
 - Easy to use embedded servlet container support
 
+```java
+@SpringBootApplication
+public class ClientApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+    }
+}
+```
+
+`@SpringBootApplication` indicates that is a configuration class and triggers auto-configuration and component scanning. It is a combination of the following annotations and their default settings:
+
+- `@EnableAutoConfiguration` - enables auto-configuration for our application based on the dependencies added
+- `@ComponentScan` - enables Spring bean dependency injection feature. All application components annotated with `@Component`, `@Service`, `@Repository`, or `@Controller` are registered as Spring beans. These beans can be injected using the `@Autowired` annotation.
+- `@Configuration` - enables Java based configurations
+
 To create a Spring Boot application, we can use the following tools (I'll be using Spring Initializr throughout the series):
 
 - Spring Initializr
@@ -178,3 +193,7 @@ Spring also provides an API for transaction management that goes well with data 
 
 - [Spring Docs](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/)
 - [Spring Data Docs](http://docs.spring.io/spring-data/data-commons/docs/1.9.2.RELEASE/reference/html/)
+
+```
+
+```

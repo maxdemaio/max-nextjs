@@ -50,25 +50,25 @@ import java.util.Properties;
 import com.maxdemaio.entity.Customer;
 
 public class CustomerDAOImpl implements CustomerDAO {
- Connection con = null;
- PreparedStatement stmt = null;
- ResultSet rs = null;
+    Connection con = null;
+    PreparedStatement stmt = null;
+    ResultSet rs = null;
 
     @Override
- public void insert(Customer customer) {
- try (FileInputStream fis = new FileInputStream("src/main/resources/application.properties");) {
- Properties p = new Properties();
+    public void insert(Customer customer) {
+        try (FileInputStream fis = new FileInputStream("src/main/resources/application.properties");) {
+            Properties p = new Properties();
             p.load(fis);
- String dname = (String) p.get("jdbc.driverClassName");
- String url = (String) p.get("spring.datasource.url");
- String username = (String) p.get("spring.datasource.username");
- String password = (String) p.get("spring.datasource.password");
+            String dname = (String) p.get("jdbc.driverClassName");
+            String url = (String) p.get("spring.datasource.url");
+            String username = (String) p.get("spring.datasource.username");
+            String password = (String) p.get("spring.datasource.password");
             Class.forName(dname);
- // Register driver
+            // Register driver
             con = DriverManager.getConnection(url, username, password);
- // Create connection
- String query = "insert into customer values (?,?,?,?,?,?)";
- // Create prepared statement
+            // Create connection
+            String query = "insert into customer values (?,?,?,?,?,?)";
+            // Create prepared statement
             stmt = con.prepareStatement(query);
             stmt.setLong(1, customer.getPhoneNumber());
             stmt.setString(2, customer.getName());
@@ -76,16 +76,16 @@ public class CustomerDAOImpl implements CustomerDAO {
             stmt.setString(4, customer.getGender().toString());
             stmt.setString(5, customer.getAddress());
             stmt.setInt(6, customer.getPlanId());
- // Execute query
+            // Execute query
             stmt.executeUpdate();
             System.out.println("Record inserted");
         } catch (Exception e) {
             System.out.println("error: " + e.getMessage());
         } finally {
- try {
- // Close the prepared statement
+            try {
+                // Close the prepared statement
                 stmt.close();
- // Close the connection
+                // Close the connection
                 con.close();
             } catch (Exception e) {
                 System.out.println("error: " + e.getMessage());
@@ -94,39 +94,40 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
- public int remove(Long phoneNo) {
- int result = 1;
- try (FileInputStream fis = new FileInputStream("src/main/resources/application.properties");) {
- Properties p = new Properties();
+    public int remove(Long phoneNo) {
+        int result = 1;
+        try (FileInputStream fis = new FileInputStream("src/main/resources/application.properties");) {
+            Properties p = new Properties();
             p.load(fis);
- String dname = (String) p.get("jdbc.driverClassName");
- String url = (String) p.get("spring.datasource.url");
- String username = (String) p.get("spring.datasource.username");
- String password = (String) p.get("spring.datasource.password");
+            String dname = (String) p.get("jdbc.driverClassName");
+            String url = (String) p.get("spring.datasource.url");
+            String username = (String) p.get("spring.datasource.username");
+            String password = (String) p.get("spring.datasource.password");
             Class.forName(dname);
- // Create connection
+            // Create connection
             con = DriverManager.getConnection(url, username, password);
- String query = "DELETE FROM Customer WHERE phone_no = ?";
- // Create prepared statement
+            String query = "DELETE FROM Customer WHERE phone_no = ?";
+            // Create prepared statement
             stmt = con.prepareStatement(query);
             stmt.setLong(1, phoneNo);
- // Execute query
+            // Execute query
             result = stmt.executeUpdate();
         } catch (Exception e) {
             System.out.println("error: " + e.getMessage());
         } finally {
- try {
- // Close the prepared statement
+            try {
+                // Close the prepared statement
                 stmt.close();
- // Close the connection
+                // Close the connection
                 con.close();
             } catch (Exception e) {
                 System.out.println("error: " + e.getMessage());
             }
         }
- return result;
+        return result;
     }
 }
+
 ```
 
 For JDBC, we can also use the `JdbcTemplate` class to concentrate on SQL queries and their parameters. As noted in the example above, you need to configure it with a `DataSource`. Spring-JDBC also has a `JdbcDaoSupport` class that you can extend to develop your DAO.
@@ -175,5 +176,5 @@ Spring also provides an API for transaction management that goes well with data 
 
 ## Resources
 
-- http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
-- http://docs.spring.io/spring-data/data-commons/docs/1.9.2.RELEASE/reference/html/
+- [Spring Docs](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/)
+- [Spring Data Docs](http://docs.spring.io/spring-data/data-commons/docs/1.9.2.RELEASE/reference/html/)

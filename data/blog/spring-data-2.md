@@ -1,6 +1,6 @@
 ---
 title: Spring Data Access - Spring Data JPA
-date: '2022-05-06'
+date: '2022-05-07'
 description: Overview of Spring Data JPA
 ---
 

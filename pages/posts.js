@@ -64,7 +64,7 @@ export default function PostHome({ allPostsData }) {
       <p className="my-para">
         <strong>{blogTitle}</strong> is a blog about business, language, and
         computer science. Sometimes my thoughts overflow and end up here for
-        safekeeping.
+        safekeeping. So far, I've written {allPostsData.length} posts.
       </p>
 
       <section className="mb-8">

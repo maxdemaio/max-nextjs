@@ -114,7 +114,7 @@ Now I'll show some examples of a high-level program translating at compile time 
 
 Example high level program:
 
-```
+```jack
 int main() {
     return factorial(3);
 }
@@ -129,7 +129,7 @@ int factorial(int n) {
 
 Example Pseudo VM code:
 
-```
+```code
 function main
     push 3
     call factorial
@@ -158,7 +158,7 @@ function mult(a,b)
 
 Actual VM program:
 
-```
+```vm
 function main 0
     push constant 3
     call factorial 1

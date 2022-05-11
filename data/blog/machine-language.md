@@ -168,6 +168,6 @@ The hack programming language is low level. A low level programming language dea
 - Pointers
 - Input/Output
 
-## Works Cited
+## Resources
 
 - Nisan, Noam, and Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles. MIT, 2021.

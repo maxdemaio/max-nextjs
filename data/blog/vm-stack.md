@@ -253,3 +253,7 @@ To create the VM implementation we need a standard VM mapping on the host platfo
 | Xxx.i symbols     | Each static variable i in file Xxx.VM will be translated to this symbol. |
 
 In conclusion we talked about arithmetic, logical, and memory access commands. We've omitted branching and function commands for future blog posts.
+
+## Resources
+
+- Nisan, Noam, and Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles. MIT, 2021.

@@ -115,15 +115,19 @@ Now I'll show some examples of a high-level program translating at compile time 
 Example high level program:
 
 ```jack
-int main() {
-    return factorial(3);
-}
+class Main {
+    function int main() {
+        return Main.factorial(3);
+    }
 
-int factorial(int n) {
-    if (n==1)
-        return 1;
-    else
-        return n * factorial(n-1);
+    function int factorial(int n) {
+         if (n = 1) {
+            return 1;
+        }
+        else {
+            return Math.multiply(n, Main.factorial(n-1));
+       }
+    }
 }
 ```
 

@@ -159,29 +159,29 @@ function mult(a,b)
 Actual VM program:
 
 ```vm
-function main 0
-    push constant 3
-    call factorial 1
-    return
-
-function factorial 0
-    push argument 0
-    push constant 1
-    eq
-    if-goto BASECASE
-
-    push argument 0
-    push argument 0
-    push constant 1
-    call mult 2
-    return
-
-label BASECASE
-    push constant 1
-    return
-
-function mult 2
-    // ...
+function Main.main 0
+push constant 3
+call Main.factorial 1
+return
+function Main.factorial 0
+push argument 0
+push constant 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 1
+return
+goto IF_END0
+label IF_FALSE0
+push argument 0
+push argument 0
+push constant 1
+sub
+call Main.factorial 1
+call Math.multiply 2
+return
+label IF_END0
 ```
 
 Here is what the global stack would look like at runtime before reaching the base case of factorial(3).

@@ -65,12 +65,6 @@ function FooterSocials() {
           </a>
         </Link>
 
-        <Link href="/products">
-          <a aria-label="Products link" className="my-nav-link">
-            Products
-          </a>
-        </Link>
-
         <Link href="/music">
           <a aria-label="Music link" className="my-nav-link">
             Music

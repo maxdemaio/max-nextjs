@@ -338,7 +338,7 @@ goto retAddr // cont program control at return address in caller
 
 I showed the assembly code that would end up building the state of a global stack. This global stack gets built through turns in program control from functions. We maintain and build this global stack during program runtime.
 
-We've gone over how to make a VM on any target platform. We test our VM translator using VM test programs, a CPU emulator, and test/compare scripts. We'll take a directory of Jack files, compile to VM language files, and translate into one assembly file. In our case the project will for the hack computer. But we could use these general guidelines to take VM code and generate assembly for other platforms. Platform independence, pretty sweet!
+We've gone over how to make a VM on any target platform. We test our VM translator using VM test programs, a CPU emulator, and test/compare scripts. We'll take a directory of Jack files, compile to VM language files, and translate into one assembly file. In our case the project will for the hack computer. But we could use these general guidelines to take VM code and generate assembly for other platforms. Platform independence is pretty sweet!
 
 ## Resources
 

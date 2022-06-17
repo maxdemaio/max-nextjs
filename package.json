@@ -12,8 +12,6 @@
     "e2e": "cypress run"
   },
   "dependencies": {
-    "@next-auth/prisma-adapter": "^1.0.1",
-    "@prisma/client": "^3.6.0",
     "@tailwindcss/typography": "^0.5.0",
     "@types/react": "^17.0.37",
     "autoprefixer": "^10.4.0",
@@ -21,7 +19,6 @@
     "globby": "^12.0.2",
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",
-    "next-auth": "4.0.5",
     "next-themes": "0.0.15",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -37,8 +34,7 @@
     "tailwindcss": "^3.0.0"
   },
   "devDependencies": {
-    "cypress": "^9.1.1",
-    "prisma": "^3.6.0"
+    "cypress": "^9.1.1"
   },
   "prettier": {
     "trailingComma": "es5",

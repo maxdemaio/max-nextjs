@@ -59,12 +59,6 @@ function FooterSocials() {
       </div>
 
       <div className="flex flex-col space-y-4 mb-8">
-        <Link href="/guestbook">
-          <a aria-label="Guestbook link" className="my-nav-link">
-            Guestbook
-          </a>
-        </Link>
-
         <Link href="/music">
           <a aria-label="Music link" className="my-nav-link">
             Music

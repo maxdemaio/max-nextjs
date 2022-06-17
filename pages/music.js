@@ -1,10 +1,10 @@
-import Container from '@/components/Container';
+import Container from '/components/Container';
 import Image from 'next/image';
 
 import { shimmer, toBase64 } from '@/lib/imageManip';
-import SubpageFooter from '@/components/SubpageFooter';
-import TopTracks from '@/components/TopTracks';
-import MyTrack from '@/components/MyTrack';
+import SubpageFooter from '/components/SubpageFooter';
+import TopTracks from '/components/TopTracks';
+import MyTrack from '/components/MyTrack';
 
 export default function Music() {
   return (

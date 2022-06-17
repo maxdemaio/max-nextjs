@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from '@/components/Container';
-import YoutubeStats from '@/components/YoutubeStats';
-import VidDisplayListItem from '@/components/VidDisplayListItem';
+import Container from '/components/Container';
+import YoutubeStats from '/components/YoutubeStats';
+import VidDisplayListItem from '/components/VidDisplayListItem';
 import { shimmer, toBase64 } from '@/lib/imageManip';
 import { useState } from 'react';
-import SubpageFooter from '@/components/SubpageFooter';
+import SubpageFooter from '/components/SubpageFooter';
 
 export default function Videos({ stats, videos }) {
   const [searchValue, setSearchValue] = useState('');

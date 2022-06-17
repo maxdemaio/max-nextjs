@@ -3,7 +3,7 @@ import { signIn, signOut, useSession } from 'next-auth/react';
 import { format } from 'date-fns';
 import useSWR, { useSWRConfig } from 'swr';
 
-import LoadingSpinner from '@/components/LoadingSpinner';
+import LoadingSpinner from '/components/LoadingSpinner';
 import fetcher from 'lib/fetcher';
 import GithubIcon from './GithubIcon';
 

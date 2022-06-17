@@ -4,9 +4,9 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 import { getAllPostIds, getPostData } from '@/lib/posts';
-import DateComp from '@/components/DateComp';
-import Container from '@/components/Container';
-import BlogFooter from '@/components/BlogFooter';
+import DateComp from '/components/DateComp';
+import Container from '/components/Container';
+import BlogFooter from '/components/BlogFooter';
 
 export default function Post({ id, html, meta }) {
   return (

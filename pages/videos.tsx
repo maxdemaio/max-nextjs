@@ -10,10 +10,11 @@ import SubpageFooter from '../components/SubpageFooter';
 
 export default function Videos({ stats, videos }) {
   const [searchValue, setSearchValue] = useState('');
+  
   const sortedVids = videos
     .sort((a, b) =>
       Number(
-        new Date(b.snippet.publishedAt) -
+        new Date(b.snippet.publishedAt).valueOf() -
           Number(new Date(a.snippet.publishedAt))
       )
     )

@@ -6,7 +6,7 @@ const { spacing } = require('tailwindcss/defaultTheme');
 module.exports = {
   mode: 'jit',
   // Files that are utilizing tailwindcss so we can purge unused styles (dep graph)
-  content: ['./pages/**/*.tsx', './components/**/*.js', './layouts/**/*.js'],
+  content: ['./pages/**/*.tsx', './components/**/*.tsx'],
   // Dark mode will change the styles on 'class' attribute
   darkMode: 'class',
   // Here is where we can extend tailwind classes (example: animations)

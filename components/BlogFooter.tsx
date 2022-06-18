@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import FooterSocials from '/components/FooterSocials';
-import CcName from '/components/CcName';
+import FooterSocials from './FooterSocials';
+import CcName from './CcName';
 
 export default function BlogFooter() {
   const moveToTop = () => {

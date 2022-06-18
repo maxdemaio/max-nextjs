@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import CcName from '/components/CcName';
-import FooterSocials from '/components/FooterSocials';
+import CcName from './CcName';
+import FooterSocials from './FooterSocials';
 
 function SubpageFooter() {
   return (

@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-import VideoBlogIcon from '/components/VideoBlogIcon';
-import TwitterIcon from '/components/TwitterIcon';
-import GithubIcon from '/components/GithubIcon';
+import VideoBlogIcon from './VideoBlogIcon';
+import TwitterIcon from './TwitterIcon';
+import GithubIcon from './GithubIcon';
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);

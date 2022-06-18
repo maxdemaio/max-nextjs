@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 
 import fetcher from 'lib/fetcher';
-import Track from 'components/Track';
+import Track from './Track';
 
 export default function Tracks() {
   const { data } = useSWR('/api/spotify/topTracks', fetcher);

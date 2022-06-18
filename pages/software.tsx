@@ -1,8 +1,8 @@
-import Container from '/components/Container';
+import Container from '../components/Container';
 import Image from 'next/image';
 
-import { shimmer, toBase64 } from '@/lib/imageManip';
-import SubpageFooter from '/components/SubpageFooter';
+import { shimmer, toBase64 } from '../lib/imageManip';
+import SubpageFooter from '../components/SubpageFooter';
 
 export default function Software() {
   return (

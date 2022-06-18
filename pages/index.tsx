@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import CcName from '/components/CcName';
-import Container from '/components/Container';
-import FooterSocials from '/components/FooterSocials';
+import CcName from '../components/CcName';
+import Container from '../components/Container';
+import FooterSocials from '../components/FooterSocials';
 
 export default function Home() {
   return (

@@ -2,9 +2,10 @@ import useSWR from 'swr';
 
 import fetcher from 'lib/fetcher';
 import Track from './Track';
+import { TopTracks } from 'lib/types';
 
 export default function Tracks() {
-  const { data } = useSWR('/api/spotify/topTracks', fetcher);
+  const { data } = useSWR<TopTracks>('/api/spotify/topTracks', fetcher);
 
   if (!data) {
     return null;

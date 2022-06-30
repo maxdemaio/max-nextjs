@@ -1,6 +1,6 @@
 {
   "name": "max-nextjs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -37,13 +37,5 @@
     "@types/react": "18.0.1",
     "cypress": "^9.1.1",
     "typescript": "^4.7.3"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "printWidth": 80,
-    "tabWidth": 2,
-    "semi": true,
-    "bracketSpacing": true,
-    "singleQuote": true
   }
 }

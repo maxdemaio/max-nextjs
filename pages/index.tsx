@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import CcName from '../components/CcName';
-import Container from '../components/Container';
-import FooterSocials from '../components/FooterSocials';
+import CcName from "../components/CcName";
+import Container from "../components/Container";
+import FooterSocials from "../components/FooterSocials";
 
 export default function Home() {
   return (
@@ -40,11 +40,12 @@ export default function Home() {
             to learn, research new technologies, and design software
             architecture. I like creating practical business solutions and
             making development processes as efficient as possible. Currently,
-            I'm working as an Associate Software Developer at{' '}
-            <a className="my-link" href="https://www.infosys.com/">
-              Infosys
-            </a>{' '}
-            where I work on client facing applications in an agile environment.
+            I'm working as an Associate Software Developer at{" "}
+            <a className="my-link" href="https://www.logicmanager.com">
+              LogicManager
+            </a>{" "}
+            where I work with frontend and backend technologies in an agile
+            environment.
           </p>
           <p className="my-para">
             I'm working on growing my skills and gaining exposure to a variety
@@ -54,16 +55,16 @@ export default function Home() {
             curiosity, and diversity.
           </p>
           <p className="text-gray-700 dark:text-gray-400">
-            You can follow me on{' '}
+            You can follow me on{" "}
             <a className="my-link" href="https://twitter.com/maxwelldemaio">
               Twitter
-            </a>{' '}
+            </a>{" "}
             where I mostly post about language, technology, and business. My
-            open source projects are publicly available on{' '}
+            open source projects are publicly available on{" "}
             <a className="my-link" href="https://github.com/maxdemaio">
               GitHub
             </a>
-            . Please feel free to reach out and contact me at{' '}
+            . Please feel free to reach out and contact me at{" "}
             <a className="my-link" href="mailto:maxwell.demaio@gmail.com">
               maxwell.demaio@gmail.com
             </a>

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 function FooterSocials() {
   return (
@@ -64,6 +64,14 @@ function FooterSocials() {
             Music
           </a>
         </Link>
+
+        <a
+          className="my-nav-link"
+          href="https://www.twitch.tv/maxmayo"
+          aria-label="Twitch link"
+        >
+          Twitch
+        </a>
       </div>
     </div>
   );

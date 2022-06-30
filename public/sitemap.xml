@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://maxdemaio.com</loc>
+    <loc>https://maxdemaio.com/blog/annotation-and-java-config</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/assemblers</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/autowiring-and-bean-scope</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/boolean-arithmetic-alu</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/boolean-functions-and-gate-logic</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/dependency-injection</loc>
   </url>
 
   <url>
     <loc>https://maxdemaio.com/blog/dtos</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/inversion-of-control</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/machine-language</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/memory</loc>
   </url>
 
   <url>
@@ -17,7 +49,23 @@
   </url>
 
   <url>
+    <loc>https://maxdemaio.com/blog/networking</loc>
+  </url>
+
+  <url>
     <loc>https://maxdemaio.com/blog/next-and-docker</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/react-jsx-elements</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/spring-data-1</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/spring-data-2</loc>
   </url>
 
   <url>
@@ -26,5 +74,13 @@
 
   <url>
     <loc>https://maxdemaio.com/blog/tailwind-react-typescript</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/vm-stack</loc>
+  </url>
+
+  <url>
+    <loc>https://maxdemaio.com/blog/vm2</loc>
   </url>
 </urlset>

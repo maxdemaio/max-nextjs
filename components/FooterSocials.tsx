@@ -59,13 +59,6 @@ function FooterSocials() {
       </div>
 
       <div className="flex flex-col space-y-4 mb-8">
-        <a
-          className="my-nav-link"
-          href="https://www.twitch.tv/maxmayo"
-          aria-label="Twitch link"
-        >
-          Twitch
-        </a>
         <Link href="/music">
           <a aria-label="Music link" className="my-nav-link">
             Music

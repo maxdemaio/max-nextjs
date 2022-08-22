@@ -1,4 +1,3 @@
-import { shimmer, toBase64 } from "lib/imageManip";
 import Image from "next/image";
 
 import CcName from "../components/CcName";
@@ -25,9 +24,7 @@ export default function Home() {
           <div className="image-frame">
             <Image
               placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(935, 935)
-              )}`}
+              blurDataURL="data:image/jpeg;base64,LbI#[r.To|IA5nS%T1s8T2n+aKxF"
               src="/static/images/me2.jpeg"
               className="rounded-3xl"
               height={260}

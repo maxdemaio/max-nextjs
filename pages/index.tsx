@@ -3,6 +3,7 @@ import Image from "next/image";
 import CcName from "../components/CcName";
 import Container from "../components/Container";
 import FooterSocials from "../components/FooterSocials";
+import pictureOfMe from "../public/static/images/me2.jpeg";
 
 export default function Home() {
   return (
@@ -21,11 +22,10 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="image-frame">
+          <div id="image-frame">
             <Image
               placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,LbI#[r.To|IA5nS%T1s8T2n+aKxF"
-              src="/static/images/me2.jpeg"
+              src={pictureOfMe}
               className="rounded-3xl"
               height={260}
               width={260}

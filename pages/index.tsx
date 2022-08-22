@@ -1,3 +1,4 @@
+import { shimmer, toBase64 } from "lib/imageManip";
 import Image from "next/image";
 
 import CcName from "../components/CcName";
@@ -24,8 +25,10 @@ export default function Home() {
           <div className="image-frame">
             <Image
               placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAEAAQQCAwAAAAAAAAAAAAABAgAEBhEDBSJBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxJR/9oADAMBAAIRAxEAPwCYzXpIY9kd3Y9ZfX/HbRnIIvKL4yYbXW1SAq+1+UpSkxg0Fl+1uz//2Q=="
-              src="/static/images/me.jpg"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(935, 935)
+              )}`}
+              src="/static/images/me2.jpeg"
               className="rounded-3xl"
               height={260}
               width={260}

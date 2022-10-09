@@ -41,7 +41,10 @@ export default function Home() {
             architecture. I like creating practical business solutions and
             making development processes as efficient as possible. Currently,
             I'm working as an Associate Software Developer at{" "}
-            <a className="my-link-blue" href="https://www.logicmanager.com">
+            <a
+              className="my-link-blue dark:my-link-blue-dark dark:my-link-blue dark:my-link-blue-dark-dark"
+              href="https://www.logicmanager.com"
+            >
               LogicManager
             </a>{" "}
             where I work with frontend and backend technologies in an agile
@@ -57,18 +60,24 @@ export default function Home() {
           <p className="text-gray-700 dark:text-gray-400">
             You can follow me on{" "}
             <a
-              className="my-link-blue"
+              className="my-link-blue dark:my-link-blue-dark"
               href="https://twitter.com/maxwelldemaio"
             >
               Twitter
             </a>{" "}
             where I mostly post about software, language, and business. My open
             source projects are publicly available on{" "}
-            <a className="my-link-blue" href="https://github.com/maxdemaio">
+            <a
+              className="my-link-blue dark:my-link-blue-dark"
+              href="https://github.com/maxdemaio"
+            >
               GitHub
             </a>
             . Please feel free to reach out and contact me at{" "}
-            <a className="my-link-blue" href="mailto:maxwell.demaio@gmail.com">
+            <a
+              className="my-link-blue dark:my-link-blue-dark"
+              href="mailto:maxwell.demaio@gmail.com"
+            >
               maxwell.demaio@gmail.com
             </a>
             .

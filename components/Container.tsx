@@ -58,13 +58,20 @@ export default function Container(props: IContainerProps) {
 
       <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-3xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
         <Link href="/">
-          <a id="home-nav" aria-label="Home link" className="my-nav-link">
+          <a
+            id="home-nav"
+            aria-label="Home link"
+            className="my-nav-link dark:my-nav-link-dark"
+          >
             Home
           </a>
         </Link>
 
         <Link href="/posts">
-          <a aria-label="Posts link" className="nav-no-show my-nav-link">
+          <a
+            aria-label="Posts link"
+            className="nav-no-show my-nav-link dark:my-nav-link-dark"
+          >
             Posts
           </a>
         </Link>
@@ -78,7 +85,10 @@ export default function Container(props: IContainerProps) {
         </Link>
 
         <Link href="/software">
-          <a aria-label="Software link" className="nav-no-show my-nav-link">
+          <a
+            aria-label="Software link"
+            className="nav-no-show my-nav-link dark:my-nav-link-dark"
+          >
             Software
           </a>
         </Link>

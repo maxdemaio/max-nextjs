@@ -37,7 +37,10 @@ export default function Software() {
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open
           source work is located on{" "}
-          <a className="my-link-blue" href="https://github.com/maxdemaio">
+          <a
+            className="my-link-blue dark:my-link-blue-dark"
+            href="https://github.com/maxdemaio"
+          >
             GitHub
           </a>
           .
@@ -50,7 +53,7 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/thelangbot"
-                className="my-link-blue"
+                className="my-link-blue dark:my-link-blue-dark"
               >
                 The Language Bot
               </a>{" "}
@@ -63,7 +66,7 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/hack-computer"
-                className="my-link-blue"
+                className="my-link-blue dark:my-link-blue-dark"
               >
                 Hack Computer
               </a>{" "}
@@ -76,7 +79,7 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/langlab"
-                className="my-link-blue"
+                className="my-link-blue dark:my-link-blue-dark"
               >
                 LangLab
               </a>{" "}
@@ -90,7 +93,7 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/house_party"
-                className="my-link-blue"
+                className="my-link-blue dark:my-link-blue-dark"
               >
                 House Party
               </a>

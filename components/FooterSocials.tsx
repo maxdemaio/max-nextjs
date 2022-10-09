@@ -5,21 +5,21 @@ export default function FooterSocials() {
     <div className=" grid grid-cols-3">
       <div className="flex flex-col space-y-4 mb-8">
         <Link href="/">
-          <a className="my-nav-link">Home</a>
+          <a className="my-nav-link dark:my-nav-link-dark">Home</a>
         </Link>
 
         <Link href="/posts">
-          <a className="my-nav-link">Posts</a>
+          <a className="my-nav-link dark:my-nav-link-dark">Posts</a>
         </Link>
 
         <Link href="/software">
-          <a className="my-nav-link">Software</a>
+          <a className="my-nav-link dark:my-nav-link-dark">Software</a>
         </Link>
       </div>
 
       <div className="flex flex-col space-y-4 mb-8">
         <a
-          className="my-nav-link"
+          className="my-nav-link dark:my-nav-link-dark"
           href="https://www.linkedin.com/in/maxdemaio/"
           aria-label="LinkedIn link"
         >
@@ -27,7 +27,7 @@ export default function FooterSocials() {
         </a>
 
         <a
-          className="my-nav-link"
+          className="my-nav-link dark:my-nav-link-dark"
           href="https://twitter.com/maxwelldemaio"
           aria-label="Twitter link"
         >
@@ -35,7 +35,7 @@ export default function FooterSocials() {
         </a>
 
         <a
-          className="my-nav-link"
+          className="my-nav-link dark:my-nav-link-dark"
           href="https://github.com/maxdemaio"
           aria-label="GitHub link"
         >
@@ -43,14 +43,14 @@ export default function FooterSocials() {
         </a>
 
         <a
-          className="my-nav-link"
+          className="my-nav-link dark:my-nav-link-dark"
           href="https://www.youtube.com/channel/UCXzTmvY30ODYPrpVImJEVBQ"
           aria-label="YouTube link"
         >
           YouTube
         </a>
         <a
-          className="my-nav-link"
+          className="my-nav-link dark:my-nav-link-dark"
           href="https://www.duolingo.com/profile/maxwelldemaio"
           aria-label="Duolingo link"
         >
@@ -60,7 +60,10 @@ export default function FooterSocials() {
 
       <div className="flex flex-col space-y-4 mb-8">
         <Link href="/music">
-          <a aria-label="Music link" className="my-nav-link">
+          <a
+            aria-label="Music link"
+            className="my-nav-link dark:my-nav-link-dark"
+          >
             Music
           </a>
         </Link>

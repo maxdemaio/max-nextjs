@@ -29,18 +29,35 @@ This essentially allows us to make our own tailwind-like classNames. */
 .my-para {
   @apply text-gray-700 dark:text-gray-500 mb-8;
 }
+
 .my-link-blue {
   @apply underline text-blue-600 hover:text-blue-800;
 }
+.my-link-blue-dark {
+  @apply underline text-blue-400 hover:text-blue-600;
+}
+
 .my-link-purple {
   @apply underline text-purple-600 hover:text-purple-700;
 }
+.my-link-purple-dark {
+  @apply underline text-purple-400 hover:text-purple-600;
+}
+
 .my-link-red {
   @apply underline text-red-600 hover:text-red-800;
 }
+.my-link-red-dark {
+  @apply underline text-red-400 hover:text-red-600;
+}
+
 .my-nav-link {
   @apply text-blue-600 hover:text-blue-800;
 }
+.my-nav-link-dark {
+  @apply text-blue-400 hover:text-blue-600;
+}
+
 .prose a {
   @apply underline text-blue-600 hover:text-blue-800;
 }

@@ -73,13 +73,16 @@ export default function Videos() {
       <p className="my-para">
         All VODs are located on{" "}
         <a
-          className="my-link-red"
+          className="my-link-red dark:my-link-red-dark"
           href="https://www.youtube.com/channel/UCXzTmvY30ODYPrpVImJEVBQ"
         >
           my YouTube channel
         </a>
         . Also, I occasionally live-stream on{" "}
-        <a className="my-link-purple" href="https://www.twitch.tv/MaxMayo">
+        <a
+          className="my-link-purple dark:my-link-purple-dark"
+          href="https://www.twitch.tv/MaxMayo"
+        >
           Twitch
         </a>
         .

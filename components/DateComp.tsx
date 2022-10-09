@@ -1,6 +1,12 @@
-import {parseISO, format} from 'date-fns';
+import { parseISO, format } from "date-fns";
 
-export default function DateComp({dateString}) {
-  const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
+export default function DateComp(props: IDateCompProps) {
+  const date = parseISO(props.dateString);
+  return (
+    <time dateTime={props.dateString}>{format(date, "LLLL d, yyyy")}</time>
+  );
+}
+
+export interface IDateCompProps {
+  dateString: string;
 }

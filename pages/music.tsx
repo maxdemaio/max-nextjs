@@ -1,9 +1,9 @@
-import Container from '../components/Container';
-import Image from 'next/image';
+import Container from "../components/Container";
+import Image from "next/image";
 
-import { shimmer, toBase64 } from '../lib/imageManip';
-import SubpageFooter from '../components/SubpageFooter';
-import TopTracks from '../components/TopTracks';
+import { shimmer, toBase64 } from "../lib/imageManip";
+import SubpageFooter from "../components/SubpageFooter";
+import TopTracks from "../components/TopTracks";
 
 export default function Music() {
   return (

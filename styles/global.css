@@ -27,16 +27,22 @@ This essentially allows us to make our own tailwind-like classNames. */
   @apply font-bold text-2xl tracking-tight mb-4;
 }
 .my-para {
-  @apply text-gray-700 dark:text-gray-400 mb-8;
+  @apply text-gray-700 dark:text-gray-500 mb-8;
 }
-.my-link {
-  @apply underline text-blue-400 hover:text-blue-600;
+.my-link-blue {
+  @apply underline text-blue-600 hover:text-blue-800;
+}
+.my-link-purple {
+  @apply underline text-purple-600 hover:text-purple-700;
+}
+.my-link-red {
+  @apply underline text-red-600 hover:text-red-800;
 }
 .my-nav-link {
-  @apply text-blue-400 hover:text-blue-600;
+  @apply text-blue-600 hover:text-blue-800;
 }
 .prose a {
-  @apply underline text-blue-400 hover:text-blue-600;
+  @apply underline text-blue-600 hover:text-blue-800;
 }
 
 /* On screens that are 767px wide or less
@@ -69,7 +75,7 @@ pre {
   scrollbar-width: none; /* Firefox */
 }
 
-.prose :where(code):not(:where([class~='not-prose'] *)) {
+.prose :where(code):not(:where([class~="not-prose"] *)) {
   font-size: 0.8em;
   font-weight: 400;
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function FooterSocials() {
+export default function FooterSocials() {
   return (
     <div className=" grid grid-cols-3">
       <div className="flex flex-col space-y-4 mb-8">
@@ -68,5 +68,3 @@ function FooterSocials() {
     </div>
   );
 }
-
-export default FooterSocials;

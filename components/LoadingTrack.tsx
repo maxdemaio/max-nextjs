@@ -1,8 +1,8 @@
-export default function LoadingTrack(track) {
+export default function LoadingTrack(props: ILoadingTrackProps) {
   return (
     <div className="flex flex-row items-baseline border-b border-gray-200 dark:border-gray-800 w-full mb-8">
       <p className="text-sm font-bold text-gray-400 dark:text-gray-600">
-        {track.ranking}
+        {props.ranking}
       </p>
       <div className="flex flex-col pl-3">
         <a
@@ -21,4 +21,8 @@ export default function LoadingTrack(track) {
       </div>
     </div>
   );
+}
+
+export interface ILoadingTrackProps {
+  ranking: number;
 }

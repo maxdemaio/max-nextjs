@@ -1,29 +1,32 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import Link from 'next/link';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import Link from "next/link";
 
-import VideoBlogIcon from './VideoBlogIcon';
-import TwitterIcon from './TwitterIcon';
-import GithubIcon from './GithubIcon';
+import VideoBlogIcon from "./VideoBlogIcon";
+import TwitterIcon from "./TwitterIcon";
+import GithubIcon from "./GithubIcon";
 
-export default function Container(props) {
+export default function Container(props: IContainerProps) {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
-  // After mounting, we have access to the theme
+  // after mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
 
+  // get child noes passed to component
+  // get custom metadata
   const { children, ...customMeta } = props;
   const router = useRouter();
 
   // TODO, edit and add custom banner
+  // Default props, gets overriden by props passed in
   const meta = {
-    title: 'Max DeMaio',
-    description: `Passionate about business, language, and computer science.`,
-    image: 'https://maxdemaio.com/static/images/me.jpg',
-    type: 'website',
+    title: "Max DeMaio",
+    description: `Passionate about software, language, and business.`,
+    type: "website",
+    image: "https://maxdemaio.com/static/images/me.jpg",
     ...customMeta,
   };
 
@@ -55,20 +58,13 @@ export default function Container(props) {
 
       <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-3xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
         <Link href="/">
-          <a
-            id="home-nav"
-            aria-label="Home link"
-            className="text-blue-400 hover:text-blue-600"
-          >
+          <a id="home-nav" aria-label="Home link" className="my-nav-link">
             Home
           </a>
         </Link>
 
         <Link href="/posts">
-          <a
-            aria-label="Posts link"
-            className="nav-no-show text-blue-400 hover:text-blue-600"
-          >
+          <a aria-label="Posts link" className="nav-no-show my-nav-link">
             Posts
           </a>
         </Link>
@@ -82,10 +78,7 @@ export default function Container(props) {
         </Link>
 
         <Link href="/software">
-          <a
-            aria-label="Software link"
-            className="nav-no-show text-blue-400 hover:text-blue-600"
-          >
+          <a aria-label="Software link" className="nav-no-show my-nav-link">
             Software
           </a>
         </Link>
@@ -128,7 +121,7 @@ export default function Container(props) {
           aria-label="Toggle Dark and Light Mode"
           type="button"
           className="w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
-          onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
         >
           {mounted && (
             <svg
@@ -139,7 +132,7 @@ export default function Container(props) {
               stroke="currentColor"
               className="text-gray-800 dark:text-gray-200"
             >
-              {resolvedTheme === 'dark' ? (
+              {resolvedTheme === "dark" ? (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -163,4 +156,13 @@ export default function Container(props) {
       </main>
     </div>
   );
+}
+
+export interface IContainerProps {
+  children: React.ReactNode;
+  title: string;
+  description: string;
+  image?: string;
+  type?: string;
+  date?: string;
 }

@@ -1,26 +1,25 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
-import Container from '../components/Container';
-import YoutubeStats from '../components/YoutubeStats';
-import VidDisplayListItem from '../components/VidDisplayListItem';
-import { shimmer, toBase64 } from '../lib/imageManip';
-import { useState } from 'react';
-import SubpageFooter from '../components/SubpageFooter';
+import Container from "../components/Container";
+import YoutubeStats from "../components/YoutubeStats";
+import VidDisplayListItem from "../components/VidDisplayListItem";
+import { shimmer, toBase64 } from "../lib/imageManip";
+import SubpageFooter from "../components/SubpageFooter";
+import { EYouTube, EYoutubeVideo } from "lib/types";
+import fetcher from "lib/fetcher";
+import useSWR from "swr";
+import LoadingSpinner from "components/LoadingSpinner";
+import YoutubeStatsLoading from "components/YoutubeStatsLoading";
 
-export default function Videos({ stats, videos }) {
-  const [searchValue, setSearchValue] = useState('');
-  
-  const sortedVids = videos
-    .sort((a, b) =>
-      Number(
-        new Date(b.snippet.publishedAt).valueOf() -
-          Number(new Date(a.snippet.publishedAt))
-      )
-    )
-    .filter((vid) =>
-      vid.snippet.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+export default function Videos() {
+  // asynch call to youtube api done on backend
+  const { data } = useSWR<EYouTube>("/api/youtube", fetcher);
+
+  const subscriberCount: number = data?.subscriberCount;
+  const viewCount: number = data?.viewCount;
+  const videoCount: number = data?.videoCount;
+  const videos: EYoutubeVideo[] = data?.videos;
 
   return (
     <Container
@@ -71,40 +70,39 @@ export default function Videos({ stats, videos }) {
           </defs>
         </svg>
       </h1>
+      <p className="my-para">
+        All VODs are located on{" "}
+        <a
+          className="my-link-red"
+          href="https://www.youtube.com/channel/UCXzTmvY30ODYPrpVImJEVBQ"
+        >
+          my YouTube channel
+        </a>
+        . Also, I occasionally live-stream on{" "}
+        <a className="my-link-purple" href="https://www.twitch.tv/MaxMayo">
+          Twitch
+        </a>
+        .
+      </p>
 
       <section className="mb-8">
-        <YoutubeStats stats={stats} />
-        <div className="relative w-full mt-4">
-          <input
-            type="text"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-            aria-label="Search videos"
-            placeholder="Search videos"
-            className="px-4 py-2 border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+        {data ? (
+          <YoutubeStats
+            subscriberCount={subscriberCount}
+            viewCount={viewCount}
+            videoCount={videoCount}
           />
-          <svg
-            className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </div>
+        ) : (
+          <YoutubeStatsLoading />
+        )}
       </section>
 
       <section className="mb-8 grid gap-y-4">
-        {sortedVids &&
-          sortedVids.map((vid) => (
-            <VidDisplayListItem key={vid.id.videoId} vid={vid} />
-          ))}
+        {data ? (
+          videos.map((vid) => <VidDisplayListItem key={vid.id} vid={vid} />)
+        ) : (
+          <LoadingSpinner />
+        )}
       </section>
 
       <Image
@@ -122,36 +120,4 @@ export default function Videos({ stats, videos }) {
       <SubpageFooter />
     </Container>
   );
-}
-
-export async function getStaticProps() {
-  // Make two parallel calls to the Google YouTube API
-  // Fetch stats and video upload data
-  const fetchStatsAndUploads = async () => {
-    // Get API keys from env
-    const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = process.env;
-
-    const [statsResponse, uploadsResponse] = await Promise.all([
-      fetch(
-        `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`
-      ),
-      fetch(
-        `https://youtube.googleapis.com/youtube/v3/search?part=id%2Csnippet&channelId=${YOUTUBE_CHANNEL_ID}&type=video&maxResults=100&key=${YOUTUBE_API_KEY}`
-      ),
-    ]);
-    const stats = await statsResponse.json();
-    const uploads = await uploadsResponse.json();
-    return [stats, uploads];
-  };
-
-  const data = await fetchStatsAndUploads();
-
-  return {
-    // Refreshes every 24 hours
-    revalidate: 86400,
-    props: {
-      stats: data[0].items[0].statistics,
-      videos: data[1].items,
-    },
-  };
 }

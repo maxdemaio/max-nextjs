@@ -17,6 +17,8 @@ my personal website powered by [Next.js](https://nextjs.org/)
 - `pages/videos/*` - Incremental static regeneration. YouTube videos and stastistics like: total channel views, total subscribers, and total videos uploaded.
 - `pages/*` - All other static pages.
 
+For each component, I export an interface of what type the props should be. All external api types are located in `lib/types.ts`.
+
 ## Running Locally
 
 ```bash

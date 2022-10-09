@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import FooterSocials from './FooterSocials';
-import CcName from './CcName';
+import Link from "next/link";
+import FooterSocials from "./FooterSocials";
+import CcName from "./CcName";
 
 export default function BlogFooter() {
   const moveToTop = () => {
@@ -23,7 +23,7 @@ export default function BlogFooter() {
         safekeeping.
       </p>
       <p className="my-para">
-        For corrections (typos, factual inaccuracies), please file a{' '}
+        For corrections (typos, factual inaccuracies), please file a{" "}
         <a
           href="https://github.com/maxdemaio/max-nextjs/issues"
           className="underline text-blue-400 hover:text-blue-600"

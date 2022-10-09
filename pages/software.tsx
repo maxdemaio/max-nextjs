@@ -1,8 +1,8 @@
-import Container from '../components/Container';
-import Image from 'next/image';
+import Container from "../components/Container";
+import Image from "next/image";
 
-import { shimmer, toBase64 } from '../lib/imageManip';
-import SubpageFooter from '../components/SubpageFooter';
+import { shimmer, toBase64 } from "../lib/imageManip";
+import SubpageFooter from "../components/SubpageFooter";
 
 export default function Software() {
   return (
@@ -36,8 +36,8 @@ export default function Software() {
         <p className="my-para">
           Here you'll find my featured projects as well as the technology I use
           to build business and software architecture. The remainder of my open
-          source work is located on{' '}
-          <a className="my-link" href="https://github.com/maxdemaio">
+          source work is located on{" "}
+          <a className="my-link-blue" href="https://github.com/maxdemaio">
             GitHub
           </a>
           .
@@ -50,10 +50,10 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/thelangbot"
-                className="my-link"
+                className="my-link-blue"
               >
                 The Language Bot
-              </a>{' '}
+              </a>{" "}
               is a Twitter bot to help individuals learn foreign languages. It
               is naturally building a community through tweets by retweeting
               #100DaysOfLanguage and #langtwt.
@@ -63,10 +63,10 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/hack-computer"
-                className="my-link"
+                className="my-link-blue"
               >
                 Hack Computer
-              </a>{' '}
+              </a>{" "}
               is a computer system built from the ground up as described in the
               book, "The Elements of Computing Systems". Made with hardware
               description language, assembly, and Java.
@@ -76,10 +76,10 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/langlab"
-                className="my-link"
+                className="my-link-blue"
               >
                 LangLab
-              </a>{' '}
+              </a>{" "}
               is a free and open source language learning website that allows
               users to practice the conjugations of the 25 most common verbs in
               English. Helpful resources have also been provided to help
@@ -90,7 +90,7 @@ export default function Software() {
             <p className="transform transition duration-300 ease-in-out dark:hover:text-white hover:text-black text-gray-700 dark:text-gray-400">
               <a
                 href="https://github.com/maxdemaio/house_party"
-                className="my-link"
+                className="my-link-blue"
               >
                 House Party
               </a>

@@ -30,7 +30,7 @@ export default function YoutubeStats(props: IYoutubeStats) {
 }
 
 export interface IYoutubeStats {
-  subscriberCount: number;
-  viewCount: number;
-  videoCount: number;
+  subscriberCount: string;
+  viewCount: string;
+  videoCount: string;
 }

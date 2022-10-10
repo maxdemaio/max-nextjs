@@ -6,26 +6,17 @@ import YoutubeStats from "../components/YoutubeStats";
 import VidDisplayListItem from "../components/VidDisplayListItem";
 import { shimmer, toBase64 } from "../lib/imageManip";
 import SubpageFooter from "../components/SubpageFooter";
-import { EYouTube, EYoutubeVideo } from "lib/types";
-import fetcher from "lib/fetcher";
-import useSWR from "swr";
-import LoadingSpinner from "components/LoadingSpinner";
-import YoutubeStatsLoading from "components/YoutubeStatsLoading";
+import { EYoutube, EYoutubeStats, EYoutubeVideo } from "lib/types";
+import googleAuth from "lib/google";
 
-export default function Videos() {
-  // asynch call to youtube api done on backend
-  const { data } = useSWR<EYouTube>("/api/youtube", fetcher);
+import { google } from "googleapis";
 
-  const subscriberCount: number = data?.subscriberCount;
-  const viewCount: number = data?.viewCount;
-  const videoCount: number = data?.videoCount;
-  const videos: EYoutubeVideo[] = data?.videos;
-
+export default function Videos(props: EYoutube) {
   return (
     <Container
       title="Posts | Videos – Max DeMaio"
       image="https://maxdemaio.com/static/images/howl-videos.jpg"
-      description="All my YouTube videos in one place."
+      description="All my videos in one place."
     >
       <h1 className="my-h1">
         <Link href="/posts">
@@ -89,23 +80,18 @@ export default function Videos() {
       </p>
 
       <section className="mb-8">
-        {data ? (
-          <YoutubeStats
-            subscriberCount={subscriberCount}
-            viewCount={viewCount}
-            videoCount={videoCount}
-          />
-        ) : (
-          <YoutubeStatsLoading />
-        )}
+        <YoutubeStats
+          subscriberCount={props.stats.subscriberCount}
+          viewCount={props.stats.viewCount}
+          videoCount={props.stats.videoCount}
+        />
       </section>
 
       <section className="mb-8 grid gap-y-4">
-        {data ? (
-          videos.map((vid) => <VidDisplayListItem key={vid.id} vid={vid} />)
-        ) : (
-          <LoadingSpinner />
-        )}
+        {props.videos &&
+          props.videos.map((vid) => (
+            <VidDisplayListItem key={vid.id} vid={vid} />
+          ))}
       </section>
 
       <Image
@@ -123,4 +109,54 @@ export default function Videos() {
       <SubpageFooter />
     </Container>
   );
+}
+
+export async function getStaticProps() {
+  const auth = await googleAuth.getClient();
+  const youtube = google.youtube({
+    auth,
+    version: "v3",
+  });
+
+  // partial responses from youtube channel api
+  const channelStatsResponse = await youtube.channels.list({
+    id: "UCXzTmvY30ODYPrpVImJEVBQ",
+    part: "statistics",
+    fields: "items(statistics(subscriberCount,viewCount,videoCount))",
+  });
+
+  // partial responses from youtube search api
+  const searchIdSnippetResponse = await youtube.search.list({
+    channelId: "UCXzTmvY30ODYPrpVImJEVBQ",
+    part: "id,snippet",
+    type: "video",
+    fields: "items(id(videoId),snippet(title, publishedAt))",
+    maxResults: 100,
+  });
+
+  const channel = channelStatsResponse.data.items[0];
+  const searchIdsSnippets = searchIdSnippetResponse.data.items;
+
+  const stats: EYoutubeStats = channel.statistics;
+  const videos: EYoutubeVideo[] = searchIdsSnippets
+    .map((idSnip, index) => ({
+      id: index,
+      videoId: idSnip.id.videoId,
+      title: idSnip.snippet.title,
+      publishedAt: idSnip.snippet.publishedAt,
+    }))
+    .sort((a, b) =>
+      Number(
+        new Date(b.publishedAt).valueOf() - Number(new Date(a.publishedAt))
+      )
+    );
+
+  return {
+    // Refreshes every 24 hours
+    revalidate: 86400,
+    props: {
+      stats: channel.statistics || null,
+      videos: videos || null,
+    },
+  };
 }

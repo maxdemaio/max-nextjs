@@ -15,6 +15,14 @@ export type ETopTracks = {
 
 // youtube api
 // https://developers.google.com/youtube/v3/docs/
+export type EYoutubeStats = {
+  commentCount?: string | null;
+  hiddenSubscriberCount?: boolean | null;
+  subscriberCount?: string;
+  viewCount?: string;
+  videoCount?: string;
+};
+
 export type EYoutubeVideo = {
   id: number;
   videoId: string;
@@ -22,9 +30,13 @@ export type EYoutubeVideo = {
   publishedAt: string;
 };
 
-export type EYouTube = {
-  subscriberCount: number;
-  viewCount: number;
-  videoCount: number;
+export type EYoutube = {
+  stats: EYoutubeStats;
   videos: EYoutubeVideo[];
+};
+
+export type EChessGame = {};
+
+export type EChessGames = {
+  games: EChessGame[];
 };

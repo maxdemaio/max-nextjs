@@ -57,7 +57,7 @@ export default function Container(props: IContainerProps) {
         )}
       </Head>
 
-      <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-3xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
+      <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-5xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
         <Link href="/">
           <a
             id="home-nav"
@@ -118,6 +118,15 @@ export default function Container(props: IContainerProps) {
                 fill="currentColor"
               />
             </svg>
+          </a>
+        </Link>
+
+        <Link href="/music">
+          <a
+            aria-label="Music link"
+            className="nav-no-show my-nav-link dark:my-nav-link-dark"
+          >
+            Music
           </a>
         </Link>
 

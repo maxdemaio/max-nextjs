@@ -12,10 +12,6 @@ export default function FooterSocials() {
           <a className="my-nav-link dark:my-nav-link-dark">Posts</a>
         </Link>
 
-        <Link href="/videos">
-          <a className="my-nav-link dark:my-nav-link-dark">Videos</a>
-        </Link>
-
         <Link href="/software">
           <a className="my-nav-link dark:my-nav-link-dark">Software</a>
         </Link>
@@ -63,6 +59,10 @@ export default function FooterSocials() {
       </div>
 
       <div className="flex flex-col space-y-4 mb-8">
+        <Link href="/videos">
+          <a className="my-nav-link dark:my-nav-link-dark">Videos</a>
+        </Link>
+
         <Link href="/music">
           <a
             aria-label="Music link"

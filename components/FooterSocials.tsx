@@ -12,6 +12,10 @@ export default function FooterSocials() {
           <a className="my-nav-link dark:my-nav-link-dark">Posts</a>
         </Link>
 
+        <Link href="/videos">
+          <a className="my-nav-link dark:my-nav-link-dark">Videos</a>
+        </Link>
+
         <Link href="/software">
           <a className="my-nav-link dark:my-nav-link-dark">Software</a>
         </Link>

@@ -7,6 +7,7 @@ import Link from "next/link";
 import VideoBlogIcon from "./VideoBlogIcon";
 import TwitterIcon from "./TwitterIcon";
 import GithubIcon from "./GithubIcon";
+import VideoIcon from "./VideoIcon";
 
 export default function Container(props: IContainerProps) {
   const [mounted, setMounted] = useState(false);
@@ -81,6 +82,15 @@ export default function Container(props: IContainerProps) {
             className="md:hidden w-10 h-10 p-3 bg-gray-200 hover:bg-gray-300 rounded dark:bg-gray-800 dark:hover:bg-gray-700"
           >
             <VideoBlogIcon />
+          </a>
+        </Link>
+
+        <Link href="/videos">
+          <a
+            aria-label="Videos link"
+            className="nav-no-show my-nav-link dark:my-nav-link-dark"
+          >
+            Videos
           </a>
         </Link>
 

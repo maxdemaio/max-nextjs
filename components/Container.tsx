@@ -7,7 +7,6 @@ import Link from "next/link";
 import VideoBlogIcon from "./VideoBlogIcon";
 import TwitterIcon from "./TwitterIcon";
 import GithubIcon from "./GithubIcon";
-import VideoIcon from "./VideoIcon";
 
 export default function Container(props: IContainerProps) {
   const [mounted, setMounted] = useState(false);

@@ -27,7 +27,7 @@ This essentially allows us to make our own tailwind-like classNames. */
   @apply font-bold text-2xl tracking-tight mb-4;
 }
 .my-para {
-  @apply text-gray-700 dark:text-gray-500 mb-8;
+  @apply text-gray-800 dark:text-gray-400 mb-8;
 }
 
 .my-link-blue {

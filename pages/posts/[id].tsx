@@ -1,12 +1,12 @@
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-import { getAllPostIds, getPostData } from '../../lib/posts';
-import DateComp from '../../components/DateComp';
-import Container from '../../components/Container';
-import BlogFooter from '../../components/BlogFooter';
+import { getAllPostIds, getPostData } from "../../lib/posts";
+import DateComp from "../../components/DateComp";
+import Container from "../../components/Container";
+import BlogFooter from "../../components/BlogFooter";
 
 export default function Post({ id, html, meta }) {
   return (
@@ -18,7 +18,7 @@ export default function Post({ id, html, meta }) {
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         <div className="mb-8">
           <h1 className="my-h1">{meta.title}</h1>
-          <div className="text-gray-500">
+          <div className="text-gray-400">
             <DateComp dateString={meta.date} />
           </div>
           <div className="sr-only">{id}</div>
@@ -31,10 +31,10 @@ export default function Post({ id, html, meta }) {
             children={html}
             components={{
               code({ node, inline, className, children, ...props }) {
-                const match = /language-(\w+)/.exec(className || '');
+                const match = /language-(\w+)/.exec(className || "");
                 return !inline && match ? (
                   <SyntaxHighlighter
-                    children={String(children).replace(/\n$/, '')}
+                    children={String(children).replace(/\n$/, "")}
                     language={match[1]}
                     style={nord}
                     PreTag="div"

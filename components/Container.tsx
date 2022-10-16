@@ -56,7 +56,7 @@ export default function Container(props: IContainerProps) {
         )}
       </Head>
 
-      <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-5xl mx-auto text-gray-900 bg-white dark:bg-black dark:text-gray-100">
+      <nav className="px-8 mt-8 mb-10 flex items-center justify-between max-w-5xl mx-auto bg-white dark:bg-black">
         <Link href="/">
           <a
             id="home-nav"
@@ -158,7 +158,6 @@ export default function Container(props: IContainerProps) {
               viewBox="0 0 24 24"
               fill="currentColor"
               stroke="currentColor"
-              className="text-gray-800 dark:text-gray-200"
             >
               {resolvedTheme === "dark" ? (
                 <path

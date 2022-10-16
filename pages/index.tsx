@@ -57,7 +57,7 @@ export default function Home() {
             chess, and learning languages. Also, I believe in hard work,
             curiosity, and diversity.
           </p>
-          <p className="text-gray-700 dark:text-gray-400">
+          <p className="my-para">
             You can follow me on{" "}
             <a
               className="my-link-blue dark:my-link-blue-dark"

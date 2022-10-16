@@ -10,11 +10,11 @@ export default function BlogFooter() {
   return (
     <footer className="mt-8">
       <Link href="/posts">
-        <a className="underline text-blue-400 hover:text-blue-600">← Back</a>
+        <a className="my-link-blue dark:my-link-blue-dark">← Back</a>
       </Link>
       {/* To top button */}
       <button className="cursor-pointer float-right" onClick={moveToTop}>
-        <a className="underline text-blue-400 hover:text-blue-600">↑ Top</a>
+        <a className="my-link-blue dark:my-link-blue-dark">↑ Top</a>
       </button>
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mt-8 mb-8" />
       <p className="my-para">
@@ -26,7 +26,7 @@ export default function BlogFooter() {
         For corrections (typos, factual inaccuracies), please file a{" "}
         <a
           href="https://github.com/maxdemaio/max-nextjs/issues"
-          className="underline text-blue-400 hover:text-blue-600"
+          className="my-link-blue dark:my-link-blue-dark"
         >
           GitHub issue
         </a>

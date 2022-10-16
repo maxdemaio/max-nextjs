@@ -47,8 +47,8 @@ export default function PostsHeader(props: IPostsHeaderProps) {
         </Link>
       </h1>
       <p className="my-para">
-        <strong>{props.blogTitle}</strong> is a blog about business, language,
-        and software. Sometimes my thoughts overflow and end up here for
+        <strong>{props.blogTitle}</strong> is a blog about software, language,
+        and business. Sometimes my thoughts overflow and end up here for
         safekeeping. So far, I've written {props.allPostsData.length} posts.
       </p>
     </>

@@ -40,3 +40,11 @@ Create a `.env` file similar to [`.env.example`](./env.example)
 ---
 
 <samp>code is licensed under [MIT](./LICENSE), words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</samp>
+
+## Sponsors
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/maxdemaio/sponsors/sponsors.svg">
+    <img src='https://cdn.jsdelivr.net/gh/maxdemaio/sponsors/sponsors.svg'/>
+  </a>
+</p>

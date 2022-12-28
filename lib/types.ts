@@ -34,9 +34,3 @@ export type EYoutube = {
   stats: EYoutubeStats;
   videos: EYoutubeVideo[];
 };
-
-export type EChessGame = {};
-
-export type EChessGames = {
-  games: EChessGame[];
-};

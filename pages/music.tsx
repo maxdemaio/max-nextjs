@@ -36,7 +36,7 @@ export default function Music(props: ETracks) {
 
       <h2 className="my-h2">Top Spotify Tracks</h2>
       <p className="my-para">
-        My most played tracks on Spotify over the last 4 weeks.
+        My most played tracks on Spotify over the last 4 weeks, updated daily.
       </p>
 
       <TopTracks tracks={props.tracks} />

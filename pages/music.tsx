@@ -4,8 +4,10 @@ import Image from "next/image";
 import { shimmer, toBase64 } from "../lib/imageManip";
 import SubpageFooter from "../components/SubpageFooter";
 import TopTracks from "../components/TopTracks";
+import { getTopTracks } from "../lib/spotify";
+import { ETracks } from "lib/types";
 
-export default function Music() {
+export default function Music(props: ETracks) {
   return (
     <Container
       title="Music – Max DeMaio"
@@ -36,7 +38,8 @@ export default function Music() {
       <p className="my-para">
         My most played tracks on Spotify over the last 4 weeks.
       </p>
-      <TopTracks />
+
+      <TopTracks tracks={props.tracks} />
 
       <Image
         placeholder="blur"
@@ -53,4 +56,23 @@ export default function Music() {
       <SubpageFooter />
     </Container>
   );
+}
+
+export async function getStaticProps() {
+  const response = await getTopTracks();
+  const { items } = await response.json();
+
+  const tracks = items.slice(0, 10).map((track) => ({
+    artist: track.artists.map((_artist) => _artist.name).join(", "),
+    songUrl: track.external_urls.spotify,
+    title: track.name,
+  }));
+
+  return {
+    // Refreshes every 24 hours
+    revalidate: 86400,
+    props: {
+      tracks: tracks,
+    },
+  };
 }

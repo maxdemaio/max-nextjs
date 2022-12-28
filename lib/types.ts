@@ -9,7 +9,7 @@ export type ETrack = {
   title: string;
 };
 
-export type ETopTracks = {
+export type ETracks = {
   tracks: ETrack[];
 };
 
@@ -33,10 +33,4 @@ export type EYoutubeVideo = {
 export type EYoutube = {
   stats: EYoutubeStats;
   videos: EYoutubeVideo[];
-};
-
-export type EChessGame = {};
-
-export type EChessGames = {
-  games: EChessGame[];
 };

@@ -69,13 +69,6 @@ export default function Videos(props: EYoutube) {
         >
           my YouTube channel
         </a>
-        . Also, I occasionally live-stream on{" "}
-        <a
-          className="my-link-purple dark:my-link-purple-dark"
-          href="https://www.twitch.tv/MaxMayo"
-        >
-          Twitch
-        </a>
         .
       </p>
 

@@ -9,7 +9,7 @@ export type ETrack = {
   title: string;
 };
 
-export type ETopTracks = {
+export type ETracks = {
   tracks: ETrack[];
 };
 

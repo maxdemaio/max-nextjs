@@ -51,7 +51,7 @@ export default function FooterSocials() {
         </a>
         <a
           className="my-nav-link dark:my-nav-link-dark"
-          href="https://www.duolingo.com/profile/maxwelldemaio"
+          href="https://www.duolingo.com/profile/maxdemaio"
           aria-label="Duolingo link"
         >
           Duolingo
